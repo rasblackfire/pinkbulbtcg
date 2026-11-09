@@ -1,24 +1,28 @@
 # PinkBulbTCG
 
-Persoonlijke Pokémon TCG-hobbysite. Gebouwd met HTML, CSS en JavaScript en geschikt voor GitHub Pages.
+Persoonlijke Pokémon TCG-hobbysite voor GitHub Pages.
 
-## Bestanden
-- `index.html` – homepage en inhoud.
-- `style.css` – vormgeving.
-- `script.js` – mobiel navigatiemenu.
+## Marktplaats-aanbod beheren
 
-## Publiceren
-Upload de bestanden naar de hoofdmap van de repository `rasblackfire/pinkbulbtcg`. Commit de wijzigingen. GitHub Pages publiceert daarna automatisch.
+Je hoeft alleen de links te beheren in `data/marktplaats-links.json`. Zet elke Marktplaats-advertentielink tussen dubbele aanhalingstekens, met komma's ertussen. Je hoeft titel, prijs of foto niet zelf over te typen.
 
-## Huidige onderdelen
-- Testfase-melding bovenaan.
-- Uitgelichte Instagram-post (officiële Instagram-embed; bezoekers kunnen Instagram-cookies/trackers laden).
-- VaultX-affiliatelink met kortingscode PINKBULBTCG (10%).
-- Link naar Marktplaats-profiel; advertenties worden nog niet automatisch ingelezen.
-- Link naar actuele PokéRadar-evenementenagenda.
-- Link naar Nederlandse TCG-winkeldirectory van StockMonster.
+GitHub Actions voert dagelijks `scripts/update_marktplaats.py` uit. Het script probeert de titel, prijs en eerste afbeelding uit de openbare advertentiepagina te halen en schrijft de resultaten naar `data/marktplaats-data.json`. Je kunt het ook handmatig starten via GitHub → Actions → Update Marktplaats listings → Run workflow.
 
-## Belangrijke beperkingen
-De Marktplaats API-documentatie beschrijft zoeken op sellerId, maar voor een automatische openbare koppeling moeten toegang, verkopers-ID en de actuele API-voorwaarden worden bevestigd. Daarom worden geen advertenties automatisch getoond.
-De evenementenkalender en winkellijst verwijzen voorlopig naar de externe bron; er is nog geen automatische synchronisatie.
-Instagram-embeds werken alleen wanneer de post openbaar is en embeds zijn toegestaan door het account.
+### Belangrijke beperkingen
+
+- Marktplaats kan automatische verzoeken blokkeren of de pagina-opmaak wijzigen. Dan kan een advertentie als 'gegevens niet opgehaald' verschijnen; dat betekent niet automatisch dat hij verkocht is.
+- Alleen een duidelijke 404/410 of herkenbare verwijdermelding wordt als 'verkocht of verwijderd' weergegeven. Een netwerkfout of blokkade wordt niet onterecht als verkocht bestempeld.
+- De prijs en afbeelding worden alleen getoond als Marktplaats ze publiek beschikbaar maakt in de pagina-metadata.
+- Het script gebruikt geen officiële API en biedt daarom geen gegarandeerde uptime of volledigheid. Voor een stabiele officiële koppeling is API-toegang van Marktplaats nodig.
+
+## Website publiceren
+
+Upload alle bestanden en mappen naar de hoofdmap van `rasblackfire/pinkbulbtcg` en commit de wijzigingen. GitHub Pages publiceert de website. Zorg dat GitHub Actions aan staat en dat de repository Actions schrijfrechten heeft (workflow permissions: Read and write permissions).
+
+## Overige onderdelen
+
+- Testfase-melding
+- Instagram-post en profiel
+- VaultX-affiliatelink met 10% korting
+- PokéRadar-evenementenagenda
+- StockMonster-winkeldirectory

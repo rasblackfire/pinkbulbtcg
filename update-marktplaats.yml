@@ -1,0 +1,29 @@
+name: Update Marktplaats listings
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+      - name: Update listing data
+        run: python3 scripts/update_marktplaats.py
+      - name: Commit updated listing data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/marktplaats-data.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Marktplaats listings"
+            git push
+          else
+            echo "No listing changes to commit"
+          fi
