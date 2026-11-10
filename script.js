@@ -123,7 +123,7 @@
     const list = document.getElementById(listId);
     const more = document.getElementById(moreId);
     const items = posts
-      .filter((p) => p.section === section)
+      .filter((p) => p.section === section && !p.voorbeeld && p.published !== false)
       .sort((a, b) => String(b.date).localeCompare(String(a.date)));
     let expanded = false;
 
@@ -352,5 +352,5 @@
   });
   loadJSON("data/events.json").then(setupEvents);
   loadJSON("data/stores.json").then(setupStores);
-  setupSales();
+  // De homepage linkt naar de handmatig beheerde verkooppagina; de oude scraper wordt niet meer gestart.
 })();
