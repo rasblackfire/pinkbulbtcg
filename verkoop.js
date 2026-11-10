@@ -1,7 +1,7 @@
 "use strict";
 const $=id=>document.getElementById(id);
 const escapeHTML=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const safeLink=v=>{try{const u=new URL(v);return u.protocol==="https:"&&/(^|\\.)marktplaats\\.nl$/.test(u.hostname)?u.href:""}catch{return ""}};
+const safeLink=v=>{try{const u=new URL(v);return u.protocol==="https:"&&/(^|\.)marktplaats\.nl$/.test(u.hostname)?u.href:""}catch{return ""}};
 const money=v=>v===null||v===undefined||v===""?"Prijs op aanvraag":typeof v==="number"?new Intl.NumberFormat("nl-NL",{style:"currency",currency:"EUR"}).format(v):String(v);
 let items=[];
 function card(item){
