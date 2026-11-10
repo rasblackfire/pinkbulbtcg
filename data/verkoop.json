@@ -1,0 +1,12 @@
+[
+  {
+    "_uitleg": "VOORBEELD, GEEN ECHTE ADVERTENTIE. Verwijder dit object en voeg je eigen items toe. Vereist: id, naam, categorie (pokemon/riftbound/overig), prijs, link, status (beschikbaar/verkocht). Optioneel: set, nummer, conditie, afbeelding (eigen foto-URL), tcgdex_id (bijv. base1-15).",
+    "id": "voorbeeld-niet-tonen",
+    "status": "voorbeeld",
+    "naam": "Voorbeeldkaart (niet zichtbaar op de website)",
+    "categorie": "pokemon",
+    "prijs": 0,
+    "link": "",
+    "tcgdex_id": ""
+  }
+]
