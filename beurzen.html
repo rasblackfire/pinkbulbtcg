@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pokémon beurzen & events 2026–2027 | PinkBulbTCG</title>
+<meta name="description" content="Overzicht van Pokémon- en TCG-beurzen in Nederland per maand. Bekijk eenvoudig de datum, beursnaam en plaats.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#120a10;--panel:#21141f;--pink:#ff71b7;--text:#fff1f8;--muted:#d2b8c8;--border:#493045}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"Space Grotesk",sans-serif;line-height:1.5}
+a{color:inherit}.wrap{max-width:1040px;margin:auto;padding:0 20px}.notice{background:#f6a6d2;color:#2d0920;text-align:center;padding:9px;font-size:.78rem;font-weight:700}
+header{border-bottom:1px solid var(--border);padding:20px 0}.head{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.brand{font-size:1.4rem;font-weight:700;text-decoration:none}.brand b{color:var(--pink)}.back{font-size:.92rem;text-decoration:none;color:var(--pink)}
+main{padding:48px 0 70px}.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);font-weight:700}h1{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.1;margin:12px 0 16px}h1 em{color:var(--pink);font-style:normal}.intro{color:var(--muted);max-width:650px}
+.monthnav{display:flex;gap:9px;overflow-x:auto;padding:20px 0 25px;scrollbar-width:thin}.monthnav a{flex-shrink:0;text-decoration:none;border:1px solid var(--border);padding:10px 17px;border-radius:30px;background:var(--panel);font-weight:700}.monthnav a:hover,.monthnav a:focus{background:var(--pink);color:#260d1d}
+.month{margin-top:34px;scroll-margin-top:25px}.month h2{font-size:1.65rem;margin:0 0 14px;border-bottom:2px solid var(--pink);padding-bottom:12px}.events{display:grid;gap:10px}
+.event{display:grid;grid-template-columns:110px 1fr auto;gap:18px;align-items:center;background:var(--panel);border:1px solid var(--border);border-radius:15px;padding:17px 20px}
+.date{color:var(--pink);font-weight:700}.name{font-weight:700;font-size:1.04rem}.city{color:var(--muted);font-size:.94rem;text-align:right}
+.note{margin-top:32px;color:var(--muted);font-size:.87rem}.empty{color:var(--muted);padding:22px;border:1px solid var(--border);border-radius:14px}
+footer{border-top:1px solid var(--border);color:var(--muted);padding:22px 0;font-size:.85rem}
+@media(max-width:600px){.event{grid-template-columns:1fr;gap:3px;padding:15px}.city{text-align:left}.date{font-size:.83rem}.month h2{font-size:1.4rem}}
+</style></head><body>
+<div class="notice">⚠ PINKBULBTCG IS IN ONTWIKKELING · De evenementenkalender wordt nog aangevuld.</div>
+<header><div class="wrap head"><a class="brand" href="index.html">Pink<b>Bulb</b>TCG</a><a class="back" href="index.html">← Terug naar home</a></div></header>
+<main class="wrap"><span class="eyebrow">Pokémon TCG · Agenda</span><h1>Beurzen <em>& events</em></h1>
+<p class="intro">Ontdek Pokémon- en TCG-beurzen in Nederland. Per maand zie je in één oogopslag de datum, naam en plaats.</p>
+<nav class="monthnav" id="monthnav" aria-label="Ga naar maand"></nav><div id="calendar"></div>
+<p class="note">Deze agenda is samengesteld uit aangeleverde informatie. Data en locaties kunnen veranderen. Controleer voor vertrek altijd de gegevens bij de organisator. Bij sommige evenementen is de exacte datum of plaats nog niet bekend.</p></main>
+<footer><div class="wrap">© PinkBulbTCG · Persoonlijke Pokémon TCG-hobbysite</div></footer>
+<script>
+const events=[["2026-11-15","Pokéstreet TCG","Rotterdam"],["2026-11-20","Flevocards Ruilmiddag","Lelystad"],["2026-11-21","TCG Master Expo XXL","Plaats nog onbekend"],["2026-11-28","Carddayz","Maarssen"],["2026-11-28","DisGoMon beurs","Utrecht"],["2026-11-29","Sea of Cards EXPO","Amersfoort"],["2026-12-05","Cardview XL","Purmerend"],["2026-12-11","Flevocards Ruilmiddag","Lelystad"],["2026-12-12","Pocketflex EXPO","Amsterdam"],["2026-12-19","TCGQuest Kersteditie","Kerkrade"],["2026-12-26","Cardview XL","Voorschoten"],["2027-01","TCGQuest Nieuwjaarseditie","Kerkrade"],["2027-01","Mixedcards Events","Rijswijk"],["2027-01","TCG030 Collectors Day","IJsselstein"],["2027-01-17","Con-Con Mega Winterfest XL","Den Haag"],["2027-02-13","Collectors Garden","Utrecht","2027-02-14"],["2027-02-27","Collectable World Events","Gorinchem","2027-02-28"],["2027-03-07","TCG Beurs Joure","Joure"],["2027-03-14","PoCoCon Amersfoort","Amersfoort"],["2027-03-14","Master Pullz Alkmaar Round 3","Alkmaar"],["2027-04-04","Collect 'O Fest Groningen","Groningen"],["2027-04-11","PoCoCon Harderwijk","Harderwijk"],["2027-04-18","PoCoCon Zwolle","Zwolle"]];
+const months=['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+const today=new Date();today.setHours(0,0,0,0);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const groups=new Map();
+for(const [date,name,city,end] of events){
+const last=end||date;if(last.length===10&&new Date(last+'T23:59:59')<today)continue;
+const key=date.slice(0,7);if(!groups.has(key))groups.set(key,[]);groups.get(key).push({date,name,city,end});
+}
+for(const [key,items] of groups){
+const [year,month]=key.split('-').map(Number),label=months[month-1]+' '+year,id='m-'+key;
+document.getElementById('monthnav').insertAdjacentHTML('beforeend','<a href="#'+id+'">'+label[0].toUpperCase()+label.slice(1)+'</a>');
+const cards=items.map(e=>{
+const d=e.date.length===7?'Datum volgt':e.end?Number(e.date.slice(8))+' & '+Number(e.end.slice(8))+' '+months[month-1]:Number(e.date.slice(8))+' '+months[month-1];
+return '<article class="event"><div class="date">'+esc(d)+'</div><div class="name">'+esc(e.name)+'</div><div class="city">📍 '+esc(e.city)+'</div></article>';
+}).join('');
+document.getElementById('calendar').insertAdjacentHTML('beforeend','<section class="month" id="'+id+'"><h2>'+label[0].toUpperCase()+label.slice(1)+'</h2><div class="events">'+cards+'</div></section>');
+}
+if(!groups.size)document.getElementById('calendar').innerHTML='<p class="empty">Er staan momenteel geen toekomstige evenementen in de agenda.</p>';
+</script></body></html>
