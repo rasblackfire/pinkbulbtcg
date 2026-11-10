@@ -329,10 +329,7 @@
       const price = link.price || (auto.status === "active" ? auto.price : "");
       const imageUrl = safeUrl(link.image || (auto.status === "active" ? auto.image : ""));
 
-      if (!title) {
-        return '<article class="sales-card"><div class="sales-no-image" aria-hidden="true">🃏</div><div class="sales-card-content"><span class="tag">Marktplaats</span><h3>Advertentie bekijken</h3><p>De gegevens van deze advertentie zijn nu niet beschikbaar. Bekijk hem direct op Marktplaats.</p><a class="btn" href="' +
-          href + '" target="_blank" rel="noopener noreferrer">Bekijk op Marktplaats →</a></div></article>';
-      }
+      if (!title) return "";
 
       const photo = imageUrl && imageUrl.protocol === "https:"
         ? '<img src="' + esc(imageUrl.href) + '" alt="" loading="lazy" referrerpolicy="no-referrer">'
