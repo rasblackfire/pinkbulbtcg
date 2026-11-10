@@ -8,136 +8,130 @@
 <style>
 :root{--pink:#f45aa7;--light:#ffcee8;--bg:#100e17;--panel:#1d1828;--text:#fff5fc;--muted:#cbbbd0;--line:#413348}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit}.wrap{max-width:1220px;margin:auto;padding:24px 18px 64px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.back{color:var(--light);text-decoration:none;font-weight:700}.eyebrow{color:var(--pink);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem}h1{font-size:clamp(2rem,5vw,3.6rem);margin:10px 0}h1 span{color:var(--pink)}p{color:var(--muted);line-height:1.55}.intro{max-width:750px}.toolbar{display:grid;grid-template-columns:minmax(180px,1fr) auto;gap:12px;margin:24px 0 12px}.search{width:100%;padding:15px 18px;border-radius:14px;border:1px solid var(--line);background:var(--panel);color:white;font:inherit}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter,.action{cursor:pointer;border:1px solid var(--line);background:var(--panel);color:white;border-radius:12px;padding:12px 16px;font-weight:700}.filter.active,.action{background:var(--pink);color:#240c1d;border-color:var(--pink)}.action:disabled{opacity:.5;cursor:wait}.layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,1fr);gap:18px}.mapbox,.listbox{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden}#map{height:580px;background:#eee}.listbox{height:580px;display:flex;flex-direction:column}.listhead{padding:16px;border-bottom:1px solid var(--line);font-weight:800}.results{overflow:auto;flex:1}.store{padding:15px 18px;border-bottom:1px solid var(--line)}.store h3{font-size:1rem;margin:0 0 6px}.store p{font-size:.88rem;margin:0 0 9px}.store a{font-size:.85rem;color:var(--light);font-weight:700;text-decoration:none}.tag{font-size:.7rem;border-radius:100px;padding:4px 8px;background:#403449;color:#fff;display:inline-block;margin-bottom:7px}.tag.special{background:#ffb7df;color:#3d0e29}.foot{padding:14px 18px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}.status{padding:12px 16px;background:#292033;border-radius:12px;margin:12px 0;font-size:.9rem;color:#f5d8eb}.map-pin{display:grid;place-items:center;border:2px solid white;box-shadow:0 2px 9px #0008;border-radius:50%;width:24px;height:24px;background:#81758c;color:white;font-size:12px}.map-pin.special{background:#f45aa7;width:34px;height:34px;font-size:19px}.legend{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0;color:var(--muted);font-size:.85rem}.dot{display:inline-block;width:11px;height:11px;border-radius:50%;background:#81758c;margin-right:6px}.dot.special{background:var(--pink)}.region-select{padding:13px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:white;font:inherit;min-width:190px}.mapcontrols{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:10px 0}.leaflet-popup-content{color:#24202a}.leaflet-popup-content a{color:#a5226d}@media(max-width:850px){.toolbar,.layout{grid-template-columns:1fr}.listbox{height:460px}#map{height:420px}.filters{justify-content:flex-start}}
 </style>
-</head>
+<style>
+.intro-overlay{position:absolute;inset:0;z-index:500;background:rgba(18,12,27,.83);display:flex;align-items:center;justify-content:center;padding:20px;pointer-events:none}.intro-panel{pointer-events:auto;max-width:390px;text-align:center;background:#21182c;border:1px solid #ef77bb;border-radius:20px;padding:25px;box-shadow:0 15px 40px #0009}.intro-panel h2{margin:0 0 8px}.intro-panel p{margin:8px 0 18px}.intro-panel select{width:100%;padding:12px;border-radius:10px;background:#32233c;color:white;border:1px solid #b85d94;font:inherit}.intro-panel button{margin-top:12px;width:100%}.mapbox{position:relative}.city-pin{background:#f45aa7;border:2px solid white;border-radius:20px;padding:5px 10px;color:#210b1b;font-weight:800;white-space:nowrap;box-shadow:0 2px 8px #0008}.city-pin small{font-weight:500}.city-label{background:none;border:0}.city-pin.special{background:#ffb0db}.help{font-size:.85rem;color:#d6bbd1}
+</style></head>
 <body><main class="wrap">
 <div class="top"><div class="eyebrow">PinkBulbasaurTCG · winkelgids</div><a class="back" href="index.html">← Terug naar home</a></div>
 <h1>Vind jouw <span>Pokémonwinkel</span> 💗</h1>
-<p class="intro">Van gespecialiseerde TCG-shops tot speelgoedwinkels: ontdek winkels door heel Nederland. Roze sterren markeren de gespecialiseerde winkels.</p>
-<div class="toolbar"><input id="search" class="search" type="search" placeholder="Zoek een plaats (bijv. Doetinchem) of winkelnaam…" aria-label="Zoek winkels"><div class="filters" role="group" aria-label="Filter winkels"><button class="filter active" data-filter="all">Alles</button><button class="filter" data-filter="special">★ TCG-specialisten</button><button class="filter" data-filter="chain">Overige winkels</button></div></div>
-<div class="mapcontrols"><label for="region">Regio: <select id="region" class="region-select"><option value="all">Heel Nederland</option><option value="noord">Noord-Nederland</option><option value="oost">Oost-Nederland</option><option value="midden">Midden-Nederland</option><option value="west">West-Nederland</option><option value="zuid">Zuid-Nederland</option></select></label><button class="filter" id="reset" type="button">Wis zoekopdracht</button></div><div class="legend"><span><i class="dot special"></i> Gespecialiseerde winkels</span><span><i class="dot"></i> Grote ketens</span></div>
-<div class="mapcontrols"><button class="action" id="locate" type="button">📍 Zoek binnen 15 km van mijn locatie</button></div>
-<div id="status" class="status" role="status">Winkels en kaart worden geladen…</div>
-<div class="layout"><section class="mapbox" aria-label="Kaart met winkels"><div id="map"></div></section><section class="listbox"><div class="listhead" id="count">Winkels</div><div class="results" id="results"></div><div class="foot">Klopt een adres niet? Controleer het voor vertrek bij de winkel zelf.</div></section></div>
-<p>Mis je een winkel? Laat het weten via PinkBulbasaurTCG. Niet iedere winkel heeft altijd Pokémonkaarten op voorraad.</p>
+<p class="intro">Zoek Pokémon- en TCG-winkels op plaats of regio. Klik op een roze plaatsmarker om de winkels te bekijken. Gespecialiseerde winkels herken je aan een ster.</p>
+<div class="toolbar"><input id="search" class="search" type="search" placeholder="Zoek plaats of winkelnaam…" aria-label="Zoek plaats of winkelnaam"><div class="filters" role="group" aria-label="Filter winkels"><button class="filter active" data-filter="all">Alle winkels</button><button class="filter" data-filter="special">★ TCG-specialisten</button><button class="filter" data-filter="chain">Overige winkels</button></div></div>
+<div class="mapcontrols"><label for="region">Regio: <select id="region" class="region-select"><option value="all">Kies een regio</option><option value="noord">Noord-Nederland</option><option value="oost">Oost-Nederland</option><option value="midden">Midden-Nederland</option><option value="west">West-Nederland</option><option value="zuid">Zuid-Nederland</option></select></label><button class="filter" id="reset" type="button">Opnieuw zoeken</button><button class="filter" id="locate" type="button">📍 Rond mijn locatie</button></div>
+<div id="status" class="status" role="status">Kies een regio of zoek een plaats om winkels op de kaart te bekijken.</div>
+<div class="layout"><section class="mapbox" aria-label="Kaart met winkels"><div id="map"></div><div class="intro-overlay" id="overlay"><div class="intro-panel"><h2>📍 Waar wil je winkels zoeken?</h2><p>Kies een regio of zoek bovenaan een plaats. Daarna verschijnen de winkels op de kaart.</p><label for="intro-region">Selecteer je regio</label><select id="intro-region"><option value="">Maak een keuze…</option><option value="noord">Noord-Nederland</option><option value="oost">Oost-Nederland</option><option value="midden">Midden-Nederland</option><option value="west">West-Nederland</option><option value="zuid">Zuid-Nederland</option></select><button class="action" id="intro-go" type="button">Bekijk winkels →</button></div></div></section><section class="listbox"><div class="listhead" id="count">Winkels in Nederland</div><div class="results" id="results"><div class="store">Selecteer een regio of zoek een plaats om te beginnen.</div></div><div class="foot">Locaties op de kaart zijn bij benadering het centrum van een plaats. Controleer het winkeladres voor vertrek.</div></section></div>
+<p class="help">De kaart gebruikt plaatsnamen en geen exacte winkellocaties. Een plaatsmarker kan meerdere winkels bevatten. Bij een plaatszoekopdracht worden ook omliggende plaatsen tot ongeveer 15 km meegenomen zodra hun locatie bekend is.</p>
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 const $=id=>document.getElementById(id);
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let stores=[],filter='all',region='all',search='',map,layer,center=null,searchMode=false,job=0,coords={};
-const cacheKey='pinkbulbtcg-geocodes-v2';
-try{coords=JSON.parse(localStorage.getItem(cacheKey)||'{}')}catch{}
-const regions={
-  noord:[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39],
-  oost:[65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83],
-  midden:[34,35,36,37,38,39,40,41,42],
-  west:[10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34],
-  zuid:[43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64]
-};
-// Postcodegebieden overlappen tussen regio's; de indeling is een eerste indicatie.
-function regionMatch(s){
- if(region==='all')return true;
- const m=s.address.match(/\b(\d{4})\s?[A-Z]{2}\b/i);
- if(!m)return false;
- const n=+m[1].slice(0,2);
- if(region==='noord')return n>=77&&n<=99;
- if(region==='oost')return n>=65&&n<=83;
- if(region==='midden')return (n>=34&&n<=42)||(n>=67&&n<=69);
- if(region==='west')return n>=10&&n<=33;
- return n>=43&&n<=64;
-}
-const mapsLink=s=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.address+', Nederland');
+const mapUrl=s=>'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.address+', Nederland');
 const rad=x=>x*Math.PI/180;
-function km(a,b){const dlat=rad(b[0]-a[0]),dlon=rad(b[1]-a[1]);return 6371*2*Math.asin(Math.sqrt(Math.sin(dlat/2)**2+Math.cos(rad(a[0]))*Math.cos(rad(b[0]))*Math.sin(dlon/2)**2))}
-function base(){return stores.filter(s=>(filter==='all'||s.type===filter)&&regionMatch(s))}
-function current(){
+const distance=(a,b)=>{const d1=rad(b[0]-a[0]),d2=rad(b[1]-a[1]);return 12742*Math.asin(Math.sqrt(Math.sin(d1/2)**2+Math.cos(rad(a[0]))*Math.cos(rad(b[0]))*Math.sin(d2/2)**2))};
+let stores=[],region='all',type='all',query='',active=false,center=null,chosenCity='',map,layer,cityCoords={},running=false,serial=0;
+try{cityCoords=JSON.parse(localStorage.getItem('pinkbulb-city-centers-v1')||'{}')}catch{}
+const regionViews={noord:[53.1,6.2,8],oost:[52.2,6.25,8],midden:[52.1,5.25,9],west:[52.05,4.5,8],zuid:[51.45,5.35,8]};
+function regionFor(s){
+ const m=String(s.address).match(/\b(\d{4})\s?[A-Z]{2}\b/i);
+ if(!m)return 'other';
+ const n=Number(m[1].slice(0,2));
+ if(n>=77)return 'noord';
+ if(n>=65)return 'oost';
+ if(n>=34&&n<=42)return 'midden';
+ if(n<=33)return 'west';
+ return 'zuid';
+}
+function base(){return stores.filter(s=>(type==='all'||s.type===type)&&(region==='all'||regionFor(s)===region))}
+function cityKey(s){return String(s.city||'').trim().toLocaleLowerCase('nl')}
+function visible(){
  let a=base();
- if(center)return a.filter(s=>Array.isArray(coords[s.id])&&km(center,coords[s.id])<=15).sort((x,y)=>km(center,coords[x.id])-km(center,coords[y.id]));
- if(search)return a.filter(s=>[s.name,s.address,s.city].join(' ').toLocaleLowerCase('nl').includes(search));
+ if(chosenCity)return a.filter(s=>cityKey(s)===chosenCity);
+ if(center)return a.filter(s=>Array.isArray(cityCoords[cityKey(s)])&&distance(center,cityCoords[cityKey(s)])<=15);
+ if(query)return a.filter(s=>[s.city,s.name,s.address].join(' ').toLocaleLowerCase('nl').includes(query));
  return a;
 }
 function render(){
- const a=current(),pending=center?base().filter(s=>!Array.isArray(coords[s.id])).length:0;
- $('count').textContent=center?`${a.length} gevonden binnen 15 km · ${pending} nog niet gecontroleerd`:`${a.length} van ${stores.length} winkels`;
- $('results').innerHTML=a.length?a.slice(0,120).map(s=>`<article class="store"><span class="tag ${s.type==='special'?'special':''}">${s.type==='special'?'★ TCG / speciaalzaak':'Overige winkel'}</span><h3>${safe(s.name)}</h3><p>${safe(s.address)}${center&&coords[s.id]?' · '+km(center,coords[s.id]).toFixed(1)+' km':''}</p><a target="_blank" rel="noopener noreferrer" href="${mapsLink(s)}">Route in Google Maps ↗</a></article>`).join(''):'<div class="store">Nog geen winkels gevonden. Probeer een andere plaats of regio.</div>';
- renderPins();
+ if(!active)return;
+ const a=visible();
+ $('count').textContent=a.length+' winkels'+(chosenCity?' in '+chosenCity: center?' binnen ongeveer 15 km':'');
+ $('results').innerHTML=a.length?a.slice(0,150).map(s=>'<article class="store"><span class="tag '+(s.type==='special'?'special':'')+'">'+(s.type==='special'?'★ TCG-specialist':'Overige winkel')+'</span><h3>'+safe(s.name)+'</h3><p>'+safe(s.address)+'</p><a href="'+mapUrl(s)+'" target="_blank" rel="noopener noreferrer">Route in Google Maps ↗</a></article>').join(''):'<div class="store">Geen winkels gevonden. Probeer een andere plaats of regio.</div>';
+ renderMarkers();
 }
-function renderPins(){
- if(!map)return;layer.clearLayers();
- const visible=current().filter(s=>Array.isArray(coords[s.id]));
- for(const s of visible){
- const special=s.type==='special',p=coords[s.id];
- const icon=L.divIcon({className:'',html:`<div class="map-pin ${special?'special':''}">${special?'★':'•'}</div>`,iconSize:special?[34,34]:[24,24],iconAnchor:special?[17,17]:[12,12]});
- L.marker(p,{icon}).bindPopup(`<strong>${safe(s.name)}</strong><br>${safe(s.address)}<br><a href="${mapsLink(s)}" target="_blank" rel="noopener noreferrer">Route ↗</a>`).addTo(layer);
+function renderMarkers(){
+ if(!map)return;
+ layer.clearLayers();
+ if(chosenCity||center){if(center)map.setView(center,11)}
+ const groups=new Map();
+ for(const s of base()){const k=cityKey(s);if(!k)continue;if(!groups.has(k))groups.set(k,[]);groups.get(k).push(s)}
+ for(const [city,items] of groups){
+ const pos=cityCoords[city];if(!Array.isArray(pos))continue;
+ if(chosenCity&&city!==chosenCity)continue;
+ if(center&&distance(center,pos)>15)continue;
+ if(query&&!center&&!chosenCity&&!items.some(s=>[s.city,s.name,s.address].join(' ').toLowerCase().includes(query)))continue;
+ const star=items.some(s=>s.type==='special');
+ const icon=L.divIcon({className:'city-label',html:'<div class="city-pin '+(star?'special':'')+'">'+(star?'★ ':'')+safe(items[0].city)+' <small>('+items.length+')</small></div>',iconSize:[130,32],iconAnchor:[65,16]});
+ L.marker(pos,{icon}).addTo(layer).on('click',()=>{chosenCity=city;center=null;query='';$('search').value='';map.setView(pos,12);render()});
  }
- if(center){map.setView(center,11)}else if(visible.length&&region!=='all'){const b=L.latLngBounds(visible.map(s=>coords[s.id]));map.fitBounds(b.pad(.2),{maxZoom:10})}
 }
-function persist(){try{localStorage.setItem(cacheKey,JSON.stringify(coords))}catch{}}
-async function geocode(query){
- const url='https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=nl&q='+encodeURIComponent(query);
+async function lookup(city){
+ const url='https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=nl&q='+encodeURIComponent(city+', Nederland');
  const r=await fetch(url,{headers:{Accept:'application/json'}});
- if(!r.ok)throw Error('Kaartdienst tijdelijk niet beschikbaar');
+ if(!r.ok)throw Error('Locatieservice tijdelijk niet bereikbaar');
  const data=await r.json();return data.length?[+data[0].lat,+data[0].lon]:null;
 }
-const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
-async function fillPins(limit=12){
- const id=++job;
- const candidates=base().filter(s=>!Object.prototype.hasOwnProperty.call(coords,s.id));
- // Eerst gespecialiseerde winkels; bij zoeken eerst passende namen/plaatsen.
- candidates.sort((a,b)=>Number(b.type==='special')-Number(a.type==='special'));
+const wait=ms=>new Promise(ok=>setTimeout(ok,ms));
+async function loadCities(limit=18){
+ if(running)return;
+ running=true;const id=++serial;
+ const groups=new Map();
+ for(const s of base()){const k=cityKey(s);if(k&&!groups.has(k))groups.set(k,[]);if(k)groups.get(k).push(s)}
+ const pending=[...groups.entries()].filter(([k])=>!(k in cityCoords)).sort((a,b)=>b[1].length-a[1].length).slice(0,limit);
  let done=0;
- for(const s of candidates.slice(0,limit)){
-  if(id!==job)return;
-  $('status').textContent=`Kaartlocaties worden automatisch opgezocht… ${done+1}/${Math.min(limit,candidates.length)}`;
-  try{coords[s.id]=await geocode(s.address+', Nederland')}catch{$('status').textContent='De kaartdienst is tijdelijk niet bereikbaar. Probeer het later opnieuw.';return}
-  done++;persist();render();await wait(1200);
+ for(const [city] of pending){
+ if(id!==serial)break;
+ try{cityCoords[city]=await lookup(city)}catch{$('status').textContent='De kaartdienst is tijdelijk druk. Bekende plaatsen blijven zichtbaar.';break}
+ done++;try{localStorage.setItem('pinkbulb-city-centers-v1',JSON.stringify(cityCoords))}catch{}
+ renderMarkers();
+ $('status').textContent='Plaatsen op de kaart laden: '+done+' van '+pending.length+'. Klik op een plaatsmarker voor de winkels.';
+ await wait(1200);
  }
- if(id!==job)return;
- $('status').textContent=center?'Winkels binnen 15 km worden getoond zodra hun locatie is gecontroleerd. De resultaten zijn nog niet volledig.':`Winkels op de kaart bijgewerkt. ${Object.values(coords).filter(Array.isArray).length} locaties beschikbaar op dit apparaat.`;
+ if(id===serial)$('status').textContent='Klik op een roze plaatsmarker om winkels te bekijken. Meer plaatslocaties worden bij een volgende zoekopdracht aangevuld.';
+ running=false;
 }
-async function searchPlace(q){
- const id=++job;
- $('status').textContent='Plaats zoeken en winkels binnen 15 km controleren…';
- try{
-  const p=await geocode(q+', Nederland');
-  if(id!==job)return;
-  if(!p){center=null;render();$('status').textContent='Geen plaats gevonden. Zoek eventueel op winkelnaam.';return}
-  center=p;render();
-  // Locaties worden stapsgewijs gecontroleerd; nooit beweren dat dit alle winkels zijn.
-  await fillPins(30);
- }catch{if(id===job)$('status').textContent='Plaats zoeken lukt tijdelijk niet. Probeer later opnieuw.'}
+function activate(){
+ active=true;$('overlay').hidden=true;$('overlay').style.display='none';
+ chosenCity='';center=null;render();
+ if(regionViews[region]){const [a,b,z]=regionViews[region];map.setView([a,b],z)}
+ loadCities();
 }
-function update(){
- center=null;job++;render();
- fillPins(12);
-}
-let searchTimer;
+function setRegion(r){region=r;$('region').value=r;$('intro-region').value=r;query='';$('search').value='';activate()}
+$('intro-go').addEventListener('click',()=>{const r=$('intro-region').value;if(!r){$('status').textContent='Kies eerst een regio of zoek bovenaan een plaats.';return}setRegion(r)});
+$('region').addEventListener('change',e=>{if(e.target.value==='all'){reset()}else setRegion(e.target.value)});
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{type=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));if(active){chosenCity='';center=null;render();loadCities()}}));
+let timer;
 $('search').addEventListener('input',e=>{
- clearTimeout(searchTimer);search=e.target.value.trim().toLocaleLowerCase('nl');
- if(!search){update();return}
- center=null;job++;render();
- searchTimer=setTimeout(()=>{
-  const matches=base().filter(s=>[s.name,s.address,s.city].join(' ').toLocaleLowerCase('nl').includes(search));
-  const exactCity=base().some(s=>s.city&&s.city.toLocaleLowerCase('nl')===search);
-  if(exactCity){searchPlace(search);return}
-  if(matches.length){fillPins(12);return}
-  searchPlace(search);
+ clearTimeout(timer);query=e.target.value.trim().toLocaleLowerCase('nl');
+ if(!query){if(active){chosenCity='';center=null;render()}return}
+ timer=setTimeout(async()=>{
+  if(!active){active=true;$('overlay').style.display='none'}
+  region='all';$('region').value='all';chosenCity='';center=null;
+  const city=stores.find(s=>cityKey(s)===query);
+  if(city){
+   const k=cityKey(city);
+   if(!(k in cityCoords)){try{cityCoords[k]=await lookup(k);localStorage.setItem('pinkbulb-city-centers-v1',JSON.stringify(cityCoords))}catch{}}
+   if(Array.isArray(cityCoords[k])){center=cityCoords[k];map.setView(center,11)}
+  }
+  render();loadCities(15);
  },650);
 });
-$('region').addEventListener('change',e=>{region=e.target.value;search='';$('search').value='';update()});
-document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.classList.toggle('active',x===b));update()}));
-$('reset').addEventListener('click',()=>{region='all';filter='all';search='';center=null;$('region').value='all';$('search').value='';document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter==='all'));update()});
-$('locate').addEventListener('click',()=>{
- if(!navigator.geolocation){$('status').textContent='Locatiebepaling niet beschikbaar.';return}
- navigator.geolocation.getCurrentPosition(p=>{center=[p.coords.latitude,p.coords.longitude];job++;render();fillPins(30)},()=>{$('status').textContent='Locatie niet beschikbaar. Zoek op een plaatsnaam.'},{timeout:10000});
-});
-function initMap(){
- if(typeof L==='undefined'){$('status').textContent='De kaart kon niet laden. De winkellijst werkt wel.';return}
+$('reset').addEventListener('click',reset);
+function reset(){serial++;running=false;active=false;center=null;chosenCity='';query='';region='all';type='all';$('search').value='';$('region').value='all';$('intro-region').value='';document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter==='all'));layer.clearLayers();map.setView([52.15,5.35],7);$('overlay').style.display='flex';$('count').textContent='Winkels in Nederland';$('results').innerHTML='<div class="store">Selecteer een regio of zoek een plaats om te beginnen.</div>';$('status').textContent='Kies een regio of zoek een plaats om winkels op de kaart te bekijken.'}
+$('locate').addEventListener('click',()=>{if(!navigator.geolocation){$('status').textContent='Locatie niet beschikbaar';return}navigator.geolocation.getCurrentPosition(p=>{active=true;$('overlay').style.display='none';region='all';$('region').value='all';chosenCity='';center=[p.coords.latitude,p.coords.longitude];render();loadCities(25)},()=>{$('status').textContent='Locatie niet beschikbaar. Zoek op plaatsnaam.'},{timeout:10000})});
+function init(){
+ if(typeof L==='undefined'){$('status').textContent='Kaart kon niet laden. Probeer de pagina opnieuw.';return}
  map=L.map('map').setView([52.15,5.35],7);
  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap-bijdragers'}).addTo(map);
- layer=L.layerGroup().addTo(map);renderPins();
+ layer=L.layerGroup().addTo(map);
 }
-fetch('winkels.json').then(r=>{if(!r.ok)throw Error('Winkelbestand ontbreekt');return r.json()}).then(data=>{
- stores=data;initMap();render();$('status').textContent=`${stores.length} winkels geladen. De eerste kaartpins verschijnen automatisch.`;fillPins(12);
-}).catch(e=>{$('status').textContent='Kon de winkels niet laden: '+e.message});
+fetch('winkels.json').then(r=>{if(!r.ok)throw Error('Winkelbestand ontbreekt');return r.json()}).then(data=>{stores=data;init();$('status').textContent=stores.length+' winkels beschikbaar. Kies een regio of zoek een plaats.'}).catch(e=>{$('status').textContent='Winkels laden mislukt: '+e.message});
 </script></body></html>
