@@ -304,9 +304,10 @@
     const scraped = new Map();
     (Array.isArray(dataRaw) ? dataRaw : []).forEach((i) => { if (i && i.url) scraped.set(i.url, i); });
 
-    const links = (Array.isArray(linksRaw) ? linksRaw : [])
+    const discovered = (Array.isArray(dataRaw) ? dataRaw : []).filter(i => i && i.url && i.status === "active" && /pok[eé]mon|pokemon|tcg|riftbound|booster|elite.trainer|toploader|binder/i.test((i.title || "") + " " + i.url)).map(i => ({url:i.url}));
+    const links = [...(Array.isArray(linksRaw) ? linksRaw : []), ...discovered]
       .map((l) => (typeof l === "string" ? { url: l } : l))
-      .filter((l) => l && typeof l.url === "string");
+      .filter((l, index, arr) => l && typeof l.url === "string" && arr.findIndex(x => (typeof x === "string" ? x : x.url) === l.url) === index);
 
     if (linksRaw === null) {
       container.innerHTML = emptyBox('De advertenties konden niet worden geladen. Bekijk <a href="https://www.marktplaats.nl/u/amanda/7986935/" target="_blank" rel="noopener">mijn Marktplaats-profiel</a>.');
