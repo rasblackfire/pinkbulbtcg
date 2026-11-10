@@ -118,6 +118,8 @@ $('search').addEventListener('input',e=>{
  center=null;job++;render();
  searchTimer=setTimeout(()=>{
   const matches=base().filter(s=>[s.name,s.address,s.city].join(' ').toLocaleLowerCase('nl').includes(search));
+  const exactCity=base().some(s=>s.city&&s.city.toLocaleLowerCase('nl')===search);
+  if(exactCity){searchPlace(search);return}
   if(matches.length){fillPins(12);return}
   searchPlace(search);
  },650);
