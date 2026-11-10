@@ -1,0 +1,107 @@
+[
+  {
+    "id": "kaart-uitleg",
+    "title": "Pokémonkaart uitgelegd: wat staat erop?",
+    "categorie": "Kaarten begrijpen",
+    "emoji": "🔍",
+    "excerpt": "HP, aanvallen, energie, zwaktes, weerstand, retreat cost, kaartnummer en symbolen."
+  },
+  {
+    "id": "sets-series",
+    "title": "Welke Pokémon TCG-series en sets zijn er?",
+    "categorie": "Kaarten begrijpen",
+    "emoji": "📚",
+    "excerpt": "Van oudere generaties tot moderne uitbreidingen: hoe herken je series, sets en symbolen?"
+  },
+  {
+    "id": "rarity",
+    "title": "Rarity, holo, reverse holo en illustration rares",
+    "categorie": "Kaarten begrijpen",
+    "emoji": "✨",
+    "excerpt": "Welke soorten kaarten bestaan er en wat betekenen de zeldzaamheidssymbolen?"
+  },
+  {
+    "id": "shop-tips",
+    "title": "Welke webshops houd ik in de gaten?",
+    "categorie": "Slim kopen",
+    "emoji": "🛍️",
+    "excerpt": "Mijn favoriete verkooppunten en tips om betrouwbare shops te herkennen, zonder nepdeals."
+  },
+  {
+    "id": "discord",
+    "title": "Discord-servers en Pokémoncommunity's",
+    "categorie": "Community",
+    "emoji": "💬",
+    "excerpt": "Waar vind je andere verzamelaars, ruilgroepen en handige gesprekken?"
+  },
+  {
+    "id": "monitors",
+    "title": "Stockmonitors, restocks en notificaties",
+    "categorie": "Slim kopen",
+    "emoji": "🔔",
+    "excerpt": "Welke voorraadmonitors bestaan er en hoe blijf je op de hoogte zonder de hele dag te refreshen?"
+  },
+  {
+    "id": "fake-cards",
+    "title": "Hoe herken je neppe Pokémonkaarten?",
+    "categorie": "Veilig verzamelen",
+    "emoji": "🕵️",
+    "excerpt": "Let op drukkwaliteit, tekst, kaartstructuur en te mooie prijzen."
+  },
+  {
+    "id": "conditie",
+    "title": "Wat betekenen NM, EX, LP en MP?",
+    "categorie": "Veilig verzamelen",
+    "emoji": "🃏",
+    "excerpt": "Een eenvoudige uitleg van kaartcondities en waar je bij tweedehands kaarten op let."
+  },
+  {
+    "id": "beschermen",
+    "title": "Kaarten bewaren: sleeves, binders en toploaders",
+    "categorie": "Verzamelen",
+    "emoji": "📁",
+    "excerpt": "Hoe bescherm je kaarten tegen krassen, stof en verbuigen?"
+  },
+  {
+    "id": "prijzen",
+    "title": "Wat is mijn Pokémonkaart waard?",
+    "categorie": "Slim kopen",
+    "emoji": "💶",
+    "excerpt": "Waar kijk je naar bij prijsvergelijkingen en waarom zijn vraagprijzen niet hetzelfde als verkoopprijzen?"
+  },
+  {
+    "id": "prerelease",
+    "title": "Je eerste Pokémon prerelease",
+    "categorie": "Events",
+    "emoji": "🎟️",
+    "excerpt": "Wat neem je mee, wat kun je verwachten en hoe bereid je je voor?"
+  },
+  {
+    "id": "ruilen",
+    "title": "Veilig kaarten ruilen op beurzen",
+    "categorie": "Events",
+    "emoji": "🤝",
+    "excerpt": "Handige tips voor ruilen, kaarten controleren en afspraken maken."
+  },
+  {
+    "id": "set-compleet",
+    "title": "Master set, complete set en reverse holos",
+    "categorie": "Verzamelen",
+    "emoji": "🏆",
+    "excerpt": "Wat is het verschil en hoe houd je bij welke kaarten nog ontbreken?"
+  },
+  {
+    "id": "sealed",
+    "title": "Sealed verzamelen of boosters openen?",
+    "categorie": "Verzamelen",
+    "emoji": "📦",
+    "excerpt": "Wat zijn de voor- en nadelen en hoe bepaal je wat bij je past?"
+  },
+  {
+    "id": "riftbound",
+    "title": "Riftbound voor Pokémonverzamelaars",
+    "categorie": "Andere TCG",
+    "emoji": "⚔️",
+    "excerpt": "Wat is Riftbound en waar let je op als je naast Pokémon nog een TCG wilt ontdekken?"
+  }
+]
