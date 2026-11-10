@@ -1,0 +1,84 @@
+[
+  {
+    "id": "eerste-prerelease",
+    "section": "blog",
+    "tag": "Ervaring",
+    "emoji": "🃏",
+    "title": "Mijn eerste prerelease: wat ik had willen weten",
+    "excerpt": "Hoe het ging, wat ik meenam en mijn grootste lessen.",
+    "date": "2026-11-09",
+    "voorbeeld": true,
+    "body": [
+      "Dit is een voorbeeldpost. Vervang deze tekst door je eigen verhaal in data/posts.json.",
+      "Tip: schrijf zoals je het aan een vriend zou vertellen. Wat ging goed, wat ging mis en wat zou je een nieuwkomer meegeven?"
+    ]
+  },
+  {
+    "id": "boosters-openen",
+    "section": "blog",
+    "tag": "Opening",
+    "emoji": "📦",
+    "title": "Boosters openen: de beste en slechtste pulls",
+    "excerpt": "Een eerlijk verslag, inclusief de teleurstellingen.",
+    "date": "2026-11-02",
+    "voorbeeld": true,
+    "body": [
+      "Dit is een voorbeeldpost. Vervang deze tekst door je eigen verhaal in data/posts.json."
+    ]
+  },
+  {
+    "id": "nieuwe-set",
+    "section": "blog",
+    "tag": "Nieuws",
+    "emoji": "📰",
+    "title": "Nieuwe set aangekondigd: dit weten we al",
+    "excerpt": "Releasedatum, highlights en waar ik op hoop.",
+    "date": "2026-10-28",
+    "voorbeeld": true,
+    "body": [
+      "Dit is een voorbeeldpost. Vervang deze tekst door je eigen verhaal in data/posts.json."
+    ]
+  },
+  {
+    "id": "uitleg-prerelease",
+    "section": "tips",
+    "tag": "Uitleg",
+    "emoji": "🎟️",
+    "title": "Hoe werkt een prerelease?",
+    "excerpt": "Van aanmelden tot deck bouwen, stap voor stap.",
+    "date": "2026-10-20",
+    "body": [
+      "Een prerelease is een evenement vlak voor de officiële uitgave van een nieuwe set. Je speelt dan al met kaarten uit die set of opent ze alvast, terwijl ze nog niet gewoon in de winkel liggen.",
+      "Wat je precies krijgt en hoe de dag verloopt, verschilt per set en per organisator. Lees daarom altijd de aankondiging van het evenement: daar staat wat er in je pakket zit, hoe laat je er moet zijn en wat je zelf mee moet nemen.",
+      "Meld je op tijd aan. Plekken zijn vaak beperkt en bij populaire sets zijn ze snel vol. Neem de bevestiging mee en kom iets eerder, dan heb je rustig de tijd om je deck in elkaar te zetten."
+    ]
+  },
+  {
+    "id": "uitleg-kaartnummers",
+    "section": "tips",
+    "tag": "Uitleg",
+    "emoji": "🔢",
+    "title": "Kaartnummers begrijpen",
+    "excerpt": "Wat betekent dat getal en die set-code onderaan?",
+    "date": "2026-10-20",
+    "body": [
+      "Onderaan elke kaart staat een nummer zoals 045/198. Het eerste getal is het nummer van de kaart in de set. Het tweede getal is het aantal genummerde kaarten in de hoofdset.",
+      "Staat er een nummer dat hoger is dan het totaal, bijvoorbeeld 205/198? Dan is het een extra kaart buiten de gewone set, zoals een speciale illustratiekaart. Die zijn vaak lastiger te vinden.",
+      "Op nieuwere kaarten staat naast het nummer ook een setcode van een paar letters en een letter voor de regulatiemarkering. Die letter bepaalt mede of je de kaart mag gebruiken in officiële toernooien met het Standard-formaat."
+    ]
+  },
+  {
+    "id": "uitleg-zeldzaamheid",
+    "section": "tips",
+    "tag": "Uitleg",
+    "emoji": "✨",
+    "title": "Zeldzaamheden en varianten",
+    "excerpt": "Holo, reverse holo, illustration rare en meer.",
+    "date": "2026-10-20",
+    "body": [
+      "Naast het kaartnummer staat een symbool voor de zeldzaamheid: een cirkel voor gewoon, een ruit voor ongewoon en een ster voor zeldzaam. Bij nieuwere sets komen daar sterren in andere kleuren bij voor speciale kaarten.",
+      "Een holo-kaart heeft een glimmende afbeelding. Bij een reverse holo glimmt juist de rest van de kaart en niet het plaatje. Veel kaarten bestaan in meerdere varianten, dus dezelfde kaart kan er verschillend uitzien en verschillend in waarde zijn.",
+      "Een illustration rare is een kaart waarvan het plaatje over de hele kaart doorloopt. De exacte namen en symbolen verschillen per set. Kijk voor zekerheid in de setlijst van een database zoals Pokémon.com of Bulbapedia."
+    ]
+  }
+]

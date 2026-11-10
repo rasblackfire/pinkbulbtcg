@@ -3,22 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PinkBulbTCG</title>
+<title>PinkBulbTCG – Pokémon TCG hobbysite</title>
+<meta name="description" content="Persoonlijke Pokémon TCG-hobbysite: blogs, tips en tricks, beurzen, winkels, binders en dubbele kaarten.">
+<meta name="theme-color" content="#120a10">
+<meta property="og:title" content="PinkBulbTCG – Pokémon TCG hobbysite">
+<meta property="og:description" content="Ervaringen, tips en tricks, beurzen, mijn binders en af en toe een dubbeltje dat een nieuw thuis zoekt.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pinkbulbtcg.nl">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💡%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="test-notice">⚠ PINKBULBTCG IS IN ONTWIKKELING · Deze website is nog in testfase. Niet alles is al compleet!</div>
 
-<div class="tape"><span>★ Dubbele kaarten • Binders • Prereleases • Beurzen • Tips &amp; tricks ★ Dubbele kaarten • Binders • Prereleases • Beurzen • Tips &amp; tricks ★ Dubbele kaarten • Binders • Prereleases • Beurzen • Tips &amp; tricks ★ Dubbele kaarten • Binders • Prereleases • Beurzen • Tips &amp; tricks ★ </span></div>
+<div class="tape" aria-hidden="true"><span>★ Dubbele kaarten • Binders • Prereleases • Beurzen • Tips &amp; tricks ★ Dubbele kaarten • Binders • Prereleases • Beurzen • Tips &amp; tricks ★ Dubbele kaarten • Binders • Prereleases • Beurzen • Tips &amp; tricks ★ Dubbele kaarten • Binders • Prereleases • Beurzen • Tips &amp; tricks ★ </span></div>
 
 <header>
   <div class="bar">
     <a href="#" class="logo">Pink<b>Bulb</b>TCG</a>
     <button class="burger" id="menu-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="menu">☰</button>
-    <nav><ul id="menu">
+    <nav aria-label="Hoofdmenu"><ul id="menu">
       <li><a href="#" class="on">Home</a></li>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#verkoop">Verkoop</a></li>
@@ -31,8 +38,9 @@
   </div>
 </header>
 
+<main>
 <div class="wrap hero">
-  <div class="bulb">💡</div>
+  <div class="bulb" aria-hidden="true">💡</div>
   <span class="sticker">Hobby · Geen bedrijf · 100% persoonlijk</span>
   <h1>Mijn Pokémon<br>hobby, <em>zonder<br>filter.</em></h1>
   <p>Ervaringen, tips &amp; tricks, beurzen, mijn binders en af en toe een dubbeltje dat een nieuw thuis zoekt. Welkom in mijn hoekje van de hobby.</p>
@@ -40,20 +48,16 @@
   <a class="btn ghost" href="#verkoop">Bekijk dubbele kaarten</a>
 </div>
 
-<section id="blog">
+<section id="blog" aria-labelledby="blog-titel">
   <div class="wrap">
-    <div class="title"><h2>Nieuwste blogs</h2><a href="#">Alle blogs →</a></div>
-    <div class="grid g3">
-      <article class="card"><div class="thumb">🃏</div><div class="in"><span class="tag">Ervaring</span><h3>Mijn eerste prerelease: wat ik had willen weten</h3><p>Hoe het ging, wat ik meenam en mijn grootste lessen.</p><div class="date">Voorbeeldpost · 9 nov 2026</div></div></article>
-      <article class="card"><div class="thumb">📦</div><div class="in"><span class="tag">Opening</span><h3>Boosters openen: de beste en slechtste pulls</h3><p>Een eerlijk verslag, inclusief de teleurstellingen.</p><div class="date">Voorbeeldpost · 2 nov 2026</div></div></article>
-      <article class="card"><div class="thumb">📰</div><div class="in"><span class="tag">Nieuws</span><h3>Nieuwe set aangekondigd: dit weten we al</h3><p>Releasedatum, highlights en waar ik op hoop.</p><div class="date">Voorbeeldpost · 28 okt 2026</div></div></article>
-    </div>
+    <div class="title"><h2 id="blog-titel">Nieuwste blogs</h2><button class="more" id="blog-more" type="button" hidden>Alle blogs →</button></div>
+    <div class="grid g3" id="blog-list"><noscript><p class="empty-note">Zet JavaScript aan om de blogs te lezen.</p></noscript></div>
   </div>
 </section>
 
-<section class="insta" id="instagram">
+<section class="insta" id="instagram" aria-labelledby="insta-titel">
   <div class="wrap">
-    <div class="title"><h2>Volg mijn avonturen</h2><a href="https://www.instagram.com/pinkbulbasaurtcg/" target="_blank" rel="noopener">@pinkbulbasaurtcg →</a></div>
+    <div class="title"><h2 id="insta-titel">Volg mijn avonturen</h2><a href="https://www.instagram.com/pinkbulbasaurtcg/" target="_blank" rel="noopener">@pinkbulbasaurtcg →</a></div>
     <div class="instagram-feature">
       <div class="instagram-copy"><span class="tag">Vastgepinde voorstelpost</span><h3>Nieuw hier? Leer mij kennen!</h3><p>Op Instagram deel ik mijn Pokémon TCG-avonturen, collecties, beurzen, pulls en meer.</p><a class="btn" href="https://www.instagram.com/p/De6TY-Co2-j/" target="_blank" rel="noopener">Bekijk mijn voorstelpost →</a><a class="btn ghost" href="https://www.instagram.com/pinkbulbasaurtcg/" target="_blank" rel="noopener">Volg @pinkbulbasaurtcg</a></div>
       <div class="instagram-embed"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/De6TY-Co2-j/" data-instgrm-version="14" style="background:#fff;border:0;border-radius:8px;margin:0 auto;max-width:540px;min-width:250px;width:100%;"></blockquote></div>
@@ -62,29 +66,32 @@
 </section>
 <script async src="https://www.instagram.com/embed.js"></script>
 
-<section id="beurzen">
+<section id="beurzen" aria-labelledby="beurzen-titel">
   <div class="wrap">
-    <div class="title"><h2>Beurzen &amp; events</h2><a href="https://www.pokeradar.nl/evenement/" target="_blank" rel="noopener">Bekijk de volledige agenda bij PokéRadar →</a></div>
-    <p class="section-intro">Op zoek naar Pokémon-beurzen, ruildagen of prereleases? Bekijk de actuele evenementenkalender van PokéRadar. De agenda op die website wordt bijgewerkt; hieronder vind je de rechtstreekse link zodat je geen verouderde datums ziet.</p>
-    <div class="event"><div class="dt"><b>TCG</b><small>agenda</small></div><div><h3>Pokémon-evenementen in Nederland</h3><p>Beurzen · Ruildagen · Prereleases · Toernooien</p></div></div>
-    <a class="btn" href="https://www.pokeradar.nl/evenement/" target="_blank" rel="noopener">Open PokéRadar agenda →</a>
-  </div>
-</section>
-
-<section id="tips">
-  <div class="wrap">
-    <div class="title"><h2>Tips &amp; tricks</h2><a href="#">Alle uitleg →</a></div>
-    <div class="grid g3">
-      <a class="card" href="#"><div class="in"><span class="tag">Uitleg</span><h3>Hoe werkt een prerelease?</h3><p>Van aanmelden tot deck bouwen, stap voor stap.</p></div></a>
-      <a class="card" href="#"><div class="in"><span class="tag">Uitleg</span><h3>Kaartnummers begrijpen</h3><p>Wat betekent dat getal en die set-code onderaan?</p></div></a>
-      <a class="card" href="#"><div class="in"><span class="tag">Uitleg</span><h3>Zeldzaamheden en varianten</h3><p>Holo, reverse holo, illustration rare en meer.</p></div></a>
+    <div class="title"><h2 id="beurzen-titel">Beurzen &amp; events</h2><a href="https://www.pokeradar.nl/evenement/" target="_blank" rel="noopener">Volledige agenda bij PokéRadar →</a></div>
+    <p class="section-intro">Pokémon-beurzen, ruildagen, prereleases en toernooien in Nederland. Evenementen die voorbij zijn verdwijnen vanzelf uit de lijst.</p>
+    <div class="filters">
+      <div class="chips" id="event-types" role="group" aria-label="Soort evenement"></div>
+      <label class="select-wrap">Provincie
+        <select id="event-province"><option value="">Alle provincies</option></select>
+      </label>
     </div>
+    <div id="events-list" class="events" aria-live="polite"><p class="sales-loading">Evenementen laden...</p></div>
+    <button class="btn ghost more-btn" id="events-more" type="button" hidden>Toon meer evenementen</button>
+    <p class="source-note">Bron voor de agenda: <a href="https://www.pokeradar.nl/evenement/" target="_blank" rel="noopener">PokéRadar</a>. Controleer datum en tijd altijd bij de organisator voordat je erheen gaat.</p>
   </div>
 </section>
 
-<section id="verkoop">
+<section id="tips" aria-labelledby="tips-titel">
   <div class="wrap">
-    <div class="title"><h2>Mijn verkoop</h2><a href="https://www.marktplaats.nl/u/amanda/7986935/" target="_blank" rel="noopener">Bekijk mijn Marktplaats-profiel →</a></div>
+    <div class="title"><h2 id="tips-titel">Tips &amp; tricks</h2><button class="more" id="tips-more" type="button" hidden>Alle uitleg →</button></div>
+    <div class="grid g3" id="tips-list"><noscript><p class="empty-note">Zet JavaScript aan om de tips te lezen.</p></noscript></div>
+  </div>
+</section>
+
+<section id="verkoop" aria-labelledby="verkoop-titel">
+  <div class="wrap">
+    <div class="title"><h2 id="verkoop-titel">Mijn verkoop</h2><a href="https://www.marktplaats.nl/u/amanda/7986935/" target="_blank" rel="noopener">Bekijk mijn Marktplaats-profiel →</a></div>
     <p class="section-intro">Hier verschijnen de geselecteerde Marktplaats-advertenties. Titel, prijs en foto worden automatisch opgehaald wanneer Marktplaats die gegevens beschikbaar stelt.</p>
     <div class="sales-intro"><span class="tag">Automatisch bijgewerkt</span><p>De advertenties worden dagelijks gecontroleerd. Als een advertentie niet meer bereikbaar is, tonen we dat bij de advertentie. Soms kan Marktplaats het automatisch uitlezen tijdelijk blokkeren.</p></div>
     <div id="sales-list" class="grid g3 sales-grid" aria-live="polite"><p class="sales-loading">Advertenties laden...</p></div>
@@ -92,12 +99,12 @@
   </div>
 </section>
 
-<section id="binders">
+<section id="binders" aria-labelledby="binders-titel">
   <div class="wrap">
     <div class="vault">
       <div>
         <span class="sticker">PINKBULBTCG kortingscode</span>
-        <h2>10% KORTING BIJ VAULTX!</h2>
+        <h2 id="binders-titel">10% KORTING BIJ VAULTX!</h2>
         <p>Op zoek naar een fijne binder voor je Pokémon-kaarten? Met mijn persoonlijke kortingscode krijg je 10% korting bij VaultX.</p>
         <div class="discount-code">PINKBULBTCG</div>
         <small>Affiliate: via mijn link ontvang ik mogelijk een commissie. Jij krijgt 10% korting.</small>
@@ -106,28 +113,52 @@
     </div>
   </div>
 </section>
-<section id="winkels">
+
+<section id="winkels" aria-labelledby="winkels-titel">
   <div class="wrap">
-    <div class="title"><h2>TCG-winkels ontdekken</h2><a href="https://stockmonster.nl/stores/land/nederland/" target="_blank" rel="noopener">Alle winkels bij StockMonster →</a></div>
-    <p class="section-intro">Op zoek naar een Pokémon- of TCG-winkel? Gebruik het Nederlandse winkeloverzicht van StockMonster om winkels en locaties te ontdekken.</p>
-    <a class="btn" href="https://stockmonster.nl/stores/land/nederland/" target="_blank" rel="noopener">Bekijk TCG-winkels in Nederland →</a>
+    <div class="title"><h2 id="winkels-titel">TCG-winkels ontdekken</h2><a href="https://stockmonster.nl/stores/land/nederland/" target="_blank" rel="noopener">Alle winkels bij StockMonster →</a></div>
+    <p class="section-intro">Op zoek naar een Pokémon- of TCG-winkel bij jou in de buurt? Zoek op naam of plaats, of kies een provincie.</p>
+    <div class="filters">
+      <label class="select-wrap grow">Zoek een winkel of plaats
+        <input type="search" id="store-search" placeholder="Bijvoorbeeld Utrecht">
+      </label>
+      <label class="select-wrap">Provincie
+        <select id="store-province"><option value="">Alle provincies</option></select>
+      </label>
+    </div>
+    <p class="result-count" id="store-count" aria-live="polite"></p>
+    <div id="stores-list" class="grid g3" aria-live="polite"><p class="sales-loading">Winkels laden...</p></div>
+    <button class="btn ghost more-btn" id="stores-more" type="button" hidden>Toon meer winkels</button>
+    <p class="source-note">Bron voor het winkeloverzicht: <a href="https://stockmonster.nl/stores/land/nederland/" target="_blank" rel="noopener">StockMonster</a>. Openingstijden en voorraad controleer je het best bij de winkel zelf.</p>
   </div>
 </section>
 
-<section id="over">
+<section id="over" aria-labelledby="over-titel">
   <div class="wrap">
-    <div class="title"><h2>Over mij</h2></div>
-    <p style="max-width:640px;color:var(--soft)">Hier komt jouw verhaal: hoe je begon met Pokémon, wat je verzamelt en waarom je deze site bent gestart. Plus een simpel contactformulier of e-mailadres.</p>
+    <div class="title"><h2 id="over-titel">Over mij</h2></div>
+    <p class="about-text">Hier komt jouw verhaal: hoe je begon met Pokémon, wat je verzamelt en waarom je deze site bent gestart.</p>
+    <a class="btn" href="https://www.instagram.com/pinkbulbasaurtcg/" target="_blank" rel="noopener">Stuur me een bericht op Instagram →</a>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">
-    <div>© 2026 PinkBulbTCG · Hobbysite, geen webshop</div>
+    <div>© <span id="year">2026</span> PinkBulbTCG · Hobbysite, geen webshop</div>
     <div>PinkBulbTCG is niet gelieerd aan The Pokémon Company, Nintendo of Creatures Inc.</div>
   </div>
 </footer>
 
-  <script src="script.js" defer></script>
+<dialog id="reader" aria-labelledby="reader-title">
+  <article class="reader-body">
+    <button type="button" class="reader-close" id="reader-close">Sluiten</button>
+    <span class="tag" id="reader-tag"></span>
+    <h2 id="reader-title"></h2>
+    <p class="date" id="reader-date"></p>
+    <div id="reader-text"></div>
+  </article>
+</dialog>
+
+<script src="script.js" defer></script>
 </body>
 </html>

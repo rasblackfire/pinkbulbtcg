@@ -113,3 +113,69 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .sales-loading,.sales-empty{color:var(--soft);padding:20px;background:var(--bg2);border:2px dashed var(--pink)}
 .sales-manage{margin-top:24px;color:var(--soft)}
 .sales-manage a{color:var(--pink);font-weight:700}
+
+
+/* ---------- Toegankelijkheid en basis ---------- */
+html{scroll-padding-top:84px}
+:focus-visible{outline:3px solid var(--acid);outline-offset:3px}
+[hidden]{display:none !important}
+nav a[aria-current="true"]{border-color:var(--pink)}
+
+/* ---------- Knoppen die op links lijken ---------- */
+.title .more{background:none;border:0;font:inherit;color:var(--pink);font-weight:700;text-transform:uppercase;font-size:.85rem;cursor:pointer;padding:0}
+.title .more:hover{text-decoration:underline}
+.more-btn{cursor:pointer;font-family:inherit;font-size:1rem;margin-top:22px}
+.empty-note{color:var(--soft)}
+
+/* ---------- Kaarten met leesknop ---------- */
+.card{position:relative}
+.card-link{all:unset;cursor:pointer;color:inherit}
+.card-link::after{content:"";position:absolute;inset:0}
+.card-link:focus-visible{outline:none}
+.card:has(.card-link:focus-visible){outline:3px solid var(--acid);outline-offset:3px}
+.card.store .btn{margin-top:14px;padding:9px 16px;font-size:.8rem;box-shadow:4px 4px 0 var(--pink)}
+
+/* ---------- Filters ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:flex-end;margin:0 0 22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);background:transparent;border:2px solid var(--pink);padding:7px 14px;cursor:pointer}
+.chip:hover{background:var(--bg2)}
+.chip[aria-pressed="true"]{background:var(--pink);color:#120a10}
+.select-wrap{display:flex;flex-direction:column;gap:4px;font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--soft)}
+.select-wrap.grow{flex:1 1 240px}
+.select-wrap select,.select-wrap input{font:inherit;font-size:1rem;text-transform:none;letter-spacing:0;font-weight:400;color:var(--ink);background:var(--bg2);border:3px solid #000;box-shadow:4px 4px 0 var(--pink);padding:10px 12px;min-width:200px;width:100%}
+.result-count{color:var(--soft);font-size:.9rem;margin-bottom:12px;min-height:1.4em}
+
+/* ---------- Evenementen ---------- */
+.events{display:grid;gap:16px}
+.events .event{margin-bottom:0;align-items:flex-start}
+.event-body h3{font-size:1.1rem;margin-bottom:2px}
+.event-meta{margin-top:4px}
+.event-link{display:inline-block;margin-top:8px;color:var(--pink);font-weight:700;text-transform:uppercase;font-size:.8rem}
+.event-link:hover{text-decoration:underline}
+.dt{flex:none}
+.source-note{margin-top:22px;color:#b88aa3;font-size:.85rem;max-width:720px}
+.source-note a{color:var(--pink);text-decoration:underline}
+.sales-empty a{color:var(--pink);font-weight:700;text-decoration:underline}
+
+/* ---------- Over mij ---------- */
+.about-text{max-width:640px;color:var(--soft);margin-bottom:20px}
+
+/* ---------- Lezer (blog en tips) ---------- */
+dialog{width:min(680px,calc(100% - 32px));max-height:86vh;margin:auto;padding:0;background:var(--bg2);color:var(--ink);border:3px solid #000;box-shadow:8px 8px 0 var(--pink)}
+dialog::backdrop{background:rgba(18,10,16,.82)}
+.reader-body{padding:clamp(20px,4vw,36px)}
+.reader-body h2{font-family:'Permanent Marker';font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.1;margin:6px 0 4px}
+.reader-body p{max-width:60ch;margin:0 0 1em;color:var(--ink)}
+.reader-body .date{margin:0 0 18px;color:#b88aa3}
+.reader-close{float:right;margin:0 0 10px 12px;font:inherit;font-weight:700;text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;color:#120a10;background:var(--pink);border:3px solid #000;box-shadow:3px 3px 0 #000;padding:6px 14px;cursor:pointer}
+
+/* ---------- Minder beweging ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .tape span{animation:none}
+  *{transition:none !important}
+}
+
+/* Gekantelde hero-elementen mogen de pagina niet breder maken dan het scherm */
+.hero{overflow-x:clip}
