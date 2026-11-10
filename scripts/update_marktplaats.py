@@ -126,7 +126,7 @@ def discover():
     old = read_json(DISCOVERED, [])
     try:
         _, html = fetch(PROFILE)
-        urls = re.findall(r'(?:https?://www\\.marktplaats\\.nl)?/v/[^"<>\\s]+?/m\\d+|https?://link\\.marktplaats\\.nl/m\\d+', html, re.I)
+        urls = re.findall(r'(?:https?://www[.]marktplaats[.]nl)?/v/[^"<> ]+?/m[0-9]+|https?://link[.]marktplaats[.]nl/m[0-9]+', html, re.I)
         found = []
         for u in urls:
             url = ("https://www.marktplaats.nl" + u) if u.startswith("/") else u
@@ -134,7 +134,7 @@ def discover():
             if TCG.search(url) and url not in found:
                 found.append(url)
         if found:
-            DISCOVERED.write_text(json.dumps(found, indent=2, ensure_ascii=False) + "\\n", encoding="utf-8")
+            DISCOVERED.write_text(json.dumps(found, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
             return found
         print("Profiel leverde geen herkenbare TCG-advertenties op; bewaar bestaande lijst.")
     except Exception as exc:
