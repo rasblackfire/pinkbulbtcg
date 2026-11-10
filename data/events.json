@@ -1,1 +1,124 @@
-[]
+[
+  {
+    "date": "2026-11-15",
+    "title": "Pokéstreet TCG",
+    "city": "Rotterdam",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-11-20",
+    "title": "Flevocards Ruilmiddag",
+    "city": "Lelystad",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-11-21",
+    "title": "TCG Master Expo XXL",
+    "city": "Plaats nog onbekend",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-11-28",
+    "title": "Carddayz",
+    "city": "Maarssen",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-11-28",
+    "title": "DisGoMon beurs",
+    "city": "Utrecht",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-11-29",
+    "title": "Sea of Cards EXPO",
+    "city": "Amersfoort",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-12-05",
+    "title": "Cardview XL",
+    "city": "Purmerend",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-12-11",
+    "title": "Flevocards Ruilmiddag",
+    "city": "Lelystad",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-12-12",
+    "title": "Pocketflex EXPO",
+    "city": "Amsterdam",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-12-19",
+    "title": "TCGQuest Kersteditie",
+    "city": "Kerkrade",
+    "type": "beurs"
+  },
+  {
+    "date": "2026-12-26",
+    "title": "Cardview XL",
+    "city": "Voorschoten",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-01-17",
+    "title": "Con-Con Mega Winterfest XL",
+    "city": "Den Haag",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-02-13",
+    "title": "Collectors Garden",
+    "city": "Utrecht",
+    "endDate": "2027-02-14",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-02-27",
+    "title": "Collectable World Events",
+    "city": "Gorinchem",
+    "endDate": "2027-02-28",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-03-07",
+    "title": "TCG Beurs Joure",
+    "city": "Joure",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-03-14",
+    "title": "PoCoCon Amersfoort",
+    "city": "Amersfoort",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-03-14",
+    "title": "Master Pullz Alkmaar Round 3",
+    "city": "Alkmaar",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-04-04",
+    "title": "Collect 'O Fest Groningen",
+    "city": "Groningen",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-04-11",
+    "title": "PoCoCon Harderwijk",
+    "city": "Harderwijk",
+    "type": "beurs"
+  },
+  {
+    "date": "2027-04-18",
+    "title": "PoCoCon Zwolle",
+    "city": "Zwolle",
+    "type": "beurs"
+  }
+]
