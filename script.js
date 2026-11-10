@@ -121,37 +121,25 @@
 
   function setupPosts(posts, section, listId, moreId, firstCount) {
     const list = document.getElementById(listId);
-    const more = document.getElementById(moreId);
-    const items = posts
-      .filter((p) => p.section === section && !p.voorbeeld && p.published !== false)
-      .sort((a, b) => String(b.date).localeCompare(String(a.date)));
-    let expanded = false;
-
-    function draw() {
-      list.textContent = "";
-      if (!items.length) {
-        list.innerHTML = emptyBox("Hier komt binnenkort iets te lezen.");
-        more.hidden = true;
-        return;
-      }
-      items.slice(0, expanded ? items.length : firstCount).forEach((post) => {
-        const card = document.createElement("article");
-        card.className = "card";
-        card.innerHTML =
-          '<div class="thumb" aria-hidden="true">' + esc(post.emoji || "🃏") + "</div>" +
-          '<div class="in"><span class="tag">' + esc(post.voorbeeld ? "Voorbeeldpost" : post.tag) + "</span>" +
-          '<h3><button type="button" class="card-link">' + esc(post.title) + "</button></h3>" +
-          "<p>" + esc(post.excerpt) + '</p><div class="date">' + esc(fmtDate(post.date)) + "</div></div>";
-        $(".card-link", card).addEventListener("click", () => openPost(post));
-        list.appendChild(card);
-      });
-      more.hidden = items.length <= firstCount;
-      more.textContent = expanded ? "Minder tonen" : more.dataset.label;
+    const items = posts.filter(p => p.section === section && !p.voorbeeld && p.published !== false)
+      .sort((a,b) => String(b.date).localeCompare(String(a.date))).slice(0, firstCount);
+    list.textContent = "";
+    if (!items.length) {
+      list.innerHTML = emptyBox(section === "blog"
+        ? 'Mijn eerste blogberichten verschijnen binnenkort! <a href="blog.html">Neem alvast een kijkje op mijn blog →</a>'
+        : 'Nieuwe tips volgen binnenkort! <a href="tips.html">Bekijk alle onderwerpen →</a>');
+      return;
     }
-
-    more.dataset.label = more.textContent;
-    more.addEventListener("click", () => { expanded = !expanded; draw(); });
-    draw();
+    items.forEach(post => {
+      const card = document.createElement("article");
+      card.className = "card";
+      card.innerHTML = '<div class="thumb" aria-hidden="true">' + esc(post.emoji || "🃏") + '</div>' +
+        '<div class="in"><span class="tag">' + esc(post.tag || "Artikel") + '</span>' +
+        '<h3><button type="button" class="card-link">' + esc(post.title) + '</button></h3>' +
+        '<p>' + esc(post.excerpt) + '</p><div class="date">' + esc(fmtDate(post.date)) + '</div></div>';
+      $(".card-link", card).addEventListener("click", () => openPost(post));
+      list.appendChild(card);
+    });
   }
 
   /* ---------- Beurzen & events ---------- */
@@ -159,79 +147,23 @@
 
   function setupEvents(all) {
     const list = $("#events-list");
-    const more = $("#events-more");
-    const typeBox = $("#event-types");
-    const provinceSelect = $("#event-province");
-    const PAGE = 6;
-    const today = todayISO();
-
     const upcoming = (Array.isArray(all) ? all : [])
-      .filter((e) => e && e.title && e.date && (e.endDate || e.date) >= today)
-      .sort((a, b) => String(a.date).localeCompare(String(b.date)));
-
-    let type = "alles";
-    let province = "";
-    let shown = PAGE;
-
-    const presentTypes = Array.from(new Set(upcoming.map((e) => e.type || "overig")));
-    if (presentTypes.length > 1) {
-      ["alles"].concat(presentTypes).forEach((t) => {
-        const b = document.createElement("button");
-        b.type = "button";
-        b.className = "chip";
-        b.dataset.type = t;
-        b.setAttribute("aria-pressed", t === "alles" ? "true" : "false");
-        b.textContent = t === "alles" ? "Alles" : (EVENT_TYPES[t] || t);
-        b.addEventListener("click", () => {
-          type = t; shown = PAGE;
-          typeBox.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", c === b ? "true" : "false"));
-          draw();
-        });
-        typeBox.appendChild(b);
-      });
-    } else {
-      typeBox.hidden = true;
+      .filter(e => e && e.title && e.date && (e.endDate || e.date) >= todayISO() && e.date.length === 10)
+      .sort((a,b) => a.date.localeCompare(b.date)).slice(0,3);
+    if (!upcoming.length) {
+      list.innerHTML = emptyBox('Er staan momenteel geen komende evenementen in dit overzicht. <a href="beurzen.html">Bekijk de volledige beursagenda →</a>');
+      return;
     }
-    fillProvinces(provinceSelect, upcoming);
-    if (!upcoming.length) $(".filters", list.closest("section")).hidden = true;
-    provinceSelect.addEventListener("change", () => { province = provinceSelect.value; shown = PAGE; draw(); });
-    more.addEventListener("click", () => { shown += PAGE; draw(); });
-
-    function dateBox(e) {
+    list.innerHTML = upcoming.map(e => {
       const d = parseDay(e.date);
-      return '<div class="dt"><b>' + esc(d.getDate()) + "</b><small>" +
-        esc(d.toLocaleDateString("nl-NL", { month: "short" }).replace(".", "")) + "</small></div>";
-    }
-
-    function draw() {
-      const filtered = upcoming.filter((e) =>
-        (type === "alles" || (e.type || "overig") === type) && (!province || e.province === province));
-
-      if (!filtered.length) {
-        list.innerHTML = emptyBox(
-          upcoming.length
-            ? "Geen evenementen gevonden met deze filters."
-            : 'Er staan nog geen komende evenementen in mijn agenda. Bekijk de <a href="https://www.pokeradar.nl/evenement/" target="_blank" rel="noopener">volledige agenda bij PokéRadar</a>.');
-        more.hidden = true;
-        return;
-      }
-
-      list.innerHTML = filtered.slice(0, shown).map((e) => {
-        const url = e.url ? safeUrl(e.url) : null;
-        const when = e.endDate && e.endDate !== e.date
-          ? fmtDate(e.date) + " t/m " + fmtDate(e.endDate)
-          : fmtDate(e.date);
-        const where = [e.venue, e.city, e.province].filter(Boolean).join(", ");
-        const meta = [EVENT_TYPES[e.type] || EVENT_TYPES.overig, when, e.time, e.price].filter(Boolean).join(" · ");
-        const link = url
-          ? '<a class="event-link" href="' + esc(url.href) + '" target="_blank" rel="noopener noreferrer">Meer info →</a>'
-          : "";
-        return '<article class="event">' + dateBox(e) + '<div class="event-body"><h3>' + esc(e.title) + "</h3><p>" +
-          esc(where) + "</p><p class=\"event-meta\">" + esc(meta) + "</p>" + link + "</div></article>";
-      }).join("");
-      more.hidden = filtered.length <= shown;
-    }
-    draw();
+      const when = fmtDate(e.date);
+      const where = [e.city, e.province].filter(Boolean).join(", ");
+      return '<article class="event"><div class="dt"><b>' + esc(d.getDate()) +
+        '</b><small>' + esc(d.toLocaleDateString("nl-NL",{month:"short"}).replace(".","")) +
+        '</small></div><div class="event-body"><h3>' + esc(e.title) + '</h3><p>' +
+        esc(where) + '</p><p class="event-meta">' + esc(when) +
+        '</p></div></article>';
+    }).join("");
   }
 
   /* ---------- Winkels ---------- */
