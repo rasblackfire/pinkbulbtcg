@@ -6,7 +6,6 @@ const money=v=>v===null||v===undefined||v===""?"Prijs op aanvraag":typeof v==="n
 let items=[];
 function card(item){
  const sold=item.status==="verkocht",link=safeLink(item.link);
- const image=item.afbeelding|| (item.categorie==="pokemon"&&/^[a-z0-9-]+$/i.test(item.tcgdex_id||"")&&item.tcgdex_id?"https://assets.tcgdex.net/en/"+(item.tcgdex_id.includes("-")?"":""):"");
  // TCGdex afbeeldings-URL: gebruik een expliciete image-URL in de JSON of haal hem op via API.
  const photo=item._resolvedImage||item.afbeelding||"";
  const validPhoto=/^https:\/\//i.test(photo)||/^(?!\/\/)(?!.*\.\.\/)[\w\-./%]+$/.test(photo);
