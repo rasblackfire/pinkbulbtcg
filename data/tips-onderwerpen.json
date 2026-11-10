@@ -103,5 +103,12 @@
     "categorie": "Andere TCG",
     "emoji": "⚔️",
     "excerpt": "Wat is Riftbound en waar let je op als je naast Pokémon nog een TCG wilt ontdekken?"
+  },
+  {
+    "id": "dex-app-collectie",
+    "title": "Mijn Pokémoncollectie bijhouden met de DEX app",
+    "categorie": "Verzamelen",
+    "emoji": "📱",
+    "excerpt": "Hoe gebruik je DEX om overzicht te houden over je Pokémonkaarten en wat vind ik er zelf van? Een artikel hierover volgt binnenkort."
   }
 ]
