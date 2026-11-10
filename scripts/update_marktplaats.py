@@ -116,16 +116,43 @@ def scrape(url):
     return item
 
 
+
+PROFILE = "https://www.marktplaats.nl/u/amanda/7986935/"
+DISCOVERED = ROOT / "data" / "marktplaats-discovered.json"
+TCG = re.compile(r"pokemon|pokémon|tcg|riftbound|trading.card|booster|elite.trainer|toploader|binder", re.I)
+
+def discover():
+    """Probeer relevante advertenties van het openbare profiel te vinden."""
+    old = read_json(DISCOVERED, [])
+    try:
+        _, html = fetch(PROFILE)
+        urls = re.findall(r'(?:https?://www\\.marktplaats\\.nl)?/v/[^"<>\\s]+?/m\\d+|https?://link\\.marktplaats\\.nl/m\\d+', html, re.I)
+        found = []
+        for u in urls:
+            url = ("https://www.marktplaats.nl" + u) if u.startswith("/") else u
+            url = url.split("?")[0]
+            if TCG.search(url) and url not in found:
+                found.append(url)
+        if found:
+            DISCOVERED.write_text(json.dumps(found, indent=2, ensure_ascii=False) + "\\n", encoding="utf-8")
+            return found
+        print("Profiel leverde geen herkenbare TCG-advertenties op; bewaar bestaande lijst.")
+    except Exception as exc:
+        print("Profiel niet uitleesbaar:", type(exc).__name__)
+    return old if isinstance(old, list) else []
+
 def main():
     previous = {i.get("url"): i for i in read_json(OUTPUT, []) if isinstance(i, dict)}
     results = []
-    for url in load_links():
+    manual = set(load_links())
+    for url in dict.fromkeys(load_links() + discover()):
         item = scrape(url)
         old = previous.get(url)
         # Blokkade of netwerkfout: houd de laatst bekende goede gegevens vast.
         if item["status"] == "unknown" and old and old.get("status") in ("active", "unavailable"):
             item = old
-        results.append(item)
+        if url in manual or (item["status"] == "active" and TCG.search(item.get("title", "") + " " + url)):
+            results.append(item)
         time.sleep(2)
     OUTPUT.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     ok = sum(1 for r in results if r["status"] == "active")
