@@ -1,34 +1,138 @@
 [
   {
-    "date": "2026-07-17",
-    "title": "Mega Evolution—Pitch Black",
-    "kind": "Engelstalige set",
+    "date": "2026-09-16",
+    "title": "30th Celebration",
+    "region": "Internationaal",
+    "type": "Set",
     "status": "Bevestigd",
-    "desc": "Een uitbreiding uit de Mega Evolution-serie, uitgebracht op 17 juli 2026.",
-    "source": "https://press.pokemon.com/en/Items/Schedule?period=All&sortAsc=False&sortBy=Date"
+    "desc": "Jubileumuitbreiding ter ere van 30 jaar Pokémon. De eerste producten verschenen wereldwijd op 16 september.",
+    "source": "https://pokemon.gamespress.com/nl/MEDIA-ALERT-Pokemon-Trading-Card-Game-30th-Celebration-Expansion-wordt"
   },
   {
     "date": "2026-09-16",
-    "title": "Pokémon TCG: 30th Celebration",
-    "kind": "Jubileumrelease",
+    "title": "30th Celebration Tech Sticker Collection (VS)",
+    "region": "Engels",
+    "type": "Collection box",
     "status": "Bevestigd",
-    "desc": "De jubileumrelease rond 30 jaar Pokémon, met meerdere producten en verzameluitgaven.",
-    "source": "https://press.pokemon.com/en/Items/Schedule?period=All&sortAsc=False&sortBy=Date"
+    "desc": "Met drie 30th Celebration boosters, een Lucario- of Alolan Exeggutor-promokaart en bijpassende stickers. De Amerikaanse productpagina noemt 16 september; de Britse site noemt november. Beschikbaarheid in Nederland kan verschillen.",
+    "source": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-tech-sticker-collection"
   },
   {
     "date": "2026-11-06",
     "title": "Mega Evolution—Delta Reign",
-    "kind": "Engelstalige set",
+    "region": "Engels",
+    "type": "Set",
     "status": "Bevestigd",
-    "desc": "Mega Rayquaza ex keert terug. De set verscheen op 6 november 2026 met onder andere boosterboxen, Elite Trainer Boxes en Booster Bundles.",
+    "desc": "Mega Rayquaza ex staat centraal in deze Engelstalige Mega Evolution-uitbreiding.",
     "source": "https://www.pokemon.com/uk/news/pokemon-tcg-mega-evolution-delta-reign-product-showcase"
   },
   {
+    "date": "2026-11-06",
+    "title": "Gem Pack Vol. 7",
+    "region": "Chinees",
+    "type": "Set",
+    "status": "Bevestigd",
+    "desc": "Vereenvoudigd Chineestalige Gem Pack-uitgave met vier glimmende kaarten per pakje. Misty's Psyduck is een van de blikvangers. Releasedatum geldt voor China, niet automatisch voor Nederlandse winkels.",
+    "source": "https://cncardsupply.com/november-2026/gem-pack-vol-7"
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Black Thunder Stream & White Flame Surge",
+    "region": "Chinees",
+    "type": "Sets",
+    "status": "Bevestigd",
+    "desc": "Twee vereenvoudigd Chineestalige uitbreidingen, uitgebracht in China met verschillende boosterformaten.",
+    "source": "https://cncardsupply.com/november-2026"
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Special Deck Set MEGA",
+    "region": "Japans",
+    "type": "Deck set",
+    "status": "Bevestigd",
+    "desc": "Japanse set met drie decks rond Mega Gengar ex, Mega Dragonite ex en Mega Feraligatr ex, plus accessoires.",
+    "source": "https://www.pokebeach.com/2026/10/mega-dragonite-ex-mega-gengar-ex-and-mega-feraligatr-ex-special-deck-set-revealed-for-november"
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Mega Greninja ex League Battle Deck",
+    "region": "Engels",
+    "type": "Speeldeck",
+    "status": "Aangekondigd door winkels",
+    "desc": "Kant-en-klaar competitief deck rond Mega Greninja ex. Beschikbaarheid kan per land en winkel verschillen.",
+    "source": "https://unownarchives.com/release-calendar/"
+  },
+  {
+    "date": "2026-11-27",
+    "title": "Aura Seeker (M7)",
+    "region": "Japans",
+    "type": "Set",
+    "status": "Bevestigd",
+    "desc": "Japanse uitbreiding met Mega Lucario Z ex. Een deel van deze kaarten wordt verwacht in de Engelstalige Flowing Fists-set.",
+    "source": "https://www.pokebeach.com/2026/10/aura-seeker-set-starring-mega-lucario-z-ex-officially-revealed"
+  },
+  {
+    "date": "2026-12-04",
+    "title": "30th Celebration Binder Collection",
+    "region": "Engels",
+    "type": "Collection box",
+    "status": "Retaildatum",
+    "desc": "Jubileumbinder met negen vakken per pagina en vijf boosters. 4 december wordt voor de Amerikaanse release genoemd; Pokémon UK toont nog een andere periode. Controleer de Nederlandse winkel.",
+    "source": "https://tcgwatch.nl/nl/nieuws/nieuws-binder-collection-verschoven-naar-december"
+  },
+  {
+    "date": "2026-12-04",
+    "title": "30th Celebration ex Tins",
+    "region": "Engels",
+    "type": "Tins",
+    "status": "Retaildatum",
+    "desc": "Jubileumblikken met Sylveon ex of Greninja ex, een promokaart en vier boosters. Datum voor een latere productgolf; lokale beschikbaarheid kan verschillen.",
+    "source": "https://stockmonster.nl/releases/set/30th/"
+  },
+  {
+    "date": "2026-12-04",
+    "title": "Unova Heavy Hitters Premium Collection",
+    "region": "Engels",
+    "type": "Collection box",
+    "status": "Retaildatum",
+    "desc": "Premium Collection met onder meer Black Bolt- en White Flare-boosters. De datum komt uit releaseoverzichten; controleer je winkel.",
+    "source": "https://nookdex.com/en/release-calendar"
+  },
+  {
+    "date": "2027-01-15",
+    "title": "Pokémon TCG Valentine's Box",
+    "region": "Engels",
+    "type": "Collection box",
+    "status": "Gemeld door vakmedia",
+    "desc": "Valentijnsdoos met 20 minibooters van drie kaarten en vijf stickervellen. PokéBeach meldt 15 januari; controleer de Nederlandse beschikbaarheid.",
+    "source": "https://www.pokebeach.com/2026/10/pokemon-tcg-valentines-box-revealed-for-january"
+  },
+  {
+    "date": "2027-01-23",
+    "endDate": "2027-01-31",
+    "title": "Flowing Fists prereleases",
+    "region": "Engels",
+    "type": "Prerelease",
+    "status": "Verwacht",
+    "desc": "Door PokéBeach gemelde prereleaseperiode. Check bij deelnemende Play! Pokémon-winkels welke dagen en locaties daadwerkelijk meedoen.",
+    "source": "https://www.pokebeach.com/2026/10/flowing-fists-pokemon-tcg-set-to-release-in-february-starring-mega-lucario-z-ex"
+  },
+  {
     "date": "2027-02-05",
-    "title": "Flowing Fists (verwacht)",
-    "kind": "Mogelijke Engelstalige set",
-    "status": "Niet officieel bevestigd",
-    "desc": "Deze datum wordt genoemd in berichtgeving, maar is nog niet door The Pokémon Company bevestigd. Onder voorbehoud!",
-    "source": "https://www.dexerto.com/pokemon/pokemon-tcg-release-2629243/"
+    "title": "Mega Evolution—Flowing Fists",
+    "region": "Engels",
+    "type": "Set",
+    "status": "Verwacht",
+    "desc": "Volgens PokéBeach verschijnt deze uitbreiding met Mega Lucario Z ex op 5 februari. The Pokémon Company had de datum bij deze controle nog niet officieel bevestigd.",
+    "source": "https://www.pokebeach.com/2026/10/flowing-fists-pokemon-tcg-set-to-release-in-february-starring-mega-lucario-z-ex"
+  },
+  {
+    "date": "2027-02-19",
+    "title": "MEGA x MEGA Parade",
+    "region": "Japans",
+    "type": "High Class Pack",
+    "status": "Gemeld door vakmedia",
+    "desc": "Verwachte Japanse High Class Pack-set met Mega Raichu X en Mega Raichu Y. Datum is gemeld door PokéBeach; houd officiële bevestigingen in de gaten.",
+    "source": "https://www.pokebeach.com/2026/08/mega-x-mega-parade-high-class-pokemon-tcg-set-to-release-in-february"
   }
 ]
