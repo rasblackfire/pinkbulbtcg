@@ -191,3 +191,24 @@ footer a:hover{color:var(--pink);text-decoration:underline}
 
 /* Nieuwe pagina's, zoekfunctie en toegankelijkheid */
 .home-newpages{padding:38px 0 20px}.article-toc{display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:var(--bg2);border-left:4px solid var(--pink);padding:16px;margin:25px 0 5px}.article-toc a{color:var(--pink);text-decoration:underline}.article-page-body h2{font:clamp(1.5rem,3vw,2rem) 'Permanent Marker',cursive;margin:28px 0 15px;scroll-margin-top:100px}.article-page-body h2:first-child{margin-top:10px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--acid);outline-offset:3px}html{scroll-padding-top:90px}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}@media(max-width:1100px){.bar{flex-wrap:wrap;gap:8px}#menu{justify-content:center}#menu a{padding:6px 8px;font-size:.78rem}}@media(max-width:820px){#menu{justify-content:flex-start}}
+
+/* PinkBulbTCG branding en illustraties - november 2026 */
+.bar .logo{display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;white-space:nowrap;transform:rotate(-2deg);font-size:clamp(1.05rem,1.7vw,1.45rem);line-height:1.1}
+.bar .logo img{display:block;width:44px;height:44px;object-fit:contain;filter:drop-shadow(2px 3px 0 #000)}
+.bar nav{min-width:0}
+.bar nav ul{justify-content:flex-end;gap:2px}
+.bar nav a{font-size:.73rem;letter-spacing:.015em;padding:6px 7px}
+.hero .bulb{position:absolute;right:3%;top:60px;width:clamp(115px,20vw,230px);height:auto;max-width:32%;opacity:.92;transform:rotate(12deg);filter:drop-shadow(7px 8px 0 #000);pointer-events:none}
+.icon-heading{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.icon-heading::before{content:'';display:inline-block;flex:none;width:clamp(34px,4vw,52px);height:clamp(34px,4vw,52px);background-size:contain;background-position:center;background-repeat:no-repeat;filter:drop-shadow(2px 3px 0 #000)}
+.icon-cards::before{background-image:url('pokemon_kaartjes.png')}
+.icon-camera::before{background-image:url('camera.png')}
+.icon-calendar::before{background-image:url('kalender.png')}
+.icon-heart::before{background-image:url('hart.png')}
+.icon-handshake::before{background-image:url('handdruk.png')}
+.icon-chat::before{background-image:url('chat.png')}
+.icon-gift::before{background-image:url('cadeau.png')}
+.icon-book::before{background-image:url('boek.png')}
+.collab-illustration{width:66px;height:66px;object-fit:contain;display:block;filter:drop-shadow(3px 3px 0 #000);margin-bottom:8px}
+@media(max-width:900px){.bar .logo{font-size:1.35rem}.bar nav a{font-size:.78rem;padding:7px 9px}.hero .bulb{opacity:.3;right:0;max-width:38%}}
+@media(max-width:600px){.bar .logo img{width:38px;height:38px}.bar .logo{font-size:1.2rem}.hero .bulb{top:40px;max-width:35%;opacity:.22}.icon-heading{gap:8px}.icon-heading::before{width:36px;height:36px}}
