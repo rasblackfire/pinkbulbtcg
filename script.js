@@ -133,11 +133,12 @@
     items.forEach(post => {
       const card = document.createElement("article");
       card.className = "card";
+      const href = post.section + "/" + encodeURIComponent(post.id) + ".html";
       card.innerHTML = '<div class="thumb" aria-hidden="true">' + esc(post.emoji || "🃏") + '</div>' +
         '<div class="in"><span class="tag">' + esc(post.tag || "Artikel") + '</span>' +
-        '<h3><button type="button" class="card-link">' + esc(post.title) + '</button></h3>' +
-        '<p>' + esc(post.excerpt) + '</p><div class="date">' + esc(fmtDate(post.date)) + '</div></div>';
-      $(".card-link", card).addEventListener("click", () => openPost(post));
+        '<h3><a class="card-link" href="' + href + '">' + esc(post.title) + '</a></h3>' +
+        '<p>' + esc(post.excerpt) + '</p><div class="date">' + esc(fmtDate(post.date)) + '</div>' +
+        '<a class="post-readmore" href="' + href + '">Lees verder →</a></div>';
       list.appendChild(card);
     });
   }
