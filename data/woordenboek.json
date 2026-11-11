@@ -1,0 +1,192 @@
+[
+  {
+    "term": "Booster",
+    "description": "Een pakje met willekeurige Pokémonkaarten uit een set.",
+    "link": "tips/booster-etb-box-verschil.html"
+  },
+  {
+    "term": "Boosterbox",
+    "description": "Een doos met meerdere boosters, vaak bedoeld voor winkels en verzamelaars. Niet elke set heeft er een.",
+    "link": "tips/booster-etb-box-verschil.html"
+  },
+  {
+    "term": "Booster Bundle",
+    "description": "Een compacte verpakking met meerdere boosters, doorgaans zonder veel accessoires.",
+    "link": "tips/booster-etb-box-verschil.html"
+  },
+  {
+    "term": "ETB",
+    "description": "Elite Trainer Box: een doos met boosters en meestal accessoires zoals sleeves en energiekaarten.",
+    "link": "tips/booster-etb-box-verschil.html"
+  },
+  {
+    "term": "Collection Box",
+    "description": "Product met boosters en vaak een speciale promokaart, grote kaart of extra verzamelitem.",
+    "link": "tips/booster-etb-box-verschil.html"
+  },
+  {
+    "term": "Promo",
+    "description": "Een kaart die via een speciaal product, evenement of actie wordt uitgegeven.",
+    "link": "tips/sets-series.html"
+  },
+  {
+    "term": "Sealed",
+    "description": "Een product waarvan de originele verpakking nog ongeopend is.",
+    "link": "tips/sealed.html"
+  },
+  {
+    "term": "Pull",
+    "description": "Een kaart die je uit een booster hebt gehaald.",
+    "link": "tips/rarity.html"
+  },
+  {
+    "term": "Hit",
+    "description": "Informele term voor een opvallende of gewilde kaart uit een booster. Wat een hit is, verschilt per verzamelaar.",
+    "link": "tips/rarity.html"
+  },
+  {
+    "term": "Chase card",
+    "description": "Een kaart die iemand graag uit een bepaalde set wil bemachtigen, vaak een populaire zeldzame kaart.",
+    "link": "tips/prijzen.html"
+  },
+  {
+    "term": "Bulk",
+    "description": "Grote hoeveelheid meestal veelvoorkomende kaarten die afzonderlijk vaak weinig waard zijn.",
+    "link": "tips/prijzen.html"
+  },
+  {
+    "term": "Holo",
+    "description": "Kaart met een glanzend effect, meestal in het illustratiegedeelte.",
+    "link": "tips/rarity.html"
+  },
+  {
+    "term": "Reverse holo",
+    "description": "Kaart waarbij een ander deel van de kaart glanst dan bij de gewone holo-variant.",
+    "link": "tips/rarity.html"
+  },
+  {
+    "term": "IR",
+    "description": "Illustration Rare: een speciale zeldzaamheid met uitgebreide illustratie, afhankelijk van set en tijdperk.",
+    "link": "tips/rarity.html"
+  },
+  {
+    "term": "SIR",
+    "description": "Special Illustration Rare: een speciale illustratievariant met een hogere zeldzaamheid in moderne sets.",
+    "link": "tips/rarity.html"
+  },
+  {
+    "term": "Full art",
+    "description": "Kaart waarvan de illustratie een groter deel van het kaartoppervlak beslaat.",
+    "link": "tips/rarity.html"
+  },
+  {
+    "term": "Alt art",
+    "description": "Informele verzamelterm voor een alternatieve illustratie van een kaart. Officiële benamingen verschillen.",
+    "link": "tips/rarity.html"
+  },
+  {
+    "term": "Master set",
+    "description": "Verzameling van alle kaarten en varianten die iemand voor een set meetelt. Er bestaat niet altijd één universele definitie.",
+    "link": "tips/set-compleet.html"
+  },
+  {
+    "term": "Complete set",
+    "description": "Alle kaarten die binnen een afgesproken setdefinitie horen, vaak zonder alle varianten of promo's.",
+    "link": "tips/set-compleet.html"
+  },
+  {
+    "term": "Setcode",
+    "description": "Korte aanduiding waarmee je een Pokémon TCG-uitbreiding kunt herkennen.",
+    "link": "tips/sets-series.html"
+  },
+  {
+    "term": "Card number",
+    "description": "Het nummer onderaan de kaart, bijvoorbeeld 045/198.",
+    "link": "tips/uitleg-kaartnummers.html"
+  },
+  {
+    "term": "NM",
+    "description": "Near Mint: kaart in zeer goede staat, met hooguit minimale gebruikssporen.",
+    "link": "tips/conditie.html"
+  },
+  {
+    "term": "LP",
+    "description": "Lightly Played: kaart met lichte zichtbare gebruikssporen.",
+    "link": "tips/conditie.html"
+  },
+  {
+    "term": "MP",
+    "description": "Moderately Played: kaart met duidelijkere gebruikssporen.",
+    "link": "tips/conditie.html"
+  },
+  {
+    "term": "HP",
+    "description": "Heavily Played kan bij kaartconditie veel slijtage betekenen; op de kaart zelf betekent HP levenspunten.",
+    "link": "tips/conditie.html"
+  },
+  {
+    "term": "Grading",
+    "description": "Professionele beoordeling van de staat en meestal echtheid van een kaart.",
+    "link": "tips/grading-pokemon-kaarten.html"
+  },
+  {
+    "term": "Slab",
+    "description": "Harde, verzegelde houder waarin een professioneel beoordeelde kaart wordt geleverd.",
+    "link": "tips/grading-pokemon-kaarten.html"
+  },
+  {
+    "term": "PSA",
+    "description": "Een bedrijf dat onder andere verzamelkaarten beoordeelt en in slabs verpakt.",
+    "link": "tips/grading-pokemon-kaarten.html"
+  },
+  {
+    "term": "CGC",
+    "description": "Een bedrijf dat onder andere tradingcards beoordeelt en verzegelt.",
+    "link": "tips/grading-pokemon-kaarten.html"
+  },
+  {
+    "term": "BGS",
+    "description": "Beckett Grading Services, een beoordelaar van verzamelkaarten.",
+    "link": "tips/grading-pokemon-kaarten.html"
+  },
+  {
+    "term": "Penny sleeve",
+    "description": "Een dun, zacht beschermhoesje voor een losse kaart.",
+    "link": "tips/pokemon-kaarten-sleeven.html"
+  },
+  {
+    "term": "Toploader",
+    "description": "Een stevige kunststof houder voor kaarten, meestal gebruikt samen met een zachte sleeve.",
+    "link": "tips/pokemon-kaarten-sleeven.html"
+  },
+  {
+    "term": "Prerelease",
+    "description": "Evenement vóór de gewone winkelrelease van een set, vaak met een spelelement.",
+    "link": "tips/uitleg-prerelease.html"
+  },
+  {
+    "term": "Build & Battle",
+    "description": "Product met kaarten om een deck te bouwen, vaak gebruikt bij prereleases.",
+    "link": "tips/uitleg-prerelease.html"
+  },
+  {
+    "term": "Restock",
+    "description": "Wanneer een product opnieuw op voorraad komt.",
+    "link": "tips/monitors.html"
+  },
+  {
+    "term": "Preorder",
+    "description": "Bestelling van een product voordat het officieel beschikbaar is.",
+    "link": "tips/pokemon-kaarten-kopen-veilig.html"
+  },
+  {
+    "term": "Trade",
+    "description": "Ruil tussen verzamelaars.",
+    "link": "tips/ruilen.html"
+  },
+  {
+    "term": "Raw card",
+    "description": "Een kaart die niet professioneel gegraded en in een slab verzegeld is.",
+    "link": "tips/grading-pokemon-kaarten.html"
+  }
+]
