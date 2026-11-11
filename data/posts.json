@@ -80,5 +80,257 @@
       "Een holo-kaart heeft een glimmende afbeelding. Bij een reverse holo glimmt juist de rest van de kaart en niet het plaatje. Veel kaarten bestaan in meerdere varianten, dus dezelfde kaart kan er verschillend uitzien en verschillend in waarde zijn.",
       "Een illustration rare is een kaart waarvan het plaatje over de hele kaart doorloopt. De exacte namen en symbolen verschillen per set. Kijk voor zekerheid in de setlijst van een database zoals Pokémon.com of Bulbapedia."
     ]
+  },
+  {
+    "id": "kaart-uitleg",
+    "section": "tips",
+    "tag": "Kaarten begrijpen",
+    "categorie": "Kaarten begrijpen",
+    "emoji": "🔍",
+    "title": "Pokémonkaart uitgelegd: wat staat erop?",
+    "excerpt": "HP, aanvallen, energie, zwaktes, weerstand, retreat cost, kaartnummer en symbolen.",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Pak een Pokémonkaart erbij. Bovenaan zie je de naam van de Pokémon, meestal met rechts de HP (levenspunten). Het energiesymbool vertelt bij welk type de kaart hoort, zoals Gras, Vuur of Water. Bij geëvolueerde Pokémon staat ook aangegeven uit welke Pokémon ze evolueren.",
+      "In het midden vind je de illustratie. Daaronder staan de aanvallen. Links van een aanval zie je welke energie nodig is; rechts staat de schade. Soms heeft een Pokémon ook een Ability, een speciale eigenschap die apart wordt uitgelegd.",
+      "Onderaan vind je de zwakte (Weakness), eventuele weerstand (Resistance) en de terugtrekkosten (Retreat Cost). De terugtrekkosten vertellen hoeveel energie je normaal moet afleggen om je actieve Pokémon terug te halen naar de bank.",
+      "Helemaal onderaan staan onder andere het kaartnummer, de setcode of het setsymbool, het zeldzaamheidssymbool, de illustrator en copyrightinformatie. Een nummer zoals 045/198 betekent kaart 45 uit een set met 198 genummerde kaarten. Een nummer boven dat totaal kan op een speciale kaart wijzen.",
+      "Let op: de precieze opmaak verschilt per tijdperk en kaartsoort. Bekijk bij twijfel dezelfde kaart in de officiële Pokémon TCG-kaartendatabase: https://www.pokemon.com/us/pokemon-tcg/pokemon-cards/"
+    ]
+  },
+  {
+    "id": "sets-series",
+    "section": "tips",
+    "tag": "Kaarten begrijpen",
+    "categorie": "Kaarten begrijpen",
+    "emoji": "📚",
+    "title": "Welke Pokémon TCG-series en sets zijn er?",
+    "excerpt": "Van oudere generaties tot moderne uitbreidingen: hoe herken je series, sets en symbolen?",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Een serie is een grotere periode binnen de Pokémon TCG. Een set of uitbreiding is een afzonderlijke kaartcollectie binnen zo'n serie. Een booster bevat meestal kaarten uit één specifieke uitbreiding.",
+      "Bekende series zijn bijvoorbeeld Base, EX, Diamond & Pearl, Black & White, XY, Sun & Moon, Sword & Shield en Scarlet & Violet. Sinds 2025 is ook de Mega Evolution-serie verschenen. Binnen Scarlet & Violet vind je onder andere 151, Paldean Fates, Prismatic Evolutions en Destined Rivals.",
+      "Elke uitbreiding heeft eigen kaarten, illustraties en verzamelnummering. Zoek je een specifieke kaart, controleer dan de setnaam, setcode én het kaartnummer. Dezelfde Pokémon kan in tientallen verschillende sets voorkomen.",
+      "Een setlijst helpt als je een verzameling compleet wilt maken. De officiële Pokémon TCG-database laat je filteren op uitbreiding: https://www.pokemon.com/us/pokemon-tcg/pokemon-cards/ . Voor aankondigingen en releasedata kun je de officiële Pokémon-nieuwspagina volgen.",
+      "Mijn tip: kies eerst een favoriete Pokémon, illustrator of set. Je hoeft echt niet iedere uitbreiding compleet te sparen!"
+    ]
+  },
+  {
+    "id": "rarity",
+    "section": "tips",
+    "tag": "Kaarten begrijpen",
+    "categorie": "Kaarten begrijpen",
+    "emoji": "✨",
+    "title": "Rarity, holo, reverse holo en illustration rares",
+    "excerpt": "Welke soorten kaarten bestaan er en wat betekenen de zeldzaamheidssymbolen?",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Op Pokémonkaarten staat vaak een symbool dat de zeldzaamheid aangeeft. Bij veel kaarten is een cirkel Common, een ruit Uncommon en een ster Rare. Moderne uitbreidingen gebruiken daarnaast speciale symbolen en categorieën, waaronder Illustration Rare en Special Illustration Rare.",
+      "Holo betekent dat een deel van de kaart glanst, vaak de afbeelding. Bij een reverse holo zit het glanseffect juist in andere delen van de kaart. Hetzelfde kaartnummer kan dus in verschillende afwerkingen voorkomen.",
+      "Een Illustration Rare (IR) heeft een opvallende illustratie die vaak veel meer ruimte inneemt dan bij een standaardkaart. Een Special Illustration Rare (SIR) is een andere, doorgaans zeldzamere categorie. Ook Ultra Rare, Hyper Rare en andere benamingen komen voor, afhankelijk van de serie.",
+      "Niet iedere glimmende kaart is automatisch duur of zeldzaam. Kijk altijd naar de exacte set, het kaartnummer en de variant. Promokaarten en speciale producten hebben soms hun eigen nummering.",
+      "Tip: vergelijk de kaart met een betrouwbare setlijst voordat je een prijs bepaalt of een ruil afspreekt."
+    ]
+  },
+  {
+    "id": "shop-tips",
+    "section": "tips",
+    "tag": "Slim kopen",
+    "categorie": "Slim kopen",
+    "emoji": "🛍️",
+    "title": "Welke webshops houd ik in de gaten?",
+    "excerpt": "Mijn favoriete verkooppunten en tips om betrouwbare shops te herkennen, zonder nepdeals.",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Pokémonproducten zijn soms snel uitverkocht, vooral rond een nieuwe release. Daarom is het handig om meerdere betrouwbare verkooppunten in de gaten te houden in plaats van op één winkel te vertrouwen.",
+      "Controleer bij een webshop de bedrijfsgegevens, contactmogelijkheden, onafhankelijke beoordelingen en het retourbeleid. Kijk ook of duidelijk staat of iets direct leverbaar is of een preorder betreft. Een extreem lage prijs bij een onbekende webshop is een waarschuwingssignaal.",
+      "Vergelijk niet alleen de prijs van een boosterbox of Elite Trainer Box, maar ook de verzendkosten, eventuele minimumafname en verwachte leverdatum. Preorderprijzen kunnen anders zijn dan prijzen na de release.",
+      "Op PinkBulbTCG vind je een overzicht van Pokémon- en TCG-winkels: https://pinkbulbtcg.nl/winkels.html . Dat is een handig startpunt, maar geen garantie dat iedere winkel altijd voorraad heeft.",
+      "Een persoonlijke favorietenlijst met webshops en ervaringen voeg ik later toe. Ik wil alleen winkels aanbevelen waar ik zelf voldoende over weet."
+    ]
+  },
+  {
+    "id": "discord",
+    "section": "tips",
+    "tag": "Community",
+    "categorie": "Community",
+    "emoji": "💬",
+    "title": "Discord-servers en Pokémoncommunity's",
+    "excerpt": "Waar vind je andere verzamelaars, ruilgroepen en handige gesprekken?",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Via Discord kun je andere Pokémonverzamelaars ontmoeten, ruilafspraken maken, nieuws delen en soms meldingen krijgen over nieuwe voorraad. Er zijn communities voor algemene TCG-praat, specifieke sets, ruilen en lokale evenementen.",
+      "Zoek een server die bij jouw doel past. Lees eerst de regels, kijk of er actieve moderators zijn en of er duidelijke afspraken bestaan voor kopen en ruilen. Een grote server is niet automatisch de gezelligste of veiligste.",
+      "Wees voorzichtig met privéberichten van onbekenden. Klik niet zomaar op betaal- of inloglinks, deel geen persoonlijke gegevens en betaal niet onder druk. Bij dure kaarten is een ontmoeting op een betrouwbare locatie vaak verstandiger.",
+      "Zet alleen notificaties aan voor onderwerpen die je echt interesseren. Anders wordt een handige community al snel een eindeloze stroom meldingen.",
+      "Ik voeg hier later concrete Discord-servers toe zodra ik hun uitnodigingslinks, regels en activiteit heb gecontroleerd."
+    ]
+  },
+  {
+    "id": "monitors",
+    "section": "tips",
+    "tag": "Slim kopen",
+    "categorie": "Slim kopen",
+    "emoji": "🔔",
+    "title": "Stockmonitors, restocks en notificaties",
+    "excerpt": "Welke voorraadmonitors bestaan er en hoe blijf je op de hoogte zonder de hele dag te refreshen?",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Een stockmonitor houdt bij of een product bij een webshop op voorraad komt. Sommige monitors sturen een melding via Discord, Telegram, een app of e-mail. Dat kan handig zijn bij populaire Pokémon TCG-releases.",
+      "Niet iedere melding betekent dat je het product ook echt kunt bestellen. Voorraad kan snel verdwijnen, winkels kunnen limieten instellen en een monitor kan een vertraging hebben.",
+      "Gebruik bij voorkeur officiële voorraadmeldingen van winkels of een monitor die duidelijk uitlegt welke winkels worden gevolgd. Geef nooit je betaalgegevens of wachtwoord aan een onbekende bot om een melding te ontvangen.",
+      "Mijn tip: maak een wensenlijst en stel een budget vast voordat je meldingen aanzet. Anders voelt iedere restock als iets dat je onmiddellijk moet kopen, terwijl dat helemaal niet hoeft.",
+      "Specifieke monitors en uitnodigingslinks voeg ik pas toe wanneer ze gecontroleerd zijn; hun werking kan veranderen."
+    ]
+  },
+  {
+    "id": "fake-cards",
+    "section": "tips",
+    "tag": "Veilig verzamelen",
+    "categorie": "Veilig verzamelen",
+    "emoji": "🕵️",
+    "title": "Hoe herken je neppe Pokémonkaarten?",
+    "excerpt": "Let op drukkwaliteit, tekst, kaartstructuur en te mooie prijzen.",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Neppe Pokémonkaarten bestaan helaas. Een opvallend lage prijs, vreemde verpakking of slordige tekst zijn redenen om extra goed te kijken. Vergelijk de kaart met afbeeldingen uit de officiële Pokémon TCG-database.",
+      "Let op spelling, lettertypes, kleuren, afwerking, kaartnummer en de achterkant. Bij bepaalde echte zeldzame kaarten hoort een speciale textuur; ontbreekt die, dan kan dat verdacht zijn. Maar niet elke echte kaart heeft textuur, dus gebruik nooit één kenmerk als definitief bewijs.",
+      "Pokémon Support noemt onder andere het bekijken van kaarten tegen fel licht als mogelijke controle. Dat is een aanwijzing, geen waterdichte test. Beschadig of scheur geen waardevolle kaart om te controleren of hij echt is.",
+      "Vraag bij online aankopen om duidelijke foto's van voor- en achterkant, liefst ook onder schuin licht. Koop bij twijfel liever bij een betrouwbare winkel of vraag een ervaren verzamelaar om mee te kijken.",
+      "Officiële uitleg: https://support.pokemon.com/hc/en-us/articles/360002068953-Did-I-purchase-fake-or-counterfeit-cards"
+    ]
+  },
+  {
+    "id": "conditie",
+    "section": "tips",
+    "tag": "Veilig verzamelen",
+    "categorie": "Veilig verzamelen",
+    "emoji": "🃏",
+    "title": "Wat betekenen NM, EX, LP en MP?",
+    "excerpt": "Een eenvoudige uitleg van kaartcondities en waar je bij tweedehands kaarten op let.",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Bij het kopen van losse Pokémonkaarten zie je vaak afkortingen voor de conditie. NM betekent Near Mint: een kaart met hooguit heel lichte gebruikssporen. EX of Excellent wordt soms gebruikt voor kaarten met wat duidelijkere, maar beperkte slijtage.",
+      "LP betekent Lightly Played: lichte gebruikssporen zoals kleine witte randjes of oppervlakkige krasjes. MP is Moderately Played: duidelijkere slijtage. HP staat voor Heavily Played en DMG of Damaged voor een beschadigde kaart.",
+      "Belangrijk: niet ieder platform of iedere verkoper gebruikt precies dezelfde indeling. Zo kan EX op het ene platform iets anders betekenen dan op het andere. Controleer daarom altijd de beschrijving en de foto's.",
+      "Bekijk vooral de hoeken, randen, achterkant, oppervlakte en eventuele vouwen of deuken. Een kleine deuk kan voor verzamelaars veel belangrijker zijn dan een paar witte puntjes.",
+      "Vraag bij duurdere kaarten om foto's in daglicht van beide kanten en bespreek de conditie vóór je betaalt."
+    ]
+  },
+  {
+    "id": "beschermen",
+    "section": "tips",
+    "tag": "Verzamelen",
+    "categorie": "Verzamelen",
+    "emoji": "📁",
+    "title": "Kaarten bewaren: sleeves, binders en toploaders",
+    "excerpt": "Hoe bescherm je kaarten tegen krassen, stof en verbuigen?",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Een mooie Pokémonkaart wil je natuurlijk netjes houden. Een zachte sleeve is de basis: daarmee beperk je direct contact met de kaart. Voor extra bescherming kun je een geschikte binder of toploader gebruiken.",
+      "Bij een binder zijn zij-insteekvakken (side-loading) en een rits handig om kaarten op hun plek te houden en stof te beperken. Zorg dat de map niet te vol zit en dat je kaarten niet met kracht in de vakjes duwt.",
+      "Een toploader is een stevige kunststof houder. Stop een kaart eerst in een passende zachte sleeve voordat je hem in een toploader schuift. Gebruik voor verzending extra bescherming zodat kaarten niet kunnen bewegen of buigen.",
+      "Bewaar kaarten droog, uit direct zonlicht en niet vlak bij warmtebronnen. Vermijd ook vochtige kelders en plekken met grote temperatuurwisselingen.",
+      "Wil je meer weten over soorten binders? Bekijk mijn bindergids: https://pinkbulbtcg.nl/binders.html ."
+    ]
+  },
+  {
+    "id": "prijzen",
+    "section": "tips",
+    "tag": "Slim kopen",
+    "categorie": "Slim kopen",
+    "emoji": "💶",
+    "title": "Wat is mijn Pokémonkaart waard?",
+    "excerpt": "Waar kijk je naar bij prijsvergelijkingen en waarom zijn vraagprijzen niet hetzelfde als verkoopprijzen?",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Wat een Pokémonkaart waard is, hangt af van de exacte kaart, set, taal, variant, conditie en de vraag van verzamelaars. Een populaire Pokémon is niet automatisch duur, en een oudere kaart is niet altijd zeldzaam.",
+      "Zoek eerst het kaartnummer en de set op. Vergelijk daarna dezelfde versie in ongeveer dezelfde conditie. Een Engelse kaart, Japanse kaart en Nederlandse kaart kunnen heel verschillende prijzen hebben.",
+      "Kijk niet alleen naar vraagprijzen. Iemand kan een kaart voor een hoog bedrag aanbieden zonder dat iemand hem daarvoor koopt. Recente verkochte exemplaren geven vaak een beter beeld van wat kopers echt betalen.",
+      "Voor Europese kaarten is Cardmarket een veelgebruikt startpunt voor vergelijking. Let op dat aanbiedersprijzen en verkoopprijzen kunnen verschillen en dat verzending en kaartconditie meetellen.",
+      "Pokémon zelf publiceert geen officiële doorverkoopwaarde. Officiële toelichting: https://support.pokemon.com/hc/en-us/articles/360001000614-What-are-my-cards-worth"
+    ]
+  },
+  {
+    "id": "ruilen",
+    "section": "tips",
+    "tag": "Events",
+    "categorie": "Events",
+    "emoji": "🤝",
+    "title": "Veilig kaarten ruilen op beurzen",
+    "excerpt": "Handige tips voor ruilen, kaarten controleren en afspraken maken.",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Kaarten ruilen op een beurs is een van de leukste kanten van de Pokémonhobby. Maar neem de tijd: je hoeft nooit meteen akkoord te gaan met een voorstel.",
+      "Controleer bij een ruil beide kaarten op kaartnummer, variant, conditie en echtheid. Spreek duidelijk af of je ruilt op basis van persoonlijke voorkeur of op basis van geschatte marktwaarde.",
+      "Gebruik eventueel een prijswebsite als hulpmiddel, maar onthoud dat prijzen veranderen en dat een vraagprijs geen gegarandeerde waarde is. Bekijk bij duurdere kaarten ook de achterkant en de hoeken.",
+      "Houd je eigen binder overzichtelijk: maak bijvoorbeeld aparte pagina's voor kaarten die je wilt houden en kaarten die je wilt ruilen. Zo voorkom je misverstanden.",
+      "Een goede ruil is er eentje waar beide verzamelaars blij mee zijn. Nee zeggen mag altijd!"
+    ]
+  },
+  {
+    "id": "set-compleet",
+    "section": "tips",
+    "tag": "Verzamelen",
+    "categorie": "Verzamelen",
+    "emoji": "🏆",
+    "title": "Master set, complete set en reverse holos",
+    "excerpt": "Wat is het verschil en hoe houd je bij welke kaarten nog ontbreken?",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Een complete set betekent voor veel verzamelaars dat ze van elk kaartnummer uit een uitbreiding minimaal één exemplaar hebben. Maar de precieze definitie verschilt per verzamelaar.",
+      "Met een master set bedoelen verzamelaars vaak alle genummerde kaarten én de beschikbare varianten, zoals reverse holo's. Soms tellen ze ook promokaarten mee; anderen juist niet. Spreek daarom altijd af wat jij onder een master set verstaat.",
+      "Controleer een setlijst en maak een checklist van wat je al hebt. Let op verschillende afwerkingen met hetzelfde nummer, speciale illustratiekaarten en eventuele kaarten buiten de gewone nummering.",
+      "Je kunt je voortgang bijhouden in een spreadsheet, op papier of in een collectie-app. Via mijn DEX-affiliatelink kun je de app bekijken: https://app.dextcg.com/welcome/?aff=amanda .",
+      "Mijn tip: begin met een set die je écht leuk vindt. Het verzamelen moet plezier geven, geen verplichting worden."
+    ]
+  },
+  {
+    "id": "sealed",
+    "section": "tips",
+    "tag": "Verzamelen",
+    "categorie": "Verzamelen",
+    "emoji": "📦",
+    "title": "Sealed verzamelen of boosters openen?",
+    "excerpt": "Wat zijn de voor- en nadelen en hoe bepaal je wat bij je past?",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Sealed verzamelen betekent dat je Pokémonproducten ongeopend bewaart, zoals boosterboxen, Elite Trainer Boxes of speciale collectiedozen. Andere verzamelaars vinden het juist leuker om alles open te maken.",
+      "Ongeopend bewaren kan mooi zijn als display of voor je collectie, maar neemt ruimte in en de verpakking kan beschadigen. Openmaken geeft het plezier van verrassingen, maar je hebt geen garantie op een zeldzame kaart.",
+      "Koop daarom niet uitsluitend vanuit de verwachting dat een product later meer waard wordt. De markt verandert en prijzen kunnen ook dalen.",
+      "Wil je vooral één specifieke kaart? Dan is die los kopen vaak voorspelbaarder dan eindeloos boosters openen. Wil je juist het uitpakmoment? Dan is een booster natuurlijk leuk.",
+      "Mijn tip: bepaal vooraf hoeveel je wilt uitgeven en geniet vooral van de hobby op jouw manier."
+    ]
+  },
+  {
+    "id": "dex-app-collectie",
+    "section": "tips",
+    "tag": "Verzamelen",
+    "categorie": "Verzamelen",
+    "emoji": "📱",
+    "title": "Mijn Pokémoncollectie bijhouden met de DEX app",
+    "excerpt": "Hoe gebruik je DEX om overzicht te houden over je Pokémonkaarten en wat vind ik er zelf van? Een artikel hierover volgt binnenkort.",
+    "date": "2026-11-11",
+    "published": true,
+    "body": [
+      "Heb je kaarten uit verschillende sets, dubbele kaarten en een lijstje met kaarten die je nog zoekt? Dan kan een collectie-app helpen om overzicht te houden.",
+      "DEX is een app gericht op het bijhouden van een Pokémonkaartencollectie. Via deze link kun je de app bekijken: https://app.dextcg.com/welcome/?aff=amanda . Bekijk zelf welke functies en eventuele betaalde opties op dit moment beschikbaar zijn.",
+      "Begin bijvoorbeeld met één favoriete set. Voeg de kaarten toe die je al bezit en controleer steeds goed het kaartnummer en de juiste variant. Zo voorkom je dat je per ongeluk een gewone holo en een reverse holo door elkaar haalt.",
+      "Handig om bij te houden: welke kaarten je hebt, welke je mist en welke dubbel zijn. Maak daarnaast af en toe zelf een back-up of export als de app die mogelijkheid biedt.",
+      "Transparantie: dit is een affiliate-link. Ik kan mogelijk een vergoeding ontvangen wanneer je via mijn link DEX gebruikt. Een uitgebreide persoonlijke review met mijn eigen screenshots en ervaringen volgt later."
+    ]
   }
 ]
