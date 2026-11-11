@@ -101,24 +101,6 @@
   updateNav();
 
   /* ---------- Blog en tips ---------- */
-  const reader = $("#reader");
-
-  function openPost(post) {
-    $("#reader-tag").textContent = post.voorbeeld ? "Voorbeeldpost" : (post.tag || "");
-    $("#reader-title").textContent = post.title;
-    $("#reader-date").textContent = fmtDate(post.date);
-    const text = $("#reader-text");
-    text.textContent = "";
-    (post.body || []).forEach((para) => {
-      const p = document.createElement("p");
-      p.textContent = para;
-      text.appendChild(p);
-    });
-    reader.showModal();
-  }
-  $("#reader-close").addEventListener("click", () => reader.close());
-  reader.addEventListener("click", (e) => { if (e.target === reader) reader.close(); });
-
   function setupPosts(posts, section, listId, moreId, firstCount) {
     const list = document.getElementById(listId);
     const items = posts.filter(p => p.section === section && !p.voorbeeld && p.published !== false)
