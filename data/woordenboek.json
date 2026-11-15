@@ -2,191 +2,709 @@
   {
     "term": "Booster",
     "description": "Een pakje met willekeurige Pokémonkaarten uit een set.",
-    "link": "tips/booster-etb-box-verschil.html"
+    "link": "tips/booster-etb-box-verschil.html",
+    "category": "Producten & boxen"
   },
   {
     "term": "Boosterbox",
     "description": "Een doos met meerdere boosters, vaak bedoeld voor winkels en verzamelaars. Niet elke set heeft er een.",
-    "link": "tips/booster-etb-box-verschil.html"
+    "link": "tips/booster-etb-box-verschil.html",
+    "category": "Producten & boxen"
   },
   {
     "term": "Booster Bundle",
     "description": "Een compacte verpakking met meerdere boosters, doorgaans zonder veel accessoires.",
-    "link": "tips/booster-etb-box-verschil.html"
+    "link": "tips/booster-etb-box-verschil.html",
+    "category": "Producten & boxen"
   },
   {
     "term": "ETB",
     "description": "Elite Trainer Box: een doos met boosters en meestal accessoires zoals sleeves en energiekaarten.",
-    "link": "tips/booster-etb-box-verschil.html"
+    "link": "tips/booster-etb-box-verschil.html",
+    "category": "Producten & boxen"
   },
   {
     "term": "Collection Box",
     "description": "Product met boosters en vaak een speciale promokaart, grote kaart of extra verzamelitem.",
-    "link": "tips/booster-etb-box-verschil.html"
+    "link": "tips/booster-etb-box-verschil.html",
+    "category": "Producten & boxen"
   },
   {
     "term": "Promo",
     "description": "Een kaart die via een speciaal product, evenement of actie wordt uitgegeven.",
-    "link": "tips/sets-series.html"
+    "link": "tips/sets-series.html",
+    "category": "Holo & kaartvarianten"
   },
   {
     "term": "Sealed",
     "description": "Een product waarvan de originele verpakking nog ongeopend is.",
-    "link": "tips/sealed.html"
+    "link": "tips/sealed.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Pull",
     "description": "Een kaart die je uit een booster hebt gehaald.",
-    "link": "tips/rarity.html"
+    "link": "tips/rarity.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Hit",
     "description": "Informele term voor een opvallende of gewilde kaart uit een booster. Wat een hit is, verschilt per verzamelaar.",
-    "link": "tips/rarity.html"
+    "link": "tips/rarity.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Chase card",
     "description": "Een kaart die iemand graag uit een bepaalde set wil bemachtigen, vaak een populaire zeldzame kaart.",
-    "link": "tips/prijzen.html"
+    "link": "tips/prijzen.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Bulk",
     "description": "Grote hoeveelheid meestal veelvoorkomende kaarten die afzonderlijk vaak weinig waard zijn.",
-    "link": "tips/prijzen.html"
+    "link": "tips/prijzen.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Holo",
     "description": "Kaart met een glanzend effect, meestal in het illustratiegedeelte.",
-    "link": "tips/rarity.html"
+    "link": "tips/rarity.html",
+    "category": "Holo & kaartvarianten"
   },
   {
     "term": "Reverse holo",
     "description": "Kaart waarbij een ander deel van de kaart glanst dan bij de gewone holo-variant.",
-    "link": "tips/rarity.html"
+    "link": "tips/rarity.html",
+    "category": "Holo & kaartvarianten"
   },
   {
     "term": "IR",
     "description": "Illustration Rare: een speciale zeldzaamheid met uitgebreide illustratie, afhankelijk van set en tijdperk.",
-    "link": "tips/rarity.html"
+    "link": "tips/rarity.html",
+    "category": "Rarity & zeldzaamheid"
   },
   {
     "term": "SIR",
     "description": "Special Illustration Rare: een speciale illustratievariant met een hogere zeldzaamheid in moderne sets.",
-    "link": "tips/rarity.html"
+    "link": "tips/rarity.html",
+    "category": "Rarity & zeldzaamheid"
   },
   {
     "term": "Full art",
     "description": "Kaart waarvan de illustratie een groter deel van het kaartoppervlak beslaat.",
-    "link": "tips/rarity.html"
+    "link": "tips/rarity.html",
+    "category": "Holo & kaartvarianten"
   },
   {
     "term": "Alt art",
     "description": "Informele verzamelterm voor een alternatieve illustratie van een kaart. Officiële benamingen verschillen.",
-    "link": "tips/rarity.html"
+    "link": "tips/rarity.html",
+    "category": "Holo & kaartvarianten"
   },
   {
     "term": "Master set",
     "description": "Verzameling van alle kaarten en varianten die iemand voor een set meetelt. Er bestaat niet altijd één universele definitie.",
-    "link": "tips/set-compleet.html"
+    "link": "tips/set-compleet.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Complete set",
     "description": "Alle kaarten die binnen een afgesproken setdefinitie horen, vaak zonder alle varianten of promo's.",
-    "link": "tips/set-compleet.html"
+    "link": "tips/set-compleet.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Setcode",
     "description": "Korte aanduiding waarmee je een Pokémon TCG-uitbreiding kunt herkennen.",
-    "link": "tips/sets-series.html"
+    "link": "tips/sets-series.html",
+    "category": "Kaartinformatie"
   },
   {
     "term": "Card number",
     "description": "Het nummer onderaan de kaart, bijvoorbeeld 045/198.",
-    "link": "tips/uitleg-kaartnummers.html"
+    "link": "tips/uitleg-kaartnummers.html",
+    "category": "Kaartinformatie"
   },
   {
     "term": "NM",
     "description": "Near Mint: kaart in zeer goede staat, met hooguit minimale gebruikssporen.",
-    "link": "tips/conditie.html"
+    "link": "tips/conditie.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "LP",
     "description": "Lightly Played: kaart met lichte zichtbare gebruikssporen.",
-    "link": "tips/conditie.html"
+    "link": "tips/conditie.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "MP",
     "description": "Moderately Played: kaart met duidelijkere gebruikssporen.",
-    "link": "tips/conditie.html"
+    "link": "tips/conditie.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "HP",
     "description": "Heavily Played kan bij kaartconditie veel slijtage betekenen; op de kaart zelf betekent HP levenspunten.",
-    "link": "tips/conditie.html"
+    "link": "tips/conditie.html",
+    "category": "Kaartinformatie"
   },
   {
     "term": "Grading",
     "description": "Professionele beoordeling van de staat en meestal echtheid van een kaart.",
-    "link": "tips/grading-pokemon-kaarten.html"
+    "link": "tips/grading-pokemon-kaarten.html",
+    "category": "Merken & grading"
   },
   {
     "term": "Slab",
     "description": "Harde, verzegelde houder waarin een professioneel beoordeelde kaart wordt geleverd.",
-    "link": "tips/grading-pokemon-kaarten.html"
+    "link": "tips/grading-pokemon-kaarten.html",
+    "category": "Merken & grading"
   },
   {
     "term": "PSA",
     "description": "Een bedrijf dat onder andere verzamelkaarten beoordeelt en in slabs verpakt.",
-    "link": "tips/grading-pokemon-kaarten.html"
+    "link": "tips/grading-pokemon-kaarten.html",
+    "category": "Merken & grading"
   },
   {
     "term": "CGC",
     "description": "Een bedrijf dat onder andere tradingcards beoordeelt en verzegelt.",
-    "link": "tips/grading-pokemon-kaarten.html"
+    "link": "tips/grading-pokemon-kaarten.html",
+    "category": "Merken & grading"
   },
   {
     "term": "BGS",
     "description": "Beckett Grading Services, een beoordelaar van verzamelkaarten.",
-    "link": "tips/grading-pokemon-kaarten.html"
+    "link": "tips/grading-pokemon-kaarten.html",
+    "category": "Merken & grading"
   },
   {
     "term": "Penny sleeve",
     "description": "Een dun, zacht beschermhoesje voor een losse kaart.",
-    "link": "tips/pokemon-kaarten-sleeven.html"
+    "link": "tips/pokemon-kaarten-sleeven.html",
+    "category": "Bescherming & binders"
   },
   {
     "term": "Toploader",
     "description": "Een stevige kunststof houder voor kaarten, meestal gebruikt samen met een zachte sleeve.",
-    "link": "tips/pokemon-kaarten-sleeven.html"
+    "link": "tips/pokemon-kaarten-sleeven.html",
+    "category": "Bescherming & binders"
   },
   {
     "term": "Prerelease",
     "description": "Evenement vóór de gewone winkelrelease van een set, vaak met een spelelement.",
-    "link": "tips/uitleg-prerelease.html"
+    "link": "tips/uitleg-prerelease.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Build & Battle",
     "description": "Product met kaarten om een deck te bouwen, vaak gebruikt bij prereleases.",
-    "link": "tips/uitleg-prerelease.html"
+    "link": "tips/uitleg-prerelease.html",
+    "category": "Producten & boxen"
   },
   {
     "term": "Restock",
     "description": "Wanneer een product opnieuw op voorraad komt.",
-    "link": "tips/monitors.html"
+    "link": "tips/monitors.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Preorder",
     "description": "Bestelling van een product voordat het officieel beschikbaar is.",
-    "link": "tips/pokemon-kaarten-kopen-veilig.html"
+    "link": "tips/pokemon-kaarten-kopen-veilig.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Trade",
     "description": "Ruil tussen verzamelaars.",
-    "link": "tips/ruilen.html"
+    "link": "tips/ruilen.html",
+    "category": "Beurzen & verzamelen"
   },
   {
     "term": "Raw card",
     "description": "Een kaart die niet professioneel gegraded en in een slab verzegeld is.",
-    "link": "tips/grading-pokemon-kaarten.html"
+    "link": "tips/grading-pokemon-kaarten.html",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "HP (levenspunten)",
+    "description": "Hit Points: hoeveel schade een Pokémon kan verdragen voordat hij Knock Out gaat. Niet hetzelfde als HP bij kaartconditie.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Aanval / Attack",
+    "description": "Actie van een Pokémon waarmee je meestal schade doet of een effect uitvoert. De benodigde energie staat naast de aanval.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Ability",
+    "description": "Speciale eigenschap op een Pokémonkaart. Een Ability is meestal geen aanval en volgt de tekst op de kaart.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Retreat Cost",
+    "description": "De energie die je normaal moet afleggen om je actieve Pokémon naar de bank terug te trekken.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Weakness",
+    "description": "Zwakte: schade van aanvallen van het genoemde type wordt volgens de kaart vermenigvuldigd.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Resistance",
+    "description": "Weerstand: vermindert schade van aanvallen van een bepaald type zoals aangegeven op de kaart.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Illustrator",
+    "description": "De naam van de kunstenaar die de kaartillustratie heeft gemaakt.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Regulation Mark",
+    "description": "Letter onderaan moderne speelkaarten waarmee wordt bepaald welke kaarten in het Standard-format toegestaan zijn.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Set Symbol",
+    "description": "Symbool of code waarmee je kunt zien uit welke uitbreiding een kaart komt.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Energy Type",
+    "description": "Het type energie dat een Pokémon gebruikt voor aanvallen, zoals Fire, Water of Psychic.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Trainerkaart",
+    "description": "Kaarttype met onder andere Item-, Supporter-, Stadium- en Pokémon Tool-kaarten.",
+    "category": "Kaartinformatie"
+  },
+  {
+    "term": "Common",
+    "description": "Veelvoorkomende zeldzaamheid; vaak aangegeven met een cirkel.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "Uncommon",
+    "description": "Minder vaak voorkomende zeldzaamheid; vaak aangegeven met een ruit.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "Rare",
+    "description": "Zeldzame kaart; in oudere sets vaak aangegeven met een ster.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "Double Rare (DR)",
+    "description": "Moderne zeldzaamheid, vaak voor speciale Pokémon ex-kaarten, aangeduid met twee zwarte sterren.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "Ultra Rare (UR)",
+    "description": "Moderne zeldzaamheid, vaak voor full-art Pokémon of Trainerkaarten; meestal twee glanzende sterren.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "Hyper Rare (HR)",
+    "description": "Zeldzaamheid voor onder andere gouden kaarten; meestal drie glanzende sterren.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "ACE SPEC Rare",
+    "description": "Speciale zeldzaamheid voor krachtige ACE SPEC Trainer- of energiekaarten, herkenbaar aan een eigen symbool.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "Secret Rare",
+    "description": "Verzamelnaam voor kaarten die buiten de gewone genummerde setlijst vallen, bijvoorbeeld 205/198. Niet iedere bijzondere kaart heet officieel Secret Rare.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "SAR",
+    "description": "Special Art Rare: Japanse zeldzaamheidsaanduiding die vaak ongeveer overeenkomt met Engelse Special Illustration Rare.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "AR",
+    "description": "Art Rare: Japanse aanduiding voor illustratiekaarten, vergelijkbaar met Illustration Rare.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "CHR / CSR",
+    "description": "Character Rare en Character Super Rare: benamingen uit bepaalde Japanse sets voor kaarten met Pokémon en personages.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "Rainbow Rare",
+    "description": "Regenboogkleurige kaartvariant uit bepaalde oudere uitbreidingen; geen standaard rarity in alle moderne sets.",
+    "category": "Rarity & zeldzaamheid"
+  },
+  {
+    "term": "Cosmos holo",
+    "description": "Holografisch patroon met een sterren- of melkwegachtig effect; komt onder andere voor op bepaalde promokaarten.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Cracked Ice holo",
+    "description": "Holografisch patroon dat lijkt op gebarsten ijs.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Galaxy holo",
+    "description": "Verzamelterm voor een sterrenachtig holo-patroon; wordt soms anders gebruikt dan Cosmos holo.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Poké Ball reverse",
+    "description": "Reverse-holopatroon met Poké Balls, onder andere gebruikt in bepaalde speciale sets.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Master Ball reverse",
+    "description": "Speciale reverse-holovariant met Master Ball-patroon, bekend van onder andere Japanse sets.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Stamped promo",
+    "description": "Promokaart met een extra stempel of logo, bijvoorbeeld van een evenement of speciale uitgave.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Non-holo",
+    "description": "Kaart zonder holografisch glanseffect.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Textured card",
+    "description": "Kaart met voelbare reliëfstructuur op de voorkant.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Parallel foil",
+    "description": "Alternatieve glanzende uitvoering van een kaart; precieze patronen verschillen per set.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "Jumbo card",
+    "description": "Extra grote Pokémonkaart, vaak meegeleverd in een collection box.",
+    "category": "Holo & kaartvarianten"
+  },
+  {
+    "term": "UPC",
+    "description": "Ultra-Premium Collection: luxe Pokémon TCG-product met boosters, promokaarten en vaak extra accessoires.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "SPC",
+    "description": "Geen universele vaste Pokémon TCG-productafkorting. Soms bedoelt iemand een Super-Premium Collection; controleer altijd de volledige productnaam.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Premium Collection",
+    "description": "Uitgebreidere collection box met boosters en extra's; de inhoud verschilt per product.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Pokémon Center ETB",
+    "description": "Speciale ETB-uitgave van Pokémon Center, vaak met afwijkende inhoud of een exclusieve promoversie.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Blister",
+    "description": "Verpakking met een of meer boosters, soms met een promokaart of munt.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Tin",
+    "description": "Metalen blik met Pokémonkaarten of boosters; inhoud verschilt per product.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Mini Tin",
+    "description": "Klein verzamelblikje met meestal een beperkt aantal boosters en soms extra's.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Display",
+    "description": "Doos of winkelverpakking met meerdere producten, zoals boosters of mini tins.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Sleeved Booster",
+    "description": "Losse booster in een kartonnen ophangverpakking.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Special Set",
+    "description": "Uitbreiding die vaak via speciale producten wordt verkocht in plaats van gewone boosterboxen; dit verschilt per markt.",
+    "category": "Producten & boxen"
+  },
+  {
+    "term": "Coin Flip",
+    "description": "Muntworp tijdens het spel om een willekeurige uitkomst te bepalen; kop of munt volgens de kaarttekst.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Active Pokémon",
+    "description": "Pokémon op de actieve plek die doorgaans aanvalt en schade ontvangt.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Bench",
+    "description": "Bank met maximaal vijf reserve-Pokémon, tenzij een kaarteffect iets anders toestaat.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Prize Cards",
+    "description": "Zes gedekte prijskaarten aan het begin van een standaardwedstrijd; je neemt er meestal een of meer na een Knock Out.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Knock Out (KO)",
+    "description": "Wanneer een Pokémon wordt uitgeschakeld, bijvoorbeeld omdat zijn schade gelijk is aan of hoger dan zijn HP.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Status Condition",
+    "description": "Special Condition zoals Asleep, Burned, Confused, Paralyzed of Poisoned.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Supporter",
+    "description": "Trainerkaart waarvan je normaal maximaal één per beurt mag spelen.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Item",
+    "description": "Trainerkaart waarvan je er normaal meerdere per beurt mag spelen.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Stadium",
+    "description": "Trainerkaart die een doorlopend effect op het speelveld heeft totdat deze wordt verwijderd of vervangen.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Pokémon Tool",
+    "description": "Trainerkaart die aan een Pokémon wordt gehecht en een effect geeft.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Evolution",
+    "description": "Een Pokémon laten evolueren volgens de regels en kaarttekst.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Energy Attachment",
+    "description": "Het aanleggen van energie; normaal mag je één energiekaart uit je hand per beurt aanleggen.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Deck",
+    "description": "Speelstapel van 60 kaarten in het standaard Pokémon TCG-spel, met de gebruikelijke deckbouwregels.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Mulligan",
+    "description": "Situatie waarbij je bij het starten geen Basic Pokémon in je openingshand hebt en opnieuw moet schudden en trekken.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Standard Format",
+    "description": "Toernooiformat met een selectie van toegestane kaarten op basis van onder andere regulatiemarkeringen.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Expanded Format",
+    "description": "Toernooiformat met een grotere kaartpool dan Standard, onder voorbehoud van verboden kaarten.",
+    "category": "Spelen & regels"
+  },
+  {
+    "term": "Binder",
+    "description": "Map om kaarten in vakjes te bewaren en te bekijken.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Trade Binder",
+    "description": "Map met kaarten die iemand wil ruilen.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Wantlist",
+    "description": "Lijst met kaarten die je nog zoekt voor je verzameling.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Comps",
+    "description": "Vergelijkbare recente verkoopprijzen die worden gebruikt om de waarde van een kaart in te schatten.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Market Price",
+    "description": "Indicatieve marktprijs op basis van een platform of verkoopgegevens; geen gegarandeerde verkoopprijs.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Lowball",
+    "description": "Bod dat duidelijk lager ligt dan wat de verkoper redelijk vindt.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Flip",
+    "description": "Een kaart of product kopen met het doel het snel met winst door te verkopen.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Pack Battle",
+    "description": "Informeel spelletje waarbij deelnemers boosters openen en pulls vergelijken; regels verschillen per groep.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Rip & Ship",
+    "description": "Verkoopvorm waarbij een verkoper live een booster opent en de kaarten daarna opstuurt.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Whitening",
+    "description": "Witte slijtplekjes aan de randen of hoeken van een kaart, vaak zichtbaar aan de achterkant.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Centering",
+    "description": "Hoe gelijkmatig de afbeelding en randen op een kaart zijn uitgelijnd.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "PSA 10",
+    "description": "De hoogste standaardcijferbeoordeling van PSA, aangeduid als Gem Mint; geen garantie voor een bepaalde verkoopprijs.",
+    "category": "Beurzen & verzamelen"
+  },
+  {
+    "term": "Sleeve",
+    "description": "Zacht kunststof hoesje ter bescherming van een kaart.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Inner Sleeve",
+    "description": "Dun hoesje dat strak om een kaart past, vaak gebruikt bij double sleeving.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Double Sleeving",
+    "description": "Een kaart in twee passende beschermhoesjes stoppen voor extra bescherming.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Side-loading Binder",
+    "description": "Map waarbij je kaarten vanaf de zijkant in de vakjes schuift.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Top-loading Binder",
+    "description": "Map waarbij je kaarten van bovenaf in de vakjes schuift.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Toploader Binder",
+    "description": "Speciale map met vakken voor kaarten die al in een toploader zitten.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Zip Binder",
+    "description": "Binder met ritssluiting rondom.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Ring Binder",
+    "description": "Map met metalen ringen en losse insteekpagina's; verkeerd gebruik kan kaarten beschadigen.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Semi-rigid / Card Saver",
+    "description": "Flexibele, halfharde kaarthouder die vaak gebruikt wordt bij gradinginzendingen.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Team Bag",
+    "description": "Hersluitbaar zakje om een groepje gesleevde kaarten of een toploader te beschermen.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "PT (Point)",
+    "description": "Diktemaat voor kaarthouders: 1 pt is 0,001 inch (ongeveer 0,0254 mm). Een standaard Pokémonkaart past doorgaans in een 35pt-houder; controleer de pasvorm.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "35pt / 55pt / 100pt",
+    "description": "Gangbare dikteaanduidingen voor houders; hogere PT-waarden zijn bedoeld voor dikkere kaarten.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "One-Touch",
+    "description": "Magnetische harde kaarthouder, vaak gebruikt om een bijzondere kaart te tonen.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Deck Box",
+    "description": "Doosje voor een speelbaar deck, vaak inclusief sleeves.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Acid-free",
+    "description": "Materiaal zonder schadelijke zuren, gewenst bij langdurige kaartopslag.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "PVC-free",
+    "description": "Materiaal zonder PVC; doorgaans aan te raden voor langdurige bescherming van verzamelkaarten.",
+    "category": "Bescherming & binders"
+  },
+  {
+    "term": "Vault X",
+    "description": "Merk van onder andere verzamelbinders, sleeves en deckboxen.",
+    "category": "Merken & grading"
+  },
+  {
+    "term": "Ultra PRO",
+    "description": "Merk van kaarthoesjes, binders, toploaders en andere verzamelaccessoires.",
+    "category": "Merken & grading"
+  },
+  {
+    "term": "Dragon Shield",
+    "description": "Merk dat vooral bekend is om sleeves, deckboxen en accessoires voor kaartspellen.",
+    "category": "Merken & grading"
+  },
+  {
+    "term": "Ultimate Guard",
+    "description": "Merk van binders, deckboxen en andere beschermproducten voor kaarten.",
+    "category": "Merken & grading"
+  },
+  {
+    "term": "Gamegenic",
+    "description": "Merk van accessoires zoals sleeves, deckboxen en opbergoplossingen.",
+    "category": "Merken & grading"
+  },
+  {
+    "term": "Gemloader",
+    "description": "Merk dat onder andere binders voor toploaders en andere kaartbescherming aanbiedt.",
+    "category": "Merken & grading"
+  },
+  {
+    "term": "Beckett",
+    "description": "Bedrijf achter BGS, een bekende gradingdienst voor verzamelkaarten.",
+    "category": "Merken & grading"
+  },
+  {
+    "term": "Grading Label",
+    "description": "Etiket boven een kaart in een slab met onder andere kaartgegevens en beoordeling.",
+    "category": "Merken & grading"
+  },
+  {
+    "term": "Population Report",
+    "description": "Overzicht van hoeveel exemplaren van een kaart een bepaalde gradingbeoordeling hebben gekregen.",
+    "category": "Merken & grading"
   }
 ]
