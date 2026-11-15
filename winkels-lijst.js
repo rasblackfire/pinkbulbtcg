@@ -32,27 +32,30 @@ function provinceOf(s){
  return null;
 }
 const chainPattern=/\b(?:dreamland|top\s*1\s*toys|top1toys|smyths|media\s*markt|mediamarkt|intertoys)\b/i;
-let stores=[],selected="Alle provincies",query="";
+let stores=[],selected="Alle provincies",query="",onlySpecial=false;
 const isSpecial=s=>s.type==="special"&&!chainPattern.test(s.name);
 const sortStores=(a,b)=>Number(isSpecial(b))-Number(isSpecial(a))||(a.city||"").localeCompare(b.city||"","nl")||a.name.localeCompare(b.name,"nl");
 const mapUrl=s=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(s.address||[s.name,s.city,"Nederland"].filter(Boolean).join(", "));
 const card=s=>'<article class="shop-card"><div class="shop-card-top"><span class="shop-tag '+(isSpecial(s)?"shop-tag-special":"")+'">'+(isSpecial(s)?"TCG-specialist":"Overige winkel")+'</span></div><h3>'+esc(s.name)+'</h3><p class="shop-city">'+esc(s.city||"")+'</p><p class="shop-address">'+esc(s.address||"Adres niet bekend")+'</p><a href="'+mapUrl(s)+'" target="_blank" rel="noopener noreferrer">Bekijk adres en route ↗</a></article>';
 function render(){
- const matches=stores.filter(s=>(selected==="Alle provincies"||s.province===selected)&&(!query||[s.name,s.city,s.address,s.province].join(" ").toLocaleLowerCase("nl").includes(query))).sort(sortStores);
+ const expanded=new Map([...document.querySelectorAll(".shop-group")].map(el=>[el.closest(".shop-province").querySelector("h2").textContent.split(" (")[0]+"|"+(el.classList.contains("shop-group-other")?"other":"special"),el.open]));
+ const matches=stores.filter(s=>(!onlySpecial||isSpecial(s))&&(selected==="Alle provincies"||s.province===selected)&&(!query||[s.name,s.city,s.address,s.province].join(" ").toLocaleLowerCase("nl").includes(query))).sort(sortStores);
  $("shop-count").textContent=matches.length+" "+(matches.length===1?"winkel":"winkels")+" gevonden";
  const groups=new Map();
  for(const s of matches){const p=s.province||"Provincie onbekend";if(!groups.has(p))groups.set(p,[]);groups.get(p).push(s)}
  const order=selected==="Alle provincies"?[...provinces,"Provincie onbekend"]:[selected];
  $("shop-results").innerHTML=order.filter(p=>groups.has(p)).map(p=>{
   const items=groups.get(p),special=items.filter(isSpecial),other=items.filter(s=>!isSpecial(s));
-  return '<section class="shop-province"><h2>'+esc(p)+' <small>('+items.length+')</small></h2>'+(special.length?'<h3 class="shop-category">TCG-specialisten</h3><div class="shop-grid">'+special.map(card).join("")+'</div>':'')+(other.length?'<h3 class="shop-category shop-category-other">Overige winkels</h3><div class="shop-grid">'+other.map(card).join("")+'</div>':'')+'</section>';
+  return '<section class="shop-province"><h2>'+esc(p)+' <small>('+items.length+')</small></h2>'+(special.length?'<details class="shop-group" open><summary>★ TCG-specialisten <small>('+special.length+')</small></summary><div class="shop-grid">'+special.map(card).join("")+'</div></details>':'')+(other.length?'<details class="shop-group shop-group-other" '+(selected==="Alle provincies"?'':'open')+'><summary>Overige winkels <small>('+other.length+')</small></summary><div class="shop-grid">'+other.map(card).join("")+'</div></details>':'')+'</section>';
  }).join("")||'<p class="shop-empty">Geen winkels gevonden. Probeer een andere zoekterm of provincie.</p>';
+ document.querySelectorAll(".shop-group").forEach(el=>{const key=el.closest(".shop-province").querySelector("h2").textContent.split(" (")[0]+"|"+(el.classList.contains("shop-group-other")?"other":"special");if(expanded.has(key))el.open=expanded.get(key)});
 }
 function setProvince(value){
  selected=value;
  document.querySelectorAll("[data-province]").forEach(b=>{const active=b.dataset.province===value;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
  render();
 }
+$("shop-special-only").addEventListener("change",e=>{onlySpecial=e.target.checked;render()});
 const buttons=["Alle provincies",...provinces].map(p=>'<button type="button" data-province="'+esc(p)+'" aria-pressed="false">'+esc(p)+'</button>').join("");
 $("shop-provinces").innerHTML=buttons;
 $("shop-provinces").addEventListener("click",e=>{const b=e.target.closest("button[data-province]");if(b)setProvince(b.dataset.province)});
