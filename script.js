@@ -262,8 +262,18 @@
   /* ---------- Alles starten ---------- */
   loadJSON("data/posts.json").then((posts) => {
     const all = Array.isArray(posts) ? posts : [];
-    setupPosts(all, "blog", "blog-list", "blog-more", 3);
-    setupPosts(all, "tips", "tips-list", "tips-more", 3);
+    setupPosts(all, "blog", "blog-list", "blog-more", 2);
+
+  });
+  loadJSON("data/releases.json").then((releases) => {
+    const box = document.getElementById("home-next-release");
+    if (!box) return;
+    const next = (Array.isArray(releases) ? releases : [])
+      .filter(p => p.date && p.date >= todayISO() && p.title)
+      .sort((a,b) => a.date.localeCompare(b.date))[0];
+    box.innerHTML = next
+      ? '<h3>'+esc(next.title)+'</h3><p class="home-release-date">'+esc(fmtDate(next.date))+' · '+esc(next.region||"Regio onbekend")+'</p><p>'+esc(next.status||"Datum onder voorbehoud")+'</p>'
+      : '<p>Er staan momenteel geen toekomstige releases in de kalender.</p>';
   });
   loadJSON("data/events.json").then(setupEvents);
   loadJSON("data/stores.json").then(setupStores);
