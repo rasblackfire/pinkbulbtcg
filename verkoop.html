@@ -23,6 +23,22 @@
 .catalog-note{color:var(--soft);font-size:.9rem;margin-top:22px}
 .sale-bottom{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:55px}.sale-panel{padding:25px;background:var(--bg2);border:3px solid #000;box-shadow:6px 6px 0 var(--pink)}.sale-panel h2{font:1.7rem 'Permanent Marker',cursive;margin:5px 0 13px}.sale-panel p{color:var(--soft);margin-bottom:16px}
 @media(max-width:750px){.catalog-controls{grid-template-columns:1fr}.sale-bottom{grid-template-columns:1fr}.sale-hero{padding-top:35px}}
+
+/* Uitgelichte PSA 10 Mega Rayquaza advertentie */
+.featured-rayquaza{display:grid;grid-template-columns:minmax(220px,.85fr) minmax(0,1.15fr);gap:30px;align-items:center;margin:18px 0 38px;padding:28px;background:linear-gradient(135deg,#331326,#1b0d1b 65%,#37162a);border:4px solid var(--pink);box-shadow:9px 9px 0 #000}
+.featured-rayquaza-photo{background:#110a11;border:3px solid #000;padding:12px;min-width:0;display:flex;justify-content:center;align-items:center}
+.featured-rayquaza-photo img{display:block;width:100%;max-height:480px;object-fit:contain}
+.featured-rayquaza-label{display:inline-block;background:var(--acid);color:#120a10;font-weight:800;font-size:.8rem;padding:7px 12px;transform:rotate(-2deg);margin-bottom:17px}
+.featured-rayquaza h2{font:clamp(2rem,4vw,3.25rem)/1.12 'Permanent Marker',cursive;margin:0 0 13px}
+.featured-rayquaza h2 em{display:block;color:var(--pink);font-style:normal}
+.featured-rayquaza-set{font-weight:700;color:var(--soft);margin-bottom:12px}
+.featured-rayquaza-price{font:clamp(2.6rem,5vw,4rem) 'Permanent Marker',cursive;color:var(--acid);margin:8px 0 17px}
+.featured-rayquaza-info>p:not(.featured-rayquaza-price){line-height:1.6}
+.featured-rayquaza-contact{margin-top:14px}
+.featured-rayquaza-actions{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 16px}
+.featured-rayquaza-actions .btn{font-size:.78rem;padding:12px 14px;text-align:center}
+.featured-rayquaza-story{display:inline-block;text-decoration:underline;color:var(--soft);font-weight:700}
+@media(max-width:750px){.featured-rayquaza{grid-template-columns:1fr;padding:18px;gap:20px}.featured-rayquaza-photo img{max-height:420px}}
 </style><link rel="canonical" href="https://pinkbulbtcg.nl/verkoop.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PinkBulbTCG">
@@ -37,6 +53,19 @@
 <header><div class="bar"><a href="index.html" class="logo"><img src="bulb.png" alt="" width="44" height="44" decoding="async"><span>Pink<b>Bulb</b>TCG</span></a><button class="burger" id="menu-toggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="menu">☰</button><nav aria-label="Hoofdmenu"><ul id="menu"><li><a href="index.html">Home</a></li><li><a href="blog.html">Blog</a></li><li><a href="nieuws.html">Nieuws</a></li><li class="nav-dropdown"><details><summary>Verzamelen</summary><ul class="nav-submenu"><li><a href="tips.html">Tips &amp; Tricks</a></li><li><a href="beginnersgids.html">Beginnersgids</a></li><li><a href="woordenboek.html">Woordenboek</a></li><li><a href="binders.html">Binders</a></li></ul></details></li><li class="nav-dropdown"><details><summary>Ontdekken</summary><ul class="nav-submenu"><li><a href="beurzen.html">Beurzen &amp; events</a></li><li><a href="winkels.html">Winkels</a></li><li><a href="releases.html">Releasekalender</a></li><li><a href="verkoop.html" class="on" aria-current="page">Verkoop</a></li></ul></details></li><li class="nav-dropdown"><details><summary>Over mij</summary><ul class="nav-submenu"><li><a href="over-mij.html">Over mij</a></li><li><a href="samenwerken.html">Samenwerken</a></li></ul></details></li><li><a href="zoeken.html" aria-label="Zoeken op website">⌕ Zoeken</a></li></ul></nav></div></header>
 <main class="wrap">
 <div class="sale-hero"><img class="page-hero-art" src="winkelwagen.png" alt="" width="120" height="120" decoding="async"><span class="sticker">Kaarten zoeken een nieuw thuis!</span><h1>Mijn <em>TCG verkoop!</em></h1><p>Dubbele Pokémonkaarten, Riftbound en andere TCG-spullen die een nieuw thuis zoeken. Snuffel tussen mijn aanbod en klik door naar Marktplaats als je iets leuks ziet!</p></div>
+<section class="featured-rayquaza" aria-labelledby="rayquaza-sale-title">
+  <div class="featured-rayquaza-photo"><img src="assets/articles/rayquaza-psa10-foto-2.jpg" alt="Mijn Mega Rayquaza ex SIR 138/103 uit Delta Reign, beoordeeld met PSA 10" loading="lazy" decoding="async"></div>
+  <div class="featured-rayquaza-info">
+    <span class="featured-rayquaza-label">EXCLUSIEF TE KOOP · PSA 10</span>
+    <h2 id="rayquaza-sale-title">Mega Rayquaza ex <em>SIR · PSA 10</em></h2>
+    <p class="featured-rayquaza-set">Pokémon TCG · Mega Evolution—Delta Reign · 138/103</p>
+    <p class="featured-rayquaza-price">€ 1.500,-</p>
+    <p>Deze prachtige Mega Rayquaza ex trok ik zelf uit mijn allerlaatste booster tijdens een prerelease. Inmiddels is hij terug van PSA met een perfecte 10 en mag hij naar een nieuwe verzamelaar!</p>
+    <p class="featured-rayquaza-contact">Interesse of een vraag? Stuur me gerust een berichtje via Instagram of Marktplaats.</p>
+    <div class="featured-rayquaza-actions"><a class="btn" href="https://www.instagram.com/pinkbulbasaurtcg/" target="_blank" rel="noopener noreferrer">Contact via Instagram →</a><a class="btn ghost" href="https://www.marktplaats.nl/u/amanda/7986935/" target="_blank" rel="noopener noreferrer">Contact via Marktplaats →</a></div>
+    <a class="featured-rayquaza-story" href="blog/rayquaza-psa10.html">Lees het verhaal achter deze PSA 10 →</a>
+  </div>
+</section>
 <div class="sale-content"><div class="catalog-top"><h2>Mijn aanbod</h2><a class="btn ghost" href="https://www.marktplaats.nl/u/amanda/7986935/" target="_blank" rel="noopener noreferrer">Alles op Marktplaats →</a></div>
 <div class="catalog-controls">
 <label for="search">Zoek op naam of set<input id="search" type="search" placeholder="Bijv. Bulbasaur of Scarlet & Violet"></label>
