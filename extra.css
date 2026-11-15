@@ -22,3 +22,11 @@
 .glossary-entry h3{font:1.35rem 'Permanent Marker',cursive;margin:0 0 10px}
 .glossary-entry p{margin-bottom:10px}
 @media(max-width:650px){.glossary-cards{grid-template-columns:1fr}.glossary-categories button{flex:1 1 auto}}
+
+/* A-Z snelnavigatie in woordenboek */
+.glossary-alphabet{display:flex;flex-wrap:wrap;gap:5px;margin:12px 0 26px;padding:14px;background:var(--bg2);border:2px solid var(--pink);border-radius:6px}
+.glossary-alphabet button{min-width:34px;min-height:38px;padding:7px 9px;border:1px solid var(--pink);background:transparent;color:var(--ink);font:700 .88rem 'Space Grotesk',sans-serif;cursor:pointer;border-radius:4px}
+.glossary-alphabet button:first-child{min-width:58px}
+.glossary-alphabet button.active,.glossary-alphabet button:not(:disabled):hover{background:var(--pink);color:#130914}
+.glossary-alphabet button:disabled{opacity:.3;cursor:not-allowed;border-color:var(--soft)}
+#glossary-list{scroll-margin-top:100px}
