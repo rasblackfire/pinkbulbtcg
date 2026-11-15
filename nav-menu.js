@@ -29,3 +29,39 @@ document.addEventListener("pointerdown",event=>{if(!menu.contains(event.target))
 document.addEventListener("keydown",event=>{if(event.key==="Escape")dropdowns.forEach(d=>d.open=false)});
 menu.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>dropdowns.forEach(d=>d.open=false)));
 })();
+
+/* Google Analytics 4: pas laden nadat de bezoeker toestemming geeft. */
+(()=>{
+"use strict";
+const measurementId="G-2VYN66RQVB";
+const consentKey="pinkbulbtcg_analytics_consent";
+function loadAnalytics(){
+ if(window.__pinkbulbAnalyticsLoaded)return;
+ window.__pinkbulbAnalyticsLoaded=true;
+ window.dataLayer=window.dataLayer||[];
+ window.gtag=function(){window.dataLayer.push(arguments)};
+ window.gtag("js",new Date());
+ window.gtag("config",measurementId);
+ const script=document.createElement("script");
+ script.async=true;
+ script.src="https://www.googletagmanager.com/gtag/js?id="+encodeURIComponent(measurementId);
+ document.head.appendChild(script);
+}
+let saved=null;
+try{saved=localStorage.getItem(consentKey)}catch(e){}
+if(saved==="yes"){loadAnalytics();return}
+if(saved==="no")return;
+if(document.getElementById("pinkbulb-analytics-consent"))return;
+const banner=document.createElement("aside");
+banner.id="pinkbulb-analytics-consent";
+banner.setAttribute("aria-label","Privacykeuze voor bezoekersstatistieken");
+banner.style.cssText="position:fixed;bottom:16px;left:16px;right:16px;max-width:560px;z-index:99999;padding:18px;background:#1c101a;color:#fff;border:2px solid #ff2e93;box-shadow:0 6px 24px #0008;font:inherit";
+banner.innerHTML='<p style="margin:0 0 12px">Mag ik anonieme bezoekersstatistieken bijhouden met Google Analytics? Zo kan ik PinkBulbTCG verbeteren. Alleen als je akkoord gaat, laad ik Analytics. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color:#ff94c8">Privacyinformatie Google</a>.</p><div style="display:flex;gap:10px;flex-wrap:wrap"><button type="button" data-consent="yes" style="cursor:pointer;background:#ff2e93;color:#160d15;border:0;padding:10px 15px;font-weight:700">Ja, is goed!</button><button type="button" data-consent="no" style="cursor:pointer;background:transparent;color:white;border:1px solid white;padding:10px 15px">Nee, bedankt</button></div>';
+banner.querySelectorAll("button").forEach(button=>button.addEventListener("click",()=>{
+ const choice=button.dataset.consent;
+ try{localStorage.setItem(consentKey,choice)}catch(e){}
+ banner.remove();
+ if(choice==="yes")loadAnalytics();
+}));
+document.body.appendChild(banner);
+})();
