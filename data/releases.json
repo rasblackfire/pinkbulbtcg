@@ -18,13 +18,29 @@
     "source": "https://www.pokemon.com/us/pokemon-tcg/product-gallery/30th-celebration-tech-sticker-collection"
   },
   {
-    "date": "2026-11-06",
-    "title": "Mega Evolution—Delta Reign",
+    "date": "2026-10-30",
+    "title": "Espeon ex of Umbreon ex Battle Deck",
     "region": "Engels",
-    "type": "Set",
+    "type": "Battle Deck",
+    "status": "Releasedatum opgegeven",
+    "desc": "Battle Deck met Espeon ex of Umbreon ex. Verschijningsdatum: 30 oktober 2026."
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Black Thunder Stream & White Flame Surge",
+    "region": "Chinees",
+    "type": "Sets",
     "status": "Bevestigd",
-    "desc": "Mega Rayquaza ex staat centraal in deze Engelstalige Mega Evolution-uitbreiding.",
-    "source": "https://www.pokemon.com/uk/news/pokemon-tcg-mega-evolution-delta-reign-product-showcase"
+    "desc": "Twee vereenvoudigd Chineestalige uitbreidingen, uitgebracht in China met verschillende boosterformaten.",
+    "source": "https://cncardsupply.com/november-2026"
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Ditto Box",
+    "region": "Engels",
+    "type": "Collection box",
+    "status": "Releasedatum opgegeven",
+    "desc": "Verschijningsdatum: 6 november 2026."
   },
   {
     "date": "2026-11-06",
@@ -37,12 +53,45 @@
   },
   {
     "date": "2026-11-06",
-    "title": "Black Thunder Stream & White Flame Surge",
-    "region": "Chinees",
-    "type": "Sets",
+    "title": "Mega Evolution—Delta Reign",
+    "region": "Engels",
+    "type": "Set",
     "status": "Bevestigd",
-    "desc": "Twee vereenvoudigd Chineestalige uitbreidingen, uitgebracht in China met verschillende boosterformaten.",
-    "source": "https://cncardsupply.com/november-2026"
+    "desc": "Mega Rayquaza ex staat centraal in deze Engelstalige Mega Evolution-uitbreiding.",
+    "source": "https://www.pokemon.com/uk/news/pokemon-tcg-mega-evolution-delta-reign-product-showcase"
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Mew Box",
+    "region": "Engels",
+    "type": "Collection box",
+    "status": "Releasedatum opgegeven",
+    "desc": "Verschijningsdatum: 6 november 2026."
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Mewtwo Box",
+    "region": "Engels",
+    "type": "Collection box",
+    "status": "Releasedatum opgegeven",
+    "desc": "Verschijningsdatum: 6 november 2026."
+  },
+  {
+    "date": "2026-11-06",
+    "title": "Pokémon TCG Ultra-Premium Collection (UPC)",
+    "region": "Engels",
+    "type": "Ultra-Premium Collection",
+    "status": "Releasedatum opgegeven",
+    "desc": "Verschijningsdatum: 6 november 2026."
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Mega Greninja ex League Battle Deck",
+    "region": "Engels",
+    "type": "Speeldeck",
+    "status": "Aangekondigd door winkels",
+    "desc": "Kant-en-klaar competitief deck rond Mega Greninja ex. Beschikbaarheid kan per land en winkel verschillen.",
+    "source": "https://unownarchives.com/release-calendar/"
   },
   {
     "date": "2026-11-13",
@@ -54,13 +103,12 @@
     "source": "https://www.pokebeach.com/2026/10/mega-dragonite-ex-mega-gengar-ex-and-mega-feraligatr-ex-special-deck-set-revealed-for-november"
   },
   {
-    "date": "2026-11-13",
-    "title": "Mega Greninja ex League Battle Deck",
+    "date": "2026-11-20",
+    "title": "Mega Evolution—Delta Reign Build & Battle Box",
     "region": "Engels",
-    "type": "Speeldeck",
-    "status": "Aangekondigd door winkels",
-    "desc": "Kant-en-klaar competitief deck rond Mega Greninja ex. Beschikbaarheid kan per land en winkel verschillen.",
-    "source": "https://unownarchives.com/release-calendar/"
+    "type": "Build & Battle Box",
+    "status": "Releasedatum opgegeven",
+    "desc": "Build & Battle Box uit de Mega Evolution-serie, behorend bij Delta Reign. Geplande datum: 20 november 2026."
   },
   {
     "date": "2026-11-27",
@@ -88,15 +136,6 @@
     "status": "Retaildatum",
     "desc": "4 december wordt genoemd als retaildatum voor een latere productgolf. Controleer per land en winkel: deze datum is niet noodzakelijk de eerste officiële uitgave.",
     "source": "https://stockmonster.nl/releases/set/30th/"
-  },
-  {
-    "date": "2026-12-04",
-    "title": "Unova Heavy Hitters Premium Collection (VS-retail)",
-    "region": "Engels",
-    "type": "Collection box",
-    "status": "Regionale retaildatum",
-    "desc": "Deze box werd al in november 2025 aangekondigd en wordt in een Europese productdatabase vermeld met 1 december 2025. De datum 4 december 2026 geldt voor de Amerikaanse retailuitgave (onder meer Best Buy en Target), niet als wereldwijde eerste release. Beschikbaarheid in Nederland kan afwijken.",
-    "source": "https://www.bestbuy.com/product/-/6671618"
   },
   {
     "date": "2027-01-15",
