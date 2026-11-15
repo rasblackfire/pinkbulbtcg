@@ -33,7 +33,7 @@ menu.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>dropd
 /* Google Analytics 4: pas laden nadat de bezoeker toestemming geeft. */
 (()=>{
 "use strict";
-const measurementId="G-2VYN66RQVB";
+const measurementId="G-67M6EZZQ9S";
 const consentKey="pinkbulbtcg_analytics_consent";
 function loadAnalytics(){
  if(window.__pinkbulbAnalyticsLoaded)return;
