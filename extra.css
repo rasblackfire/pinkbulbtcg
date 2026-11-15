@@ -40,3 +40,14 @@
 .release-past{padding-top:35px;border-top:2px dashed var(--pink)}
 .release-past-intro{color:var(--soft);margin:-8px 0 25px}
 .release-past .release-card{box-shadow:4px 4px 0 #7a355b}
+
+/* Visuele taalkeuze voor de releasekalender */
+.release-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,310px);gap:22px;align-items:end}
+.release-region-control{min-width:0}
+.release-control-label{display:block;font-size:.84rem;text-transform:uppercase;font-weight:700;margin-bottom:9px}
+.release-region-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.release-region-buttons button{font:700 .86rem 'Space Grotesk',sans-serif;border:2px solid var(--pink);border-radius:6px;background:var(--bg2);color:var(--ink);padding:10px 12px;cursor:pointer;min-height:43px;transition:background .15s,color .15s}
+.release-region-buttons button:hover,.release-region-buttons button.active{background:var(--pink);color:#120a10}
+.release-region-buttons button:focus-visible{outline:3px solid var(--acid);outline-offset:3px}
+.release-actions label:last-child{grid-column:auto}
+@media(max-width:780px){.release-actions{grid-template-columns:1fr}.release-actions label:last-child{grid-column:auto}}
