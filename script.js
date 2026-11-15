@@ -265,6 +265,14 @@
     setupPosts(all, "blog", "blog-list", "blog-more", 2);
 
   });
+  loadJSON("data/news.json").then((news) => {
+    const panel = document.querySelector(".home-news-panel");
+    if (!panel || !Array.isArray(news) || !news.length) return;
+    const latest = news.filter(n => n.date && n.title && /^nieuws\/[a-z0-9-]+\.html$/.test(n.url||""))
+      .sort((a,b)=>b.date.localeCompare(a.date))[0];
+    if (!latest) return;
+    panel.innerHTML = '<span class="tag">Nieuwste nieuwsbericht · '+esc(fmtDate(latest.date))+'</span><h3><a href="'+esc(latest.url)+'">'+esc(latest.title)+'</a></h3><p>'+esc(latest.excerpt||"")+'</p><a class="home-text-link" href="'+esc(latest.url)+'">Lees het nieuwsbericht →</a>';
+  });
   loadJSON("data/releases.json").then((releases) => {
     const box = document.getElementById("home-next-release");
     if (!box) return;
