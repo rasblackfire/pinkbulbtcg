@@ -32,6 +32,10 @@ for f in sorted(ROOT.rglob("*.html")):
     if f.name in SKIP or any(x in SKIP_DIRS or x.startswith(".") for x in rel.parts):continue
     pages+=1
     p=HeadParser();p.feed(f.read_text(encoding="utf-8",errors="replace"))
+    # Non-indexable utility pages do not need search result metadata.
+    robots_values=[m.get("content","").lower() for m in p.metas if m.get("name","").lower()=="robots"]
+    if any("noindex" in value for value in robots_values):
+        continue
     issues=[]
     title=" ".join(p.titles).strip()
     if not title:issues.append("missing title")
