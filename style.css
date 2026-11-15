@@ -294,3 +294,5 @@ footer a:hover{color:var(--pink);text-decoration:underline}
 #menu .nav-submenu li{width:100%}
 #menu .nav-submenu a{font-size:.8rem;padding:10px 12px;white-space:nowrap}
 @media(max-width:820px){#menu{align-items:stretch;flex-wrap:nowrap;gap:4px}#menu>li{width:100%}#menu>li>a,#menu>li>details>summary{font-size:.88rem;padding:12px 14px}#menu .nav-submenu{position:static;min-width:0;width:100%;box-shadow:none;border:0;border-left:2px solid var(--pink);margin:0 0 6px 16px;padding:3px 0 3px 8px;background:transparent}#menu .nav-submenu a{white-space:normal}}
+
+@media(min-width:821px){#menu .nav-dropdown:hover .nav-submenu,#menu .nav-dropdown:focus-within .nav-submenu{display:flex}#menu .nav-dropdown:hover summary{border-color:var(--pink);background:var(--pink);color:#120a10}}
