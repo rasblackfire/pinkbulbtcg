@@ -8,3 +8,17 @@
 
 /* Foto in nieuwskaart */
 .news-card .news-card-photo{display:block;width:100%;max-width:340px;aspect-ratio:16/10;object-fit:cover;border-radius:12px}
+
+/* Woordenboek: onderwerpen en duidelijke kaarten */
+.glossary-categories{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 24px}
+.glossary-categories button{cursor:pointer;border:2px solid var(--pink);background:var(--bg2);color:var(--ink);padding:10px 14px;font:700 .88rem 'Space Grotesk',sans-serif;border-radius:5px}
+.glossary-categories button:hover,.glossary-categories button.active{background:var(--pink);color:#130914}
+.glossary-list{display:block}
+.glossary-group{margin:0 0 38px;scroll-margin-top:110px}
+.glossary-group>h2{font:clamp(1.35rem,3vw,1.9rem) 'Permanent Marker',cursive;border-bottom:3px solid var(--pink);padding:0 0 9px;margin:0 0 18px}
+.glossary-group>h2 small{font:600 .85rem 'Space Grotesk',sans-serif;color:var(--soft)}
+.glossary-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.glossary-entry{min-width:0}
+.glossary-entry h3{font:1.35rem 'Permanent Marker',cursive;margin:0 0 10px}
+.glossary-entry p{margin-bottom:10px}
+@media(max-width:650px){.glossary-cards{grid-template-columns:1fr}.glossary-categories button{flex:1 1 auto}}
