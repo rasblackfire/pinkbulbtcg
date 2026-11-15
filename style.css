@@ -269,3 +269,12 @@ footer a:hover{color:var(--pink);text-decoration:underline}
 .home-support .support-actions .btn{margin-bottom:12px}
 @media(max-width:760px){.home-hero-personal{grid-template-columns:1fr;padding-top:36px;padding-bottom:40px;gap:25px}.home-hero-photo{justify-self:center;max-width:340px;transform:rotate(1deg)}.home-news-layout{grid-template-columns:1fr}.home-guide-grid{grid-template-columns:1fr}.home-guide-grid>a{padding:20px}}
 @media(max-width:560px){#blog .g3{grid-template-columns:1fr}.home-hero-personal h1{font-size:clamp(2.45rem,10vw,3.6rem)}}
+
+/* Compact DEX-blok: tekst links, acties rechts, zonder decoratief icoon */
+.home-dex .dex-promo{grid-template-columns:minmax(0,1fr) minmax(205px,auto);gap:26px;padding:26px 30px}
+.home-dex .dex-promo h2{font-size:clamp(1.7rem,3vw,2.35rem)}
+.home-dex .dex-promo .dex-disclosure{margin-bottom:0}
+.home-dex .dex-actions{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px}
+.home-dex .dex-actions .btn{margin:0;max-width:250px;text-align:center}
+.home-dex .dex-actions .dex-more{margin:0;color:#120a10}
+@media(max-width:800px){.home-dex .dex-promo{grid-template-columns:1fr;gap:18px}.home-dex .dex-actions{align-items:flex-start}}
