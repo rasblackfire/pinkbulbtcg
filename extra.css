@@ -30,3 +30,13 @@
 .glossary-alphabet button.active,.glossary-alphabet button:not(:disabled):hover{background:var(--pink);color:#130914}
 .glossary-alphabet button:disabled{opacity:.3;cursor:not-allowed;border-color:var(--soft)}
 #glossary-list{scroll-margin-top:100px}
+
+/* Releasekalender: toekomstige releases bovenaan, archief onderaan */
+.release-period{padding:0;margin:0 0 50px}
+.release-period>h2{font:clamp(1.7rem,4vw,2.4rem) 'Permanent Marker',cursive;margin:0 0 22px;padding-bottom:12px;border-bottom:4px solid var(--pink)}
+.release-period>h2 small{font:700 .9rem 'Space Grotesk',sans-serif;color:var(--soft)}
+.release-period .release-month{padding:0;margin-bottom:28px}
+.release-period .release-month>h3{font:clamp(1.25rem,3vw,1.7rem) 'Permanent Marker',cursive;text-transform:capitalize;margin-bottom:14px;color:var(--soft)}
+.release-past{padding-top:35px;border-top:2px dashed var(--pink)}
+.release-past-intro{color:var(--soft);margin:-8px 0 25px}
+.release-past .release-card{box-shadow:4px 4px 0 #7a355b}
