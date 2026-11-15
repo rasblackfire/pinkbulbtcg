@@ -14,3 +14,18 @@
 /* Artikelafbeeldingen: vaste uitsnede, geen vervorming */
 .article-tile .article-art{height:auto;aspect-ratio:16/10;overflow:hidden}
 .article-tile .article-art img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* Tips & Tricks: rustigere kaarten en onderwerpen */
+.tips-categories{display:flex;flex-wrap:wrap;gap:9px;margin:-12px 0 18px}
+.tips-categories button{cursor:pointer;border:2px solid var(--pink);background:var(--bg2);color:var(--ink);padding:10px 14px;border-radius:5px;font:700 .86rem 'Space Grotesk',sans-serif}
+.tips-categories button:hover,.tips-categories button.active{background:var(--pink);color:#160b14}
+.tips-result-count{color:var(--soft);font-size:.88rem;margin:0 0 22px}
+.tips-article-list{display:block}
+.tips-topic-group{margin:0 0 38px}
+.tips-topic-group>h3{font:clamp(1.4rem,3vw,2rem) 'Permanent Marker',cursive;border-bottom:3px solid var(--pink);padding-bottom:10px;margin:0 0 19px}
+.tips-topic-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.tips-article-list>.article-tile{display:inline-flex;width:min(100%,350px);vertical-align:top;margin:0 20px 20px 0}
+.tips-tile .article-inner{padding:22px}
+.tips-tile .article-inner h3{margin-top:4px}
+.tips-tile .article-inner p{line-height:1.6}
+@media(max-width:650px){.tips-article-list>.article-tile{display:flex;width:100%;margin-right:0}.tips-categories button{flex:1 1 auto}}
