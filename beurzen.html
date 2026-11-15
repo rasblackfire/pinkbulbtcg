@@ -47,4 +47,4 @@ return '<article class="agenda-item"><div class="agenda-date">'+esc(d)+'</div><d
 document.getElementById('calendar').insertAdjacentHTML('beforeend','<section class="agenda-month" id="'+id+'"><h2>'+label[0].toUpperCase()+label.slice(1)+'</h2><div class="agenda-list">'+cards+'</div></section>');
 }
 if(!groups.size)document.getElementById('calendar').innerHTML='<p class="agenda-empty">Er staan momenteel geen toekomstige evenementen in de agenda.</p>';
-</script><script>document.getElementById('menu-toggle').addEventListener('click',function(){const m=document.getElementById('menu');const open=m.classList.toggle('open');this.setAttribute('aria-expanded',String(open));});</script></body></html>
+</script><script>document.getElementById('menu-toggle').addEventListener('click',function(){const m=document.getElementById('menu');const open=m.classList.toggle('open');this.setAttribute('aria-expanded',String(open));});</script><script src="nav-menu.js?v=2" defer></script></body></html>
