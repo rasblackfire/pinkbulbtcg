@@ -239,3 +239,7 @@ footer a:hover{color:var(--pink);text-decoration:underline}
 .news-article-body .article-note{padding:22px;margin-top:28px;border:2px solid var(--pink)}
 .news-article-body .article-note h2{margin-top:0}
 @media(max-width:600px){.news-card{flex-direction:column}.news-card-icon{width:62px;height:62px}}
+
+/* Afbeeldingen op de homepage */
+.thumb{overflow:hidden}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover}
