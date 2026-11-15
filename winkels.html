@@ -178,4 +178,4 @@ function init(){
  layer=L.layerGroup().addTo(map);
 }
 fetch('winkels.json').then(r=>{if(!r.ok)throw Error('Winkelbestand ontbreekt');return r.json()}).then(data=>{stores=data;init();$('status').textContent=stores.length+' winkels beschikbaar. Kies een regio of zoek een plaats.'}).catch(e=>{$('status').textContent='Winkels laden mislukt: '+e.message});
-</script></body></html>
+</script><script src="nav-menu.js?v=2" defer></script></body></html>
