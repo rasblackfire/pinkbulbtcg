@@ -53,7 +53,33 @@
     </div>
   </div>
 </section>
-<script async src="https://www.instagram.com/embed.js"></script>
+<script>
+/* Laad Instagram pas wanneer de bezoeker bij de embed in de buurt komt. */
+(function(){
+  var embed=document.querySelector(".instagram-embed");
+  if(!embed)return;
+  var loaded=false;
+  function loadInstagram(){
+    if(loaded)return;
+    loaded=true;
+    var script=document.createElement("script");
+    script.async=true;
+    script.src="https://www.instagram.com/embed.js";
+    document.head.appendChild(script);
+  }
+  if("IntersectionObserver" in window){
+    var observer=new IntersectionObserver(function(entries){
+      if(entries.some(function(entry){return entry.isIntersecting})){
+        observer.disconnect();
+        loadInstagram();
+      }
+    },{rootMargin:"400px 0px"});
+    observer.observe(embed);
+  }else{
+    window.addEventListener("load",loadInstagram,{once:true});
+  }
+})();
+</script>
 
 
 <section class="home-guides" aria-labelledby="home-guides-title"><div class="wrap"><div class="title"><h2 id="home-guides-title">Duik in de Pokémon TCG-hobby</h2></div><div class="home-guide-grid"><a href="tips.html"><span>01 / Ontdekken</span><h3>Tips &amp; tricks</h3><p>Praktische uitleg over kaarten, kopen, ruilen en verzamelen.</p><b>Bekijk alle tips →</b></a><a href="woordenboek.html"><span>02 / Begrijpen</span><h3>Woordenboek</h3><p>Van SIR tot slab: alle Pokémontermen helder uitgelegd.</p><b>Zoek een begrip →</b></a><a href="beginnersgids.html"><span>03 / Beginnen</span><h3>Beginnersgids</h3><p>Nieuw met Pokémonkaarten? Hier begin je op je gemak.</p><b>Start hier →</b></a></div></div></section>
