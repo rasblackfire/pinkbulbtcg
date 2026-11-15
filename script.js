@@ -116,7 +116,7 @@
       const card = document.createElement("article");
       card.className = "card";
       const href = post.section + "/" + encodeURIComponent(post.id) + ".html";
-      card.innerHTML = '<div class="thumb" aria-hidden="true">' + esc(post.emoji || "🃏") + '</div>' +
+      card.innerHTML = '<div class="thumb" aria-hidden="true">' + (post.image ? '<img src="' + esc(post.image) + '" alt="" loading="lazy" decoding="async">' : esc(post.emoji || "🃏")) + '</div>' +
         '<div class="in"><span class="tag">' + esc(post.tag || "Artikel") + '</span>' +
         '<h3><a class="card-link" href="' + href + '">' + esc(post.title) + '</a></h3>' +
         '<p>' + esc(post.excerpt) + '</p><div class="date">' + esc(fmtDate(post.date)) + '</div>' +

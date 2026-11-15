@@ -93,3 +93,21 @@ De beurzenagenda en het winkeloverzicht verwijzen naar PokéRadar en StockMonste
 ## Lokaal bekijken
 
 De site laadt zijn gegevens met `fetch`, dus een dubbelklik op `index.html` werkt niet. Start in de map een eenvoudige server met `python3 -m http.server` en open http://localhost:8000.
+
+## Afbeeldingen bij blogs en nieuws
+
+De foto's van artikelen staan in `assets/articles/`. Bestandsnamen bevatten kleine letters en streepjes, zonder spaties.
+
+- **Blogoverzicht en homepage:** voeg in `data/posts.json` bij een bericht `"image": "assets/articles/naam-van-foto.jpg"` toe. Zonder foto verschijnt het bestaande pictogram.
+- **Blogartikel:** gebruik in `blog/naam.html` een pad dat begint met `../assets/articles/`.
+- **Nieuws:** de nieuwskaart staat voorlopig rechtstreeks in `nieuws.html`; de foto verwijst naar `assets/articles/`.
+- **Nieuwe afbeeldingen:** upload ze naar `assets/articles/` en pas de verwijzing aan. Verwijder nooit een afbeelding zolang een pagina die nog gebruikt.
+
+### Veilig publiceren
+
+1. Maak in GitHub eerst een back-up via **Code → Download ZIP**.
+2. Upload **niet de ZIP als één bestand**: pak hem uit en upload de inhoud van `pinkbulbtcg-main/` met behoud van de mappenstructuur.
+3. Verwijder niet vooraf alle bestaande bestanden. Voor verplaatste foto's kun je de oude bestanden pas verwijderen nadat de nieuwe website goed werkt.
+4. Controleer na de GitHub Pages-deploy homepage, blog, nieuws en enkele artikelpagina's.
+
+Let op: bestaande inhoud en koppelingen zijn behouden. Dit is een gerichte opschoning van artikelafbeeldingen, geen volledige herbouw van de site.
