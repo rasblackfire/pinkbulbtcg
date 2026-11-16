@@ -57,25 +57,6 @@
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  /* ---------- Mobiel menu ---------- */
-  const menuToggle = $("#menu-toggle");
-  const menu = $("#menu");
-  if (menuToggle && menu) {
-    const closeMenu = () => {
-      menu.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      menuToggle.setAttribute("aria-label", "Menu openen");
-    };
-    menuToggle.addEventListener("click", () => {
-      const isOpen = menu.classList.toggle("open");
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-      menuToggle.setAttribute("aria-label", isOpen ? "Menu sluiten" : "Menu openen");
-    });
-    menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
-    window.addEventListener("resize", () => { if (window.innerWidth > 820) closeMenu(); });
-  }
-
   /* ---------- Actief menu-item tijdens scrollen ---------- */
   const navLinks = Array.from(document.querySelectorAll("#menu a"));
   const navTargets = navLinks.map((a) => {
