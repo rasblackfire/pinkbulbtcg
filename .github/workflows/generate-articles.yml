@@ -1,0 +1,49 @@
+name: Generate new articles
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/posts.json'
+      - 'templates/article.html'
+      - 'scripts/generate_articles.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: article-generation
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Generate and publish missing opted-in pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/generate_articles.py
+            if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard -- blog/ tips/)" ]; then
+              echo "All article pages already exist."
+              exit 0
+            fi
+            git add -- blog/ tips/
+            if git diff --cached --quiet; then
+              echo "No new pages."
+              exit 0
+            fi
+            git commit -m "Generate new article pages"
+            if git push origin HEAD:main; then exit 0; fi
+            echo "Retrying after concurrent update ($attempt)"
+          done
+          exit 1
