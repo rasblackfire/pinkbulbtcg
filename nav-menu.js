@@ -24,10 +24,22 @@ if(!document.getElementById("shared-header-styles")){
  css.textContent='.header-instagram{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;width:42px;height:42px;color:#ff2e93;border:2px solid #ff2e93;background:#1c101a;transition:background .15s,color .15s,transform .15s;margin-left:10px;order:4}.header-instagram:hover,.header-instagram:focus-visible{background:#ff2e93;color:#160d15;transform:translateY(-2px)}.header-instagram:focus-visible{outline:2px solid #e8ff3a;outline-offset:3px}@media(max-width:850px){.header-instagram{order:2;margin-left:auto;width:39px;height:39px}.bar .burger{order:3;margin-left:8px}.bar nav{order:4}}';
  document.head.appendChild(css);
 }
+/* Eén gedeelde mobiele menuknop voor alle pagina's. */
+const toggle=document.getElementById("menu-toggle");
+const closeMobile=()=>{menu.classList.remove("open");if(toggle){toggle.setAttribute("aria-expanded","false");toggle.setAttribute("aria-label","Menu openen")}};
+if(toggle){
+ toggle.addEventListener("click",()=>{
+  const opened=menu.classList.toggle("open");
+  toggle.setAttribute("aria-expanded",String(opened));
+  toggle.setAttribute("aria-label",opened?"Menu sluiten":"Menu openen");
+ });
+ menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeMobile));
+ window.addEventListener("resize",()=>{if(window.innerWidth>820)closeMobile()});
+}
 const dropdowns=[...menu.querySelectorAll(":scope > .nav-dropdown > details")];
 dropdowns.forEach(current=>{current.addEventListener("toggle",()=>{if(current.open)dropdowns.forEach(other=>{if(other!==current)other.open=false})});current.querySelector("summary")?.addEventListener("click",()=>{if(!current.open)dropdowns.forEach(other=>{if(other!==current)other.open=false})})});
 document.addEventListener("pointerdown",event=>{if(!menu.contains(event.target))dropdowns.forEach(d=>d.open=false)});
-document.addEventListener("keydown",event=>{if(event.key==="Escape")dropdowns.forEach(d=>d.open=false)});
+document.addEventListener("keydown",event=>{if(event.key==="Escape"){dropdowns.forEach(d=>d.open=false);closeMobile()}});
 menu.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>dropdowns.forEach(d=>d.open=false)));
 })();
 
