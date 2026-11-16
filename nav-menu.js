@@ -2,6 +2,7 @@
 (()=>{"use strict";
 const menu=document.getElementById("menu");if(!menu)return;
 const current=location.pathname.split("/").pop()||"index.html";
+const section=location.pathname.split("/").filter(Boolean).slice(-2,-1)[0]||"";
 const items=[
 ["index.html","Home"],["blog.html","Blog"],["nieuws.html","Nieuws"],
 ["Verzamelen",[["tips.html","Tips & Tricks"],["beginnersgids.html","Beginnersgids"],["woordenboek.html","Woordenboek"],["binders.html","Binders"]]],
