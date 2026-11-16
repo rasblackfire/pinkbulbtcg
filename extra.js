@@ -1,4 +1,4 @@
-(()=>{"use strict";const $=id=>document.getElementById(id);const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));const menu=$("menu-toggle");if(menu)menu.addEventListener("click",()=>{const open=$("menu").classList.toggle("open");menu.setAttribute("aria-expanded",String(open))});async function get(path){const r=await fetch(path,{cache:"no-cache"});if(!r.ok)throw Error("Laden mislukt");return r.json()}if($("release-list")){
+(()=>{"use strict";const $=id=>document.getElementById(id);const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));async function get(path){const r=await fetch(path,{cache:"no-cache"});if(!r.ok)throw Error("Laden mislukt");return r.json()}if($("release-list")){
 let items=[];let region="alles";
 const dateLabel=iso=>new Date(iso+"T12:00:00").toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"});
 const render=()=>{
