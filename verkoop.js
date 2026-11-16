@@ -24,6 +24,6 @@ async function load(){
  }catch(e){$("count").textContent="Aanbod kon niet worden geladen."}
  render();
 }
-$("menu-toggle").addEventListener("click",function(){const menu=$("menu"),open=menu.classList.toggle("open");this.setAttribute("aria-expanded",String(open))});
+
 ["search","category","availability"].forEach(id=>$(id).addEventListener(id==="search"?"input":"change",render));
 load();
