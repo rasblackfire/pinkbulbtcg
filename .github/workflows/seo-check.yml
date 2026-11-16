@@ -5,6 +5,9 @@ on:
     paths:
       - '**/*.html'
       - 'scripts/check_seo.py'
+      - 'scripts/check_site.py'
+      - 'data/**'
+      - 'news-feed.js'
       - '.github/workflows/seo-check.yml'
   workflow_dispatch:
 permissions:
@@ -19,3 +22,5 @@ jobs:
           python-version: '3.12'
       - name: Check SEO metadata
         run: python scripts/check_seo.py
+      - name: Check links, images and content data
+        run: python scripts/check_site.py
