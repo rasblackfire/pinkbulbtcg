@@ -10,11 +10,13 @@ Persoonlijke Pokémon TCG-hobbysite voor GitHub Pages (pinkbulbtcg.nl).
 
 **Releasekalender:** beheer items in `data/releases.json`; de pagina `releases.html` toont deze automatisch.
 
-**Blogs en tips:** de overzichten gebruiken `data/posts.json`. Een los artikel heeft daarnaast een eigen HTML-bestand in `blog/` of `tips/`.
+**Blogs en tips:** de overzichten gebruiken `data/posts.json`. Voor een nieuw eenvoudig artikel kun je `generatePage: true` toevoegen. GitHub Actions maakt dan een ontbrekende HTML-pagina in `blog/` of `tips/` met `templates/article.html` en `scripts/generate_articles.py`. Bestaande HTML-pagina's worden nooit overschreven. Artikelen met bijzondere galerijen of eigen opmaak kun je nog steeds handmatig maken. De artikelmaker op `artikel-maken.html` voegt `generatePage: true` automatisch toe. De eerste automatische publicatie moet nog gecontroleerd worden.
 
 **Vormgeving:** `style.css` bevat de basis; `extra.css` aanvullende stijlen. Voeg een algemene aanpassing liever op één centrale plek toe dan in elke pagina afzonderlijk.
 
 **Automatische controle:** `scripts/check_seo.py` controleert SEO-gegevens; `scripts/check_site.py` controleert lokale links, afbeeldingen en belangrijke JSON-bestanden. GitHub Actions voert beide controles uit en toont waarschuwingen zonder de publicatie te blokkeren.
+
+**Artikelgenerator:** workflow `.github/workflows/generate-articles.yml` wordt gestart als `data/posts.json` wijzigt. Na het genereren volgt de gewone GitHub Pages-publicatie en sitemap-update. Een artikel heeft dus soms een paar minuten nodig om online te verschijnen.
 
 **Publiceren:** GitHub Pages publiceert na wijzigingen op `main`. De sitemap wordt automatisch bijgewerkt via `.github/workflows/update-sitemap.yml`. Bij een fout: kijk eerst naar de juiste workflow onder GitHub Actions.
 
