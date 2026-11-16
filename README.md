@@ -4,7 +4,7 @@ Persoonlijke Pokémon TCG-hobbysite voor GitHub Pages (pinkbulbtcg.nl).
 
 ## Website onderhouden (november 2026)
 
-**Menu en Instagram:** pas alleen `nav-menu.js` aan. De HTML-pagina's hebben een lege `<ul id="menu"></ul>` die automatisch wordt gevuld. Verander de menuknoppen niet in losse artikelen.
+**Menu en Instagram:** pas alleen `nav-menu.js` aan. De HTML-pagina's hebben een lege `<ul id="menu"></ul>` die automatisch wordt gevuld. Ook het mobiele hamburgermenu wordt daar geregeld. Voeg geen losse `menu-toggle`-clickhandlers toe aan pagina's, `script.js` of `extra.js`. Verander de menuknoppen niet in losse artikelen.
 
 **Nieuws:** voeg een item toe aan `data/news.json`. De pagina `nieuws.html` gebruikt `news-feed.js` om de kaarten automatisch te tonen, op datum gesorteerd. Maak daarnaast de bijbehorende artikelpagina in `nieuws/`. Plaats afbeeldingen bij voorkeur in `nieuws/` of `assets/articles/` en verwijs er met het juiste pad naar. Verander niet handmatig de nieuwskaarten in `nieuws.html`.
 
@@ -13,6 +13,8 @@ Persoonlijke Pokémon TCG-hobbysite voor GitHub Pages (pinkbulbtcg.nl).
 **Blogs en tips:** de overzichten gebruiken `data/posts.json`. Een los artikel heeft daarnaast een eigen HTML-bestand in `blog/` of `tips/`.
 
 **Vormgeving:** `style.css` bevat de basis; `extra.css` aanvullende stijlen. Voeg een algemene aanpassing liever op één centrale plek toe dan in elke pagina afzonderlijk.
+
+**Automatische controle:** `scripts/check_seo.py` controleert SEO-gegevens; `scripts/check_site.py` controleert lokale links, afbeeldingen en belangrijke JSON-bestanden. GitHub Actions voert beide controles uit en toont waarschuwingen zonder de publicatie te blokkeren.
 
 **Publiceren:** GitHub Pages publiceert na wijzigingen op `main`. De sitemap wordt automatisch bijgewerkt via `.github/workflows/update-sitemap.yml`. Bij een fout: kijk eerst naar de juiste workflow onder GitHub Actions.
 
