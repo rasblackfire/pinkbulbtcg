@@ -2,6 +2,22 @@
 
 Persoonlijke Pokémon TCG-hobbysite voor GitHub Pages (pinkbulbtcg.nl).
 
+## Website onderhouden (november 2026)
+
+**Menu en Instagram:** pas alleen `nav-menu.js` aan. De HTML-pagina's hebben een lege `<ul id="menu"></ul>` die automatisch wordt gevuld. Verander de menuknoppen niet in losse artikelen.
+
+**Nieuws:** voeg een item toe aan `data/news.json`. De pagina `nieuws.html` gebruikt `news-feed.js` om de kaarten automatisch te tonen, op datum gesorteerd. Maak daarnaast de bijbehorende artikelpagina in `nieuws/`. Plaats afbeeldingen bij voorkeur in `nieuws/` of `assets/articles/` en verwijs er met het juiste pad naar. Verander niet handmatig de nieuwskaarten in `nieuws.html`.
+
+**Releasekalender:** beheer items in `data/releases.json`; de pagina `releases.html` toont deze automatisch.
+
+**Blogs en tips:** de overzichten gebruiken `data/posts.json`. Een los artikel heeft daarnaast een eigen HTML-bestand in `blog/` of `tips/`.
+
+**Vormgeving:** `style.css` bevat de basis; `extra.css` aanvullende stijlen. Voeg een algemene aanpassing liever op één centrale plek toe dan in elke pagina afzonderlijk.
+
+**Publiceren:** GitHub Pages publiceert na wijzigingen op `main`. De sitemap wordt automatisch bijgewerkt via `.github/workflows/update-sitemap.yml`. Bij een fout: kijk eerst naar de juiste workflow onder GitHub Actions.
+
+**Let op:** de site is een statische website. Een nieuw artikel heeft nog steeds een eigen HTML-pagina nodig. Het menu, de nieuwskaarten en de releasekalender zijn wel centraal geregeld.
+
 ## Mapindeling
 
 Zet de mappen precies zo in de hoofdmap van de repository. Als de mappen plat worden geüpload, werken de Marktplaats-koppeling en de dagelijkse update niet.
@@ -17,7 +33,7 @@ Upload mappen door ze in één keer naar GitHub te slepen (niet als zipbestand),
 
 ## Inhoud aanpassen
 
-Je past de site aan door alleen de bestanden in `data/` te bewerken. Let op de komma's tussen items en dubbele aanhalingstekens rond tekst.
+Veel overzichten pas je aan via de bestanden in `data/`. Voor losse artikelpagina's en het centrale menu gelden de instructies hierboven. Let op de komma's tussen items en dubbele aanhalingstekens rond tekst.
 
 ### Beurzen en events: `data/events.json`
 
