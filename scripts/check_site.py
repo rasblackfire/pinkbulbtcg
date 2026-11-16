@@ -69,6 +69,12 @@ for name, required in DATA_FILES.items():
             for key in required:
                 if not item.get(key):
                     warnings.append(f"{name} item {index}: veld '{key}' ontbreekt")
+            if name == "data/posts.json" and item.get("published") is not False and not item.get("voorbeeld"):
+                section, slug = item.get("section"), item.get("id")
+                if section in {"blog", "tips"} and isinstance(slug, str) and slug:
+                    article = ROOT / section / (slug + ".html")
+                    if not article.is_file():
+                        warnings.append(f"{name} item {index}: artikelpagina ontbreekt: {section}/{slug}.html")
             if name == "data/news.json" and item.get("url"):
                 target = local_target(ROOT / "index.html", item["url"])
                 if target is not None and not target.is_file():
