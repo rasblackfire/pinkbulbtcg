@@ -9,6 +9,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: sitemap-update
+  cancel-in-progress: false
 jobs:
   sitemap:
     runs-on: ubuntu-24.04
@@ -16,17 +19,39 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+          ref: main
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Generate sitemap
-        run: python scripts/generate_sitemap.py
-      - name: Commit sitemap changes
+      - name: Generate sitemap and push safely
+        shell: bash
         run: |
-          if ! git diff --quiet -- sitemap.xml; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # A newer commit can land while this workflow is running.
+          # Rebuild the sitemap from the latest main before every push attempt.
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/generate_sitemap.py
+
+            if git diff --quiet -- sitemap.xml; then
+              echo "Sitemap is already up to date."
+              exit 0
+            fi
+
             git add sitemap.xml
             git commit -m "Automatically refresh sitemap"
-            git push
-          fi
+
+            if git push origin HEAD:main; then
+              echo "Sitemap updated."
+              exit 0
+            fi
+
+            echo "Main changed during attempt $attempt; retrying with latest files."
+          done
+
+          echo "Could not update sitemap after 5 attempts."
+          exit 1
